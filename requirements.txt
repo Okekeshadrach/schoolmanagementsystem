@@ -1,0 +1,40 @@
+Ifechidere Shadrach, [5/10/2022 10:36 AM]
+1. Login (for student, staff, and system admin(us) respectively)
+2. Register Student (System admin)
+3. View Student List (System Admin)
+4. Update Student (System Admin)
+5. Delete Student (System Admin)
+6. Register Staff (system admin)
+7. View Staff (System Admin)
+8. Update Staff (System Admin)
+9. Delete Staff (System Admin)
+10. Create Class and Class arm(System Admin)
+11. Update Class Arm (System Admin)
+12. Create Subject and assign Subject(to class and teacher)(System Admin)
+13. Give Assignment(Teacher and System Admin)
+14. Check Assignment (Student, Teacher, and System Admin)
+15. Create Time Table(System Admin)
+16. View Class and Class Arm(Teacher and System Admin)
+17. Take Class Attendance (Teacher and System Admin)
+18. View Class Attendance (Teacher and System Admin)
+19. Create Session and Term (System Admin)
+20. Enter CAs and Quiz Score (Teacher and System Admin)
+21. Enter Exam Score (Teacher and System Admin)
+22. Prepare Result (Class Head Teacher and System Admin)
+23. Check Result (Student)
+24. Cumulative Grade Sheet (Class Head Teacher and System Admin)
+25. Create Term Payment (System Admin)
+26. View Term Payment (Student, Teacher, and System Admin)
+27. Make Payment (Student)
+28. Verify Payment (System Admin)
+29. View List of Payments (Class Head Teacher and System Admin)
+30. Other Possible and good functionalities...
+Things to get done this week:
+- Login
+- Registration (student, staff, admin)
+- Student and staff list
+- Update student and staff 
+- Create class and class arms
+- Create subject
+- Assign teacher
+And more...

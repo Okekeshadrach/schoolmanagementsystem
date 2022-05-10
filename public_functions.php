@@ -5,7 +5,18 @@ class sms_engine
     public $host = 'localhost';
     public $user = 'root';
     public $pass = '';
-    public $database = '';
+    public $database = 'dbms';
+
+    // $query = "SELECT MAX(cast(registration_code as decimal)) id FROM accounts ";  
+    // if($result = mysql_query($query))
+    // {
+    //     $row = mysql_fetch_assoc($result);
+
+    //     $count = $row['id'];
+    //     $count = $count+1;
+
+    //     $code_no = str_pad($count, 4, "0", STR_PAD_LEFT);
+    // }
 
     // Registration of both students and staff details
 
