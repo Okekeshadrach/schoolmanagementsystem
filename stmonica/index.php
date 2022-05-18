@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from krystalng.com/fggconitsha/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2022 13:48:51 GMT -->
+<!-- Mirrored from BinozyDigital.com/St. Monica/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2022 13:48:51 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
@@ -9,13 +9,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka">
+    <meta name="description" content="St. Monica Nursery/Primary, Ibusa Delta">
     <meta name="keywords" content="school, education">
-    <meta name="author" content="Krystal Digital Solutions">
+    <meta name="author" content="BinozyDigital Solutions">
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb696676654.png?v1">
-    <title>Krystal’s It Academy F.g.g.c, Nkwelle Ezunaka - School Portal</title>
+    <title>St. Monica Nursery/Primary, Ibusa Delta - School Portal</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
