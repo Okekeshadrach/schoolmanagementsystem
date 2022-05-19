@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -50,57 +49,44 @@
                         <div class="card card-body">
                             <p>These Behavioural traits will show on every student's result. They will also be available
                                 when placing students result comment. You can Name them as you please</p>
-                            <form action="school-config/behavioural-trait-edit-process/" id="b-trait" method="post"
-                                accept-charset="utf-8">
+                            <form action="school-config/behavioural-trait-edit-process/" id="b-trait" method="post" accept-charset="utf-8">
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[A]" id="category"
-                                                value="Neatness" required>
+                                            <input type="text" class="form-control" name="bt[A]" id="category" value="Neatness" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[B]" id="category"
-                                                value="Obedience" required>
+                                            <input type="text" class="form-control" name="bt[B]" id="category" value="Obedience" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[C]" id="category"
-                                                value="Reliability" required>
+                                            <input type="text" class="form-control" name="bt[C]" id="category" value="Reliability" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[D]" id="category"
-                                                value="Initiative" required>
+                                            <input type="text" class="form-control" name="bt[D]" id="category" value="Initiative" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[E]" id="category"
-                                                value="Sense of Reponsibility" required>
+                                            <input type="text" class="form-control" name="bt[E]" id="category" value="Sense of Reponsibility" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[F]" id="category"
-                                                value="Punctuality" required>
+                                            <input type="text" class="form-control" name="bt[F]" id="category" value="Punctuality" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[G]" id="category"
-                                                value="Relationship with Students" required>
+                                            <input type="text" class="form-control" name="bt[G]" id="category" value="Relationship with Students" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[H]" id="category"
-                                                value="Attentiveness" required>
+                                            <input type="text" class="form-control" name="bt[H]" id="category" value="Attentiveness" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[I]" id="category"
-                                                value="Self Control" required>
+                                            <input type="text" class="form-control" name="bt[I]" id="category" value="Self Control" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="bt[J]" id="category"
-                                                value="Spirit of Co-operation" required>
+                                            <input type="text" class="form-control" name="bt[J]" id="category" value="Spirit of Co-operation" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="admin"
-                                        class="btn btn-warning btn-rounded waves-effect waves-light m-t-10">Close</a>
-                                    <button type="submit"
-                                        class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save changes
+                                    <a href="admin" class="btn btn-warning btn-rounded waves-effect waves-light m-t-10">Close</a>
+                                    <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save changes
                                     </button>
                                 </div>
                                 <p class="processor pull-right"></p>
@@ -112,7 +98,7 @@
             </div>
 
             <script>
-                $('#b-trait').submit(function (e) {
+                $('#b-trait').submit(function(e) {
                     e.preventDefault();
                     submit_form('#b-trait');
                 });
@@ -120,8 +106,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com"
-                    target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -138,7 +123,7 @@
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+    <?php include('../layout/script.php') ?>
 </body>
 
 </html>

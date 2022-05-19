@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -57,15 +56,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <p>
-                                    <a href="staff/create"
-                                        class="btn btn-primary btn-rounded waves-effect waves-light m-t-5"><i
-                                            class="fa fa-user-plus"></i> New staff account</a>
-                                    <a href="staff/nominal-roll.html" target="_blank"
-                                        class="btn btn-info btn-rounded waves-effect waves-light m-t-5"><i
-                                            class="fa fa-print"></i> Print Staff Nominal roll</a>
-                                    <a href="staff/bulk-bio-update/1"
-                                        class="btn btn-success btn-rounded waves-effect waves-light m-t-5"><i
-                                            class="fa fa-th-list"></i> Staff Bulk Bio update</a>
+                                    <a href="create.php" class="btn btn-primary btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-user-plus"></i> New staff account</a>
+                                    <a href="staff/nominal-roll.html" target="_blank" class="btn btn-info btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-print"></i> Print Staff Nominal roll</a>
+                                    <a href="staff/bulk-bio-update/1" class="btn btn-success btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-th-list"></i> Staff Bulk Bio update</a>
                                 </p>
 
                                 <div class="table-responsive" id="resp-div">
@@ -90,17 +83,13 @@
                                                     <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
                                                 </td>
                                                 <td>
-                                                    <a href="staff/staff-profile/fd9dcc2e1324d22fb" class="text-info"
-                                                        target="_blank">Mr Fawole John Oluwaseyi</a>
+                                                    <a href="staff/staff-profile/fd9dcc2e1324d22fb" class="text-info" target="_blank">Mr Fawole John Oluwaseyi</a>
                                                 </td>
                                                 <td>fawole.j</td>
                                                 <td>fawole37@yahoo.com</td>
                                                 <td>08064828248</td>
                                                 <td>
-                                                    <a href="user-account/delete/6bc35d554a82fd726"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                        title="Delete this Staff Account" data-toggle="tooltip"><i
-                                                            class="fa fa-user-times"></i> </a>
+                                                    <a href="user-account/delete/6bc35d554a82fd726" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                 </td>
                                             </tr>
 
@@ -110,17 +99,13 @@
                                                     <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
                                                 </td>
                                                 <td>
-                                                    <a href="staff/staff-profile/892ad0ba4184e247f" class="text-info"
-                                                        target="_blank">MR Obinozie Henry Ebuka</a>
+                                                    <a href="staff/staff-profile/892ad0ba4184e247f" class="text-info" target="_blank">MR Obinozie Henry Ebuka</a>
                                                 </td>
                                                 <td>obinozie.h</td>
                                                 <td>obinoziehenry@gmail.com</td>
                                                 <td>08037370787</td>
                                                 <td>
-                                                    <a href="user-account/delete/7bb090a875ff21d52"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                        title="Delete this Staff Account" data-toggle="tooltip"><i
-                                                            class="fa fa-user-times"></i> </a>
+                                                    <a href="user-account/delete/7bb090a875ff21d52" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                 </td>
                                             </tr>
 
@@ -130,38 +115,29 @@
                                                     <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
                                                 </td>
                                                 <td>
-                                                    <a href="staff/staff-profile/e19bc1d52c75e1542" class="text-info"
-                                                        target="_blank">Mr Obinozie Nnamdi Francis</a>
+                                                    <a href="staff/staff-profile/e19bc1d52c75e1542" class="text-info" target="_blank">Mr Obinozie Nnamdi Francis</a>
                                                 </td>
                                                 <td>obinozie.n</td>
                                                 <td>nnamdifrancis32@gmail.com</td>
                                                 <td>08064769378</td>
                                                 <td>
-                                                    <a href="user-account/delete/4640cc2058b1bde4b"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                        title="Delete this Staff Account" data-toggle="tooltip"><i
-                                                            class="fa fa-user-times"></i> </a>
+                                                    <a href="user-account/delete/4640cc2058b1bde4b" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                 </td>
                                             </tr>
 
                                             <tr>
                                                 <td>4</td>
                                                 <td>
-                                                    <img src="uploads/passport_df0f6ec551dfee6df.jpg" width="50"
-                                                        class="img-circle" />
+                                                    <img src="uploads/passport_df0f6ec551dfee6df.jpg" width="50" class="img-circle" />
                                                 </td>
                                                 <td>
-                                                    <a href="staff/staff-profile/9a192c3a5f6e794a7" class="text-info"
-                                                        target="_blank">Mr Umerah Anthony Tochukwu</a>
+                                                    <a href="staff/staff-profile/9a192c3a5f6e794a7" class="text-info" target="_blank">Mr Umerah Anthony Tochukwu</a>
                                                 </td>
                                                 <td>umerah.t</td>
                                                 <td>umra2020@gmail.com</td>
                                                 <td>08068513947</td>
                                                 <td>
-                                                    <a href="user-account/delete/668962267681d0e10c58"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                        title="Delete this Staff Account" data-toggle="tooltip"><i
-                                                            class="fa fa-user-times"></i> </a>
+                                                    <a href="user-account/delete/668962267681d0e10c58" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                 </td>
                                             </tr>
 
@@ -174,14 +150,16 @@
                 </div>
 
                 <script>
-                    $(function () {
+                    $(function() {
                         if ($('tr').length > 10) {
-                            $('.table').DataTable({ "iDisplayLength": 50 });
+                            $('.table').DataTable({
+                                "iDisplayLength": 50
+                            });
                         }
                     });
 
 
-                    $(document).on('click', '.user-delete', function (e) {
+                    $(document).on('click', '.user-delete', function(e) {
                         e.preventDefault();
                         var a = $(this);
                         var url = a.attr('href');
@@ -192,14 +170,16 @@
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",
                             confirmButtonText: "Yes, proceed!"
-                        }, function () {
+                        }, function() {
                             var xhr = get_request(url);
-                            xhr.done(function (result) {
+                            xhr.done(function(result) {
                                 if (result.type === 'success') {
-                                    a.parent().parent().fadeOut(2000, function () {
-                                        $('#resp-div').load('staff/manage #resp-tbl', function () {
+                                    a.parent().parent().fadeOut(2000, function() {
+                                        $('#resp-div').load('staff/manage #resp-tbl', function() {
                                             if ($('tr').length > 20) {
-                                                $('.table').DataTable({ "iDisplayLength": 50 });
+                                                $('.table').DataTable({
+                                                    "iDisplayLength": 50
+                                                });
                                             }
                                         });
                                     });
@@ -211,8 +191,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a
-                        href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
@@ -226,10 +205,10 @@
         <!-- End Wrapper -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <?php include('../layout/script.php') ?>
 </body>
 
 </html>

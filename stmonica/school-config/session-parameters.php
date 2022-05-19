@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -75,17 +74,13 @@
                                     </select>
                                 </div>
                                 <div class="offset-md-5 col-md-3">
-                                    <a href="#newParam"
-                                        class="btn btn-primary btn-rounded waves-effect waves-light m-b-5"
-                                        data-toggle="modal" data-target="#newParam">Set new Session Parameter</a>
+                                    <a href="#newParam" class="btn btn-primary btn-rounded waves-effect waves-light m-b-5" data-toggle="modal" data-target="#newParam">Set new Session Parameter</a>
                                 </div>
                             </div>
                             <p>Here, you can set appropriate weights for given session parameters. See existing settings
                                 below</p>
                             <div class="table-responsive" id="resp-div">
-                                <table
-                                    class="table table-striped table-bordered color-table success-table stylish-table"
-                                    id="resp-table" width="100%">
+                                <table class="table table-striped table-bordered color-table success-table stylish-table" id="resp-table" width="100%">
                                     <thead>
                                         <tr role="row">
                                             <th>#</th>
@@ -114,10 +109,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/303e5a7757b3afd881"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/303e5a7757b3afd881" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-13 sp">
@@ -132,10 +124,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/8f3ca356585381e3c2"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/8f3ca356585381e3c2" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-13 sp">
@@ -150,10 +139,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/98ab10bc595a6f2951"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/98ab10bc595a6f2951" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-13 sp">
@@ -168,10 +154,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/e7f5d5ee6023103d5e"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/e7f5d5ee6023103d5e" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-12 sp">
@@ -186,10 +169,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/2707b431535ee361b4"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/2707b431535ee361b4" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-12 sp">
@@ -204,10 +184,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/43d2f6ba5479dd8d14"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/43d2f6ba5479dd8d14" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-12 sp">
@@ -222,10 +199,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/5a4ee76e55a94bf653"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/5a4ee76e55a94bf653" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-12 sp">
@@ -240,10 +214,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/50f9a98b560d00557a"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/50f9a98b560d00557a" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-11 sp">
@@ -258,10 +229,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/557efa8849300aae7f"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/557efa8849300aae7f" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-11 sp">
@@ -276,10 +244,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/75ee1d775086f4863e"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/75ee1d775086f4863e" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-11 sp">
@@ -294,10 +259,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/947ce86b51ca05e1f6"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/947ce86b51ca05e1f6" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-11 sp">
@@ -312,10 +274,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/1bedf8c75253f9b2dc"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/1bedf8c75253f9b2dc" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-10 sp">
@@ -330,10 +289,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/26d1cdb945c97f842f"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/26d1cdb945c97f842f" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-10 sp">
@@ -348,10 +304,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/4b8db503463c7f5648"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/4b8db503463c7f5648" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-10 sp">
@@ -366,10 +319,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/1b273dd347037cbf4a"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/1b273dd347037cbf4a" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-10 sp">
@@ -384,10 +334,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/64260482485af52c4d"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/64260482485af52c4d" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-9 sp">
@@ -402,10 +349,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/eaa8113b418e722bc9"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/eaa8113b418e722bc9" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-9 sp">
@@ -420,10 +364,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/4682b5b04287f9c738"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/4682b5b04287f9c738" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-9 sp">
@@ -438,10 +379,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/9252fc98438940229f"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/9252fc98438940229f" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-9 sp">
@@ -456,10 +394,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/004382364406d18699"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/004382364406d18699" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-8 sp">
@@ -474,10 +409,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/416f405b37637ae243"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/416f405b37637ae243" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-8 sp">
@@ -492,10 +424,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/6c82acb038278dfb4b"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/6c82acb038278dfb4b" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-8 sp">
@@ -510,10 +439,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/a18c9a08391356972a"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/a18c9a08391356972a" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-8 sp">
@@ -528,10 +454,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/66a965c14031108b77"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/66a965c14031108b77" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-7 sp">
@@ -546,10 +469,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/b19356f131251c5b84"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/b19356f131251c5b84" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-7 sp">
@@ -564,10 +484,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/d913ba92330f6f05d4"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/d913ba92330f6f05d4" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-7 sp">
@@ -582,10 +499,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/79a6a61434a0ecc3eb"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/79a6a61434a0ecc3eb" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-7 sp">
@@ -600,10 +514,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/fa5a42c63592e85572"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/fa5a42c63592e85572" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-7 sp">
@@ -618,10 +529,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/e64d7fd6367fd2bc9a"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/e64d7fd6367fd2bc9a" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-7 sp">
@@ -636,10 +544,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/f159950d3295d674a4"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/f159950d3295d674a4" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-6 sp">
@@ -654,10 +559,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/22cdeda92748c1462e"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/22cdeda92748c1462e" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-6 sp">
@@ -672,10 +574,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/10dbe6d628365f26b5"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/10dbe6d628365f26b5" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-6 sp">
@@ -690,10 +589,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/bd7d7aab295a7336f9"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/bd7d7aab295a7336f9" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-6 sp">
@@ -708,10 +604,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/71d7eb4f3083424433"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/71d7eb4f3083424433" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-5 sp">
@@ -726,10 +619,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/79163ce5231a0ca673"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/79163ce5231a0ca673" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-5 sp">
@@ -744,10 +634,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/b3037ee7243a00cbec"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/b3037ee7243a00cbec" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-5 sp">
@@ -762,10 +649,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/b14f971f25ab68f180"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/b14f971f25ab68f180" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-5 sp">
@@ -780,10 +664,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/ba01745926188de5bb"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/ba01745926188de5bb" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-4 sp">
@@ -798,10 +679,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/9b5bf5bd213fca64f9"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/9b5bf5bd213fca64f9" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-4 sp">
@@ -816,10 +694,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/119e418e170a87f43e"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/119e418e170a87f43e" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-4 sp">
@@ -834,10 +709,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/76de166a189d99d497"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/76de166a189d99d497" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-4 sp">
@@ -852,10 +724,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/3ee3515122d6fba07c"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/3ee3515122d6fba07c" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-4 sp">
@@ -870,10 +739,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/4e8dfe4719030bf09d"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/4e8dfe4719030bf09d" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-4 sp">
@@ -888,10 +754,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/0ca67dd220be93aff9"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/0ca67dd220be93aff9" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-3 sp">
@@ -906,10 +769,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/2aa6d15e136eb91e4b"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/2aa6d15e136eb91e4b" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-3 sp">
@@ -924,10 +784,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/3e954fe014f1615db1"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/3e954fe014f1615db1" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-3 sp">
@@ -942,10 +799,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/086b1bdb151cd06869"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/086b1bdb151cd06869" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-3 sp">
@@ -960,10 +814,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/83f48c03166577d77d"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/83f48c03166577d77d" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-2 sp">
@@ -978,10 +829,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/1c378c797c70e8ed3"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/1c378c797c70e8ed3" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-2 sp">
@@ -996,10 +844,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/fa8391348e223a0bc"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/fa8391348e223a0bc" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-2 sp">
@@ -1014,10 +859,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/5469f1f597a07e2f4"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/5469f1f597a07e2f4" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-2 sp">
@@ -1032,10 +874,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/bdd59901101d5278cc"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/bdd59901101d5278cc" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-2 sp">
@@ -1050,10 +889,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/96c94ebc11c9caf531"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/96c94ebc11c9caf531" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-2 sp">
@@ -1068,10 +904,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/eda88f0d12857586e9"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/eda88f0d12857586e9" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-1 sp">
@@ -1086,10 +919,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/fc03263f150840032"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/fc03263f150840032" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-1 sp">
@@ -1104,10 +934,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/ff26a7ae2f679e653"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/ff26a7ae2f679e653" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-1 sp">
@@ -1122,10 +949,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/641f8fd039a311061"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/641f8fd039a311061" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-1 sp">
@@ -1140,10 +964,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/4add9352439232819"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/4add9352439232819" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-1 sp">
@@ -1158,10 +979,7 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/7396ccc65d77dd460"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/7396ccc65d77dd460" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                         <tr class="session-1 sp">
@@ -1176,39 +994,31 @@
                                             <td class="text-center">100</td>
                                             <td class="text-center">100</td>
                                             <td>
-                                                <a href="school-config/session_param-edit/46ef26e76a1851b4a"
-                                                    class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                    title="Edit this setting" data-toggle="tooltip"><i
-                                                        class="fa fa-edit"></i> </a>
+                                                <a href="school-config/session_param-edit/46ef26e76a1851b4a" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this setting" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div class="modal fade" id="newParam" tabindex="1" role="dialog" aria-labelledby="myModal"
-                                style="display: none">
+                            <div class="modal fade" id="newParam" tabindex="1" role="dialog" aria-labelledby="myModal" style="display: none">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h4 class="modal-title" id="myModal">Set New Session Parameter</h4>
-                                            <button type="button" class="close" data-dismiss="modal"
-                                                aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form action="school-config/set-session-param" id="session-param" method="post"
-                                            accept-charset="utf-8">
+                                        <form action="school-config/set-session-param" id="session-param" method="post" accept-charset="utf-8">
                                             <div class="modal-body">
                                                 <div class="form-group">
                                                     <label for="session_name" class="control-label">For:</label>
-                                                    <input type="text" class="form-control" name="session_name"
-                                                        id="session_name" disabled>
+                                                    <input type="text" class="form-control" name="session_name" id="session_name" disabled>
                                                     <input type="hidden" name="session_id" value="" id="session_id">
                                                 </div>
                                                 <div class="row">
                                                     <div class="form-group col-md-12">
                                                         <label for="class_id" class="control-label">Class Name:</label>
-                                                        <select class="custom-select form-control" id="class_id"
-                                                            name="class_id" style="width: 100%" required>
+                                                        <select class="custom-select form-control" id="class_id" name="class_id" style="width: 100%" required>
                                                             <option value="1">JSS 1</option>
                                                             <option value="2">JSS 2</option>
                                                             <option value="3">JSS 3</option>
@@ -1222,35 +1032,28 @@
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="ca1" class="control-label">CA1 (%):</label>
-                                                        <input type="number" class="form-control" name="ca1" id="ca1"
-                                                            min="0" max="100" placeholder="e.g. 15">
+                                                        <input type="number" class="form-control" name="ca1" id="ca1" min="0" max="100" placeholder="e.g. 15">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="ca2" class="control-label">CA2 (%):</label>
-                                                        <input type="number" class="form-control" name="ca2" id="ca2"
-                                                            min="0" max="100" placeholder="e.g. 15">
+                                                        <input type="number" class="form-control" name="ca2" id="ca2" min="0" max="100" placeholder="e.g. 15">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="ca3" class="control-label">CA3 (%):</label>
-                                                        <input type="number" class="form-control" name="ca3" id="ca3"
-                                                            min="0" max="100" placeholder="e.g. 15">
+                                                        <input type="number" class="form-control" name="ca3" id="ca3" min="0" max="100" placeholder="e.g. 15">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="ca4" class="control-label">CA4 (%)</label>
-                                                        <input type="number" class="form-control" name="ca4" id="ca4"
-                                                            min="0" max="100" placeholder="e.g. 15">
+                                                        <input type="number" class="form-control" name="ca4" id="ca4" min="0" max="100" placeholder="e.g. 15">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="exam" class="control-label">Exam (%):</label>
-                                                        <input type="number" class="form-control" name="exam" id="exam"
-                                                            min="0" max="100" placeholder="e.g. 70" required>
+                                                        <input type="number" class="form-control" name="exam" id="exam" min="0" max="100" placeholder="e.g. 70" required>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="weight" class="control-label">Term Weight
                                                             (%):</label>
-                                                        <input type="number" class="form-control" name="weight"
-                                                            id="weight" min="0" max="100" placeholder="e.g. 100"
-                                                            required>
+                                                        <input type="number" class="form-control" name="weight" id="weight" min="0" max="100" placeholder="e.g. 100" required>
                                                         <small class="text-success">(Term weight to be used on
                                                             cumulative result)</small>
                                                     </div>
@@ -1258,11 +1061,8 @@
 
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button"
-                                                    class="btn btn-warning btn-rounded waves-effect waves-light m-t-10"
-                                                    data-dismiss="modal">Close</button>
-                                                <button type="submit"
-                                                    class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Submit</button>
+                                                <button type="button" class="btn btn-warning btn-rounded waves-effect waves-light m-t-10" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Submit</button>
                                             </div>
                                         </form>
                                     </div>
@@ -1274,7 +1074,6 @@
                 </div>
 
                 <script>
-
                     // ==== THIS PAGE FUNCTION ============
                     function reorder_table() {
                         var session_id = $('#__session_id').val();
@@ -1286,7 +1085,7 @@
                         } else {
                             $("tbody").append('<tr id="msg"><td colspan="10"><i>Looks like no session parameters have been set for ' + session_name + ' yet. Click on "Set new session Parameter" to get started.</i></td></tr>');
                         }
-                        $('.sn-' + session_id).each(function (i) {
+                        $('.sn-' + session_id).each(function(i) {
                             $(this).text(i + 1);
                         });
                         $('#session_id').val(session_id);
@@ -1299,32 +1098,31 @@
                     //========================================
 
                     //====== Run when user changes the session in <select></select> ======
-                    $('#__session_id').change(function () {
+                    $('#__session_id').change(function() {
                         reorder_table();
                     });
                     //========================================
 
 
                     //====== Run when modal form is submitted ========
-                    $('#session-param').submit(function (e) {
+                    $('#session-param').submit(function(e) {
                         e.preventDefault();
                         var xhr = submit_form2('#session-param');
-                        xhr.done(function (result) {
+                        xhr.done(function(result) {
                             if (result.type === 'success') {
-                                $('#resp-div').load(site_url + 'school-config/session-parameters #resp-table', function () {
+                                $('#resp-div').load(site_url + 'school-config/session-parameters #resp-table', function() {
                                     reorder_table();
                                 });
                             }
                         });
                     });
-        //================================================
+                    //================================================
                 </script>
             </div><!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com"
-                    target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -1337,11 +1135,11 @@
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
-     <!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+    <?php include('../layout/script.php') ?>
 </body>
 
 </html>

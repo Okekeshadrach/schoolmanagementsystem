@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -62,15 +61,13 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <form action="messaging/send-text-message-process" id="message-form" target="_blank"
-                                    method="post" accept-charset="utf-8">
+                                <form action="messaging/send-text-message-process" id="message-form" target="_blank" method="post" accept-charset="utf-8">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="user_type">Send Text Message
                                                     to</label>
-                                                <select name="user_type" class="selectpicker"
-                                                    data-style="form-control btn-secondary" id="user_type" required>
+                                                <select name="user_type" class="selectpicker" data-style="form-control btn-secondary" id="user_type" required>
                                                     <option value="staff">All Staff</option>
                                                     <option value="parent">Parents</option>
                                                     <option value="student">Students</option>
@@ -83,8 +80,7 @@
                                     <div class="row" id="for-student" style="display: none">
                                         <div class="form-group col-sm-6">
                                             <label class="form-control-label" for="class">Class</label>
-                                            <select class="selectpicker" data-style="form-control btn-secondary"
-                                                id="class" name="class_id" style="width: 100%" required>
+                                            <select class="selectpicker" data-style="form-control btn-secondary" id="class" name="class_id" style="width: 100%" required>
                                                 <option value="1">JSS 1</option>
                                                 <option value="2">JSS 2</option>
                                                 <option value="3">JSS 3</option>
@@ -163,40 +159,32 @@
                                     <div class="row">
                                         <div class="col-md-12 m-t-20">
                                             <label class="form-control-label" for="content">Message Body</label>
-                                            <textarea class="form-control" id="content" name="content" rows="5"
-                                                maxlength="320" required></textarea>
+                                            <textarea class="form-control" id="content" name="content" rows="5" maxlength="320" required></textarea>
                                         </div>
                                         <div class="form-group col-md-12">
                                             <hr>
                                             <label class="form-control-label" for="copy">Phone Numbers to copy</label>
-                                            <textarea class="form-control" id="copy" name="copy"
-                                                placeholder="optional"></textarea>
+                                            <textarea class="form-control" id="copy" name="copy" placeholder="optional"></textarea>
                                             <small class="text-info">Use a <i class="text-success">comma</i> to separate
                                                 multiple phone numbers</small>
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label class="form-control-label" for="exempt">Phone Numbers to
                                                 exempt</label>
-                                            <textarea class="form-control" id="exempt" name="exempt"
-                                                placeholder="optional"></textarea>
+                                            <textarea class="form-control" id="exempt" name="exempt" placeholder="optional"></textarea>
                                             <small class="text-info">Use a <i class="text-success">comma</i> to separate
                                                 multiple phone numbers</small>
                                         </div>
                                     </div>
                                     <div class="m-t-20">
-                                        <button type="button"
-                                            class="btn btn-warning btn-rounded waves-effect waves-light m-t-10"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="submit" id="csv-form-btn"
-                                            class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Send
+                                        <button type="button" class="btn btn-warning btn-rounded waves-effect waves-light m-t-10" data-dismiss="modal">Close</button>
+                                        <button type="submit" id="csv-form-btn" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Send
                                             Message</button>
                                     </div>
                                 </form> <br>
-                                <form action="messaging/send-text-message-test" id="message-test-form" method="post"
-                                    accept-charset="utf-8">
+                                <form action="messaging/send-text-message-test" id="message-test-form" method="post" accept-charset="utf-8">
                                     <input type="hidden" name="content_test" id="content_test">
-                                    <button type="submit" id="csv-form-btn"
-                                        class="btn btn-sm btn-outline-secondary btn-rounded waves-effect waves-light m-t-10">Send
+                                    <button type="submit" id="csv-form-btn" class="btn btn-sm btn-outline-secondary btn-rounded waves-effect waves-light m-t-10">Send
                                         a test message to me</button>
                                 </form>
                             </div>
@@ -223,7 +211,7 @@
 
                 reorder_class_arm();
 
-                $('#user_type').change(function () {
+                $('#user_type').change(function() {
                     if ($(this).val() === 'student' || $(this).val() === 'parent') {
                         $('#for-student').show('slow');
                     } else {
@@ -231,12 +219,12 @@
                     }
                 });
 
-                $('#class').change(function () {
+                $('#class').change(function() {
                     reorder_class_arm();
                 });
 
 
-                $('#message-form').submit(function (e) {
+                $('#message-form').submit(function(e) {
                     e.preventDefault();
 
                     var user_type = $('#user_type option:selected').text();
@@ -248,9 +236,9 @@
                         showCancelButton: true,
                         confirmButtonColor: "#13aa2c",
                         confirmButtonText: "Yes, proceed!"
-                    }, function () {
+                    }, function() {
                         var xhr = submit_form2('#message-form');
-                        xhr.done(function (result) {
+                        xhr.done(function(result) {
                             if (result.type === 'success') {
                                 // SWEET ALERT
                                 swal("Message Sent!", result.msg, "success");
@@ -261,7 +249,7 @@
                 });
 
 
-                $('#message-test-form').submit(function (e) {
+                $('#message-test-form').submit(function(e) {
                     e.preventDefault();
                     $('#content_test').val($('#content').val());
                     submit_form2('#message-test-form');
@@ -271,8 +259,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com"
-                    target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -285,11 +272,11 @@
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
-     <!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+    <?php include('../layout/script.php') ?>
 </body>
 
 </html>

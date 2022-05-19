@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -57,9 +56,7 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <a href="admin-account.html/create"
-                                    class="btn btn-primary btn-rounded waves-effect waves-light m-b-20"><i
-                                        class="fa fa-user-plus"></i> Create new admin account</a>
+                                <a href="admin-account.html/create" class="btn btn-primary btn-rounded waves-effect waves-light m-b-20"><i class="fa fa-user-plus"></i> Create new admin account</a>
 
                                 <div class="table-responsive resp-tbl">
                                     <div id="stud_list">
@@ -82,12 +79,10 @@
                                                 <tr>
                                                     <td class="sn">1</td>
                                                     <td>
-                                                        <img src="uploads/passport_Akanbi_Bukola.jpg" width="50"
-                                                            class="img-circle" />
+                                                        <img src="uploads/passport_Akanbi_Bukola.jpg" width="50" class="img-circle" />
                                                     </td>
                                                     <td>
-                                                        <a href="admin-account.html/admin-profile/43f5c32e73595a730"
-                                                            class="text-info" target="_blank">Akanbi Bukola </a>
+                                                        <a href="admin-account.html/admin-profile/43f5c32e73595a730" class="text-info" target="_blank">Akanbi Bukola </a>
                                                     </td>
                                                     <td>Female</td>
                                                     <td>bukky</td>
@@ -95,10 +90,7 @@
                                                     <td>08038439573</td>
 
                                                     <td>
-                                                        <a href="user-account/delete/bcda2b8a74946c10a946"
-                                                            class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                            title="Delete this Admin Account" data-toggle="tooltip"><i
-                                                                class="fa fa-user-times"></i> </a>
+                                                        <a href="user-account/delete/bcda2b8a74946c10a946" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                     </td>
                                                 </tr>
 
@@ -108,8 +100,7 @@
                                                         <img src="uploads/nobody_f.jpg" width="50" class="img-circle" />
                                                     </td>
                                                     <td>
-                                                        <a href="admin-account.html/admin-profile/38bdacf644eed5f6f"
-                                                            class="text-info" target="_blank">Egejuru Gift </a>
+                                                        <a href="admin-account.html/admin-profile/38bdacf644eed5f6f" class="text-info" target="_blank">Egejuru Gift </a>
                                                     </td>
                                                     <td>Female</td>
                                                     <td>gift</td>
@@ -117,10 +108,7 @@
                                                     <td>08037598829</td>
 
                                                     <td>
-                                                        <a href="user-account/delete/e6bf78fd99537f91d"
-                                                            class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                            title="Delete this Admin Account" data-toggle="tooltip"><i
-                                                                class="fa fa-user-times"></i> </a>
+                                                        <a href="user-account/delete/e6bf78fd99537f91d" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                     </td>
                                                 </tr>
 
@@ -130,8 +118,7 @@
                                                         <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
                                                     </td>
                                                     <td>
-                                                        <a href="admin-account.html/admin-profile/f024b40b15ba842f7"
-                                                            class="text-info" target="_blank">Krystal Admin </a>
+                                                        <a href="admin-account.html/admin-profile/f024b40b15ba842f7" class="text-info" target="_blank">Krystal Admin </a>
                                                     </td>
                                                     <td>Male</td>
                                                     <td>krystal_adm</td>
@@ -139,22 +126,17 @@
                                                     <td>09026428001</td>
 
                                                     <td>
-                                                        <a href="user-account/delete/38c432991f115c38e"
-                                                            class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                            title="Delete this Admin Account" data-toggle="tooltip"><i
-                                                                class="fa fa-user-times"></i> </a>
+                                                        <a href="user-account/delete/38c432991f115c38e" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td class="sn">4</td>
                                                     <td>
-                                                        <img src="uploads/passport_Ogah_Elizabethmary.jpeg" width="50"
-                                                            class="img-circle" />
+                                                        <img src="uploads/passport_Ogah_Elizabethmary.jpeg" width="50" class="img-circle" />
                                                     </td>
                                                     <td>
-                                                        <a href="admin-account.html/admin-profile/750f1d6e649901fe6"
-                                                            class="text-info" target="_blank">Ogah Elizabethmary </a>
+                                                        <a href="admin-account.html/admin-profile/750f1d6e649901fe6" class="text-info" target="_blank">Ogah Elizabethmary </a>
                                                     </td>
                                                     <td>Female</td>
                                                     <td>lizzy_@o</td>
@@ -162,10 +144,7 @@
                                                     <td>08026200015</td>
 
                                                     <td>
-                                                        <a href="user-account/delete/32ca592e746920f48a92"
-                                                            class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete"
-                                                            title="Delete this Admin Account" data-toggle="tooltip"><i
-                                                                class="fa fa-user-times"></i> </a>
+                                                        <a href="user-account/delete/32ca592e746920f48a92" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                     </td>
                                                 </tr>
 
@@ -179,13 +158,15 @@
                 </div>
 
                 <script>
-                    $(function () {
+                    $(function() {
                         if ($('tr').length > 10) {
-                            $('.table').DataTable({ "iDisplayLength": 50 });
+                            $('.table').DataTable({
+                                "iDisplayLength": 50
+                            });
                         }
                     });
 
-                    $('.user-delete').click(function (e) {
+                    $('.user-delete').click(function(e) {
                         e.preventDefault();
                         var a = $(this);
                         var url = a.attr('href');
@@ -196,13 +177,13 @@
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",
                             confirmButtonText: "yahhh, proceed!"
-                        }, function () {
+                        }, function() {
                             var xhr = get_request(url);
-                            xhr.done(function (result) {
+                            xhr.done(function(result) {
                                 if (result.type === 'success') {
-                                    a.parent().parent().fadeOut(2000, function () {
+                                    a.parent().parent().fadeOut(2000, function() {
                                         $(this).remove();
-                                        $('.sn').each(function (i) {
+                                        $('.sn').each(function(i) {
                                             $(this).text(i + 1);
                                         });
                                     });
@@ -214,8 +195,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a
-                        href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
@@ -228,11 +208,11 @@
         <!-- ============================================================== -->
         <!-- End Wrapper -->
         <!-- ============================================================== -->
-         <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <?php include('../layout/script.php') ?>
 </body>
 
 </html>

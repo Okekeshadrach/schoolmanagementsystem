@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
@@ -56,8 +55,7 @@
                                 <div class="row">
                                     <div class="form-group col-sm-4">
                                         <label for="session_id">Select Term/Session</label>
-                                        <select class="custom-select form-control select2" id="session_id"
-                                            name="session_id" style="width: 100%" required>
+                                        <select class="custom-select form-control select2" id="session_id" name="session_id" style="width: 100%" required>
                                             <option value=""></option>
 
                                             <option value="ace51bd912bf28e2e7">Third Term: 2019/2020</option>
@@ -77,8 +75,7 @@
                                     </div>
                                     <div class="form-group col-sm-4">
                                         <label for="class_arm_id">Select Class Arm</label>
-                                        <select class="custom-select form-control select2" id="class_arm_id"
-                                            name="class_arm_id" style="width: 100%" required>
+                                        <select class="custom-select form-control select2" id="class_arm_id" name="class_arm_id" style="width: 100%" required>
                                             <option value=""></option>
                                             <option value="9e7b76d010f9e2caa">JSS 1A</option>
                                             <option value="aca849df23d38dd44">JSS 1B</option>
@@ -137,8 +134,7 @@
                                     </div>
 
                                     <div class="offset-sm-3 col-sm-9">
-                                        <button type="submit"
-                                            class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">
+                                        <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">
                                             Proceed
                                         </button>
                                     </div>
@@ -150,9 +146,10 @@
             </div>
 
             <script>
-                $('#myform').submit(function (e) {
+                $('#myform').submit(function(e) {
                     e.preventDefault();
-                    var session_id = $('select[name=session_id]').val(), class_arm_id = $('select[name=class_arm_id]').val();
+                    var session_id = $('select[name=session_id]').val(),
+                        class_arm_id = $('select[name=class_arm_id]').val();
 
                     window.open(
                         site_url + 'classes/manage-students/' + session_id + '/' + class_arm_id, '_blank'
@@ -162,8 +159,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com"
-                    target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -175,11 +171,11 @@
     </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
-     <!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+    <?php include('../layout/script.php') ?>
 </body>
 
 </html>

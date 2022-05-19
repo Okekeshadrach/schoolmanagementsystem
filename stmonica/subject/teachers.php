@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>        
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
@@ -66,8 +65,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <form action="subject/subject1.html/unassign-staff" id="unassign-staff" method="post"
-                                accept-charset="utf-8">
+                            <form action="subject/subject1.html/unassign-staff" id="unassign-staff" method="post" accept-charset="utf-8">
                                 <div class="row">
                                     <div class="col-md-10">
                                         <div class="form-group">
@@ -76,18 +74,14 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            <button type="submit"
-                                                class="btn btn-primary btn-rounded waves-effect waves-light"
-                                                id="unassign" disabled>Unassign Selected</button>
+                                            <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light" id="unassign" disabled>Unassign Selected</button>
                                             <span class="processor"></span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="table-responsive" id="resp-div">
-                                    <table
-                                        class="table table-striped table-bordered color-table success-table stylish-table"
-                                        id="resp-table" width="100%">
+                                    <table class="table table-striped table-bordered color-table success-table stylish-table" id="resp-table" width="100%">
                                         <thead>
                                             <tr role="row">
                                                 <th>#</th>
@@ -119,8 +113,7 @@
                                                 <td>
                                                     <div class="switch">
                                                         <label>
-                                                            <input name="data_id[]" type="checkbox"
-                                                                value="017cdcc81784e4a1c" class="chk">
+                                                            <input name="data_id[]" type="checkbox" value="017cdcc81784e4a1c" class="chk">
                                                             <span class="lever switch-col-light-blue"></span>
                                                         </label>
                                                     </div>
@@ -139,8 +132,7 @@
                                                 <td>
                                                     <div class="switch">
                                                         <label>
-                                                            <input name="data_id[]" type="checkbox"
-                                                                value="9e2a34963105cc565" class="chk">
+                                                            <input name="data_id[]" type="checkbox" value="9e2a34963105cc565" class="chk">
                                                             <span class="lever switch-col-light-blue"></span>
                                                         </label>
                                                     </div>
@@ -159,8 +151,7 @@
                                                 <td>
                                                     <div class="switch">
                                                         <label>
-                                                            <input name="data_id[]" type="checkbox"
-                                                                value="565b75be201f0d40e" class="chk">
+                                                            <input name="data_id[]" type="checkbox" value="565b75be201f0d40e" class="chk">
                                                             <span class="lever switch-col-light-blue"></span>
                                                         </label>
                                                     </div>
@@ -175,7 +166,6 @@
                 </div>
 
                 <script>
-
                     // ==== THIS PAGE FUNCTION ============
                     function reorder_table() {
                         var subj_id = $('#__subj_id').val();
@@ -193,7 +183,7 @@
                             $('#unassign').hide('slow');
                             $('#hint').html('');
                         }
-                        $('.sn-' + subj_id).each(function (i) {
+                        $('.sn-' + subj_id).each(function(i) {
                             $(this).text(i + 1);
                         });
                     }
@@ -205,13 +195,13 @@
                     //========================================
 
                     //====== Run when user changes the class in <select></select> ======
-                    $('#__subj_id').change(function () {
+                    $('#__subj_id').change(function() {
                         reorder_table();
                     });
                     //========================================
 
 
-                    $('input[type=checkbox]').click(function () {
+                    $('input[type=checkbox]').click(function() {
                         count_checked_rows = $('input:checkbox:checked.chk').length;
                         if (count_checked_rows > 0) {
                             $('#unassign').removeAttr('disabled');
@@ -222,7 +212,7 @@
 
 
                     //====================================================================
-                    $('#unassign').click(function (e) {
+                    $('#unassign').click(function(e) {
                         e.preventDefault();
                         var subj_name = $('#__subj_id option:selected').text();
 
@@ -233,11 +223,11 @@
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",
                             confirmButtonText: "Yes, proceed!"
-                        }, function () {
+                        }, function() {
                             var xhr = submit_form('#unassign-staff');
-                            xhr.done(function (result) {
+                            xhr.done(function(result) {
                                 if (result.type === 'success') {
-                                    $('input:checkbox:checked.chk').parent().parent().parent().parent().fadeOut(2000, function () {
+                                    $('input:checkbox:checked.chk').parent().parent().parent().parent().fadeOut(2000, function() {
                                         $(this).remove();
                                         reorder_table();
                                         $('#unassign').attr('disabled', 'disabled');
@@ -246,13 +236,12 @@
                             });
                         });
                     });
-        //====================================================================
+                    //====================================================================
                 </script><!-- ============================================================== -->
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a
-                        href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
@@ -263,10 +252,10 @@
             <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <?php include('../layout/script.php') ?>
 </body>
 
 </html>

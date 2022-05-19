@@ -17,8 +17,8 @@
             <div class="profile-text">
                 <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Henry Obinozie</a>
                 <div class="dropdown-menu animated flipInY">
-                    <a href="../admin/profile" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-                    <a href="../admin/my-activity" class="dropdown-item"><i class="ti-wallet"></i> My Activity
+                    <a href="../admin/profile.php" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                    <a href="../admin/my-activity.php" class="dropdown-item"><i class="ti-wallet"></i> My Activity
                         Log</a>
                     <div class="dropdown-divider"></div>
                     <a href="../login/logout" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>

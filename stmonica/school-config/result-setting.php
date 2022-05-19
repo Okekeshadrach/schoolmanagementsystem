@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -56,24 +55,20 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <form action="school-config/result-setting-process" method="post"
-                                    accept-charset="utf-8">
+                                <form action="school-config/result-setting-process" method="post" accept-charset="utf-8">
                                     <div class="form-group">
                                         <label>Score Entry Access</label>
                                         <hr>
                                         <div class="col-sm-9">
-                                            <input name="score_entry" type="radio" id="s_r_1"
-                                                class="with-gap radio-col-deep-purple" value="1" checked />
+                                            <input name="score_entry" type="radio" id="s_r_1" class="with-gap radio-col-deep-purple" value="1" checked />
                                             <label class="form-control-label m-r-20" for="s_r_1">Open to all
                                                 <small>(Admin and Staff)</small>
                                             </label>
                                             <br>
-                                            <input name="score_entry" type="radio" id="s_r_2"
-                                                class="with-gap radio-col-deep-purple" value="0" />
+                                            <input name="score_entry" type="radio" id="s_r_2" class="with-gap radio-col-deep-purple" value="0" />
                                             <label class="form-control-label m-r-20" for="s_r_2">Lock for all</label>
                                             <br>
-                                            <input name="score_entry" type="radio" id="s_r_3"
-                                                class="with-gap radio-col-deep-purple" value="2" />
+                                            <input name="score_entry" type="radio" id="s_r_3" class="with-gap radio-col-deep-purple" value="2" />
                                             <label class="form-control-label" for="s_r_3">Lock for staff only</label>
                                         </div>
                                     </div>
@@ -85,8 +80,7 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <form action="school-config/result-setting-process" method="post"
-                                    accept-charset="utf-8">
+                                <form action="school-config/result-setting-process" method="post" accept-charset="utf-8">
                                     <div class="form-group">
                                         <label>Minimum Subjects required to Compute Result</label>
                                         <hr>
@@ -95,8 +89,7 @@
 
                                         <div class="row">
                                             <div class="col-sm-3">
-                                                <input name="min_subject_compute_position" type="number"
-                                                    class="form-control" value="1" min="1" />
+                                                <input name="min_subject_compute_position" type="number" class="form-control" value="1" min="1" />
                                             </div>
                                             <div class="col-sm-6">
                                                 <button class="btn btn-primary btn-rounded">Save</button>
@@ -111,29 +104,24 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <form action="school-config/result-access-process" id="result-access-form" method="post"
-                                    accept-charset="utf-8">
+                                <form action="school-config/result-access-process" id="result-access-form" method="post" accept-charset="utf-8">
 
                                     <div class="form-group">
                                         <label>Student/Parent Result Access</label>
                                         <hr>
                                         <small>(Only Results on <i class="text-primary">Blue</i> will be available to
-                                            Students/Parents. Results that are not released will display as <i
-                                                class="text-danger">"This Result is not yet released"</i> on the Student
+                                            Students/Parents. Results that are not released will display as <i class="text-danger">"This Result is not yet released"</i> on the Student
                                             or Parent account)</small>
 
                                         <div class="table-responsive" id="resp-div" style="max-height: 300px">
-                                            <table
-                                                class="table table-striped table-bordered color-table success-table stylish-table"
-                                                id="resp-table" width="100%">
+                                            <table class="table table-striped table-bordered color-table success-table stylish-table" id="resp-table" width="100%">
                                                 <tbody>
                                                     <tr>
                                                         <td>First Term: 2020/2021</td>
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox"
-                                                                        value="13" class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="13" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -144,8 +132,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox"
-                                                                        value="12" class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="12" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -156,8 +143,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox"
-                                                                        value="11" class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="11" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -168,8 +154,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox"
-                                                                        value="10" class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="10" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -180,8 +165,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="9"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="9" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -192,8 +176,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="8"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="8" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -204,8 +187,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="7"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="7" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -216,8 +198,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="6"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="6" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -228,8 +209,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="5"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="5" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -240,8 +220,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="4"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="4" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -252,8 +231,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="3"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="3" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -264,8 +242,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="2"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="2" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -276,8 +253,7 @@
                                                         <td>
                                                             <div class="switch">
                                                                 <label>
-                                                                    <input name="session_id[]" type="checkbox" value="1"
-                                                                        class="chk" checked>
+                                                                    <input name="session_id[]" type="checkbox" value="1" class="chk" checked>
                                                                     <span class="lever switch-col-light-blue"></span>
                                                                 </label>
                                                             </div>
@@ -303,18 +279,15 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <form action="school-config/result-setting-process" id="result-setting-form"
-                                            method="post" accept-charset="utf-8">
+                                        <form action="school-config/result-setting-process" id="result-setting-form" method="post" accept-charset="utf-8">
                                             <div class="form-group">
                                                 <label class="form-control-label">Preferred Report Card Template</label>
                                                 <div class="col-sm-9">
-                                                    <input name="result_template" type="radio" id="r1"
-                                                        class="with-gap radio-col-deep-purple" value="1" checked />
+                                                    <input name="result_template" type="radio" id="r1" class="with-gap radio-col-deep-purple" value="1" checked />
                                                     <label class="form-control-label m-r-20" for="r1">Template 1
                                                     </label>
                                                     <br>
-                                                    <input name="result_template" type="radio" id="r2"
-                                                        class="with-gap radio-col-deep-purple" value="2" />
+                                                    <input name="result_template" type="radio" id="r2" class="with-gap radio-col-deep-purple" value="2" />
                                                     <label class="form-control-label m-r-20" for="r2">Template 2</label>
                                                     <br>
                                                 </div>
@@ -323,16 +296,14 @@
                                                 <label class="form-control-label" for="result_th_color">Table Head
                                                     Background Color</label>
                                                 <div class="col-sm-9">
-                                                    <input name="result_th_color" id="result_th_color" type="color"
-                                                        class="form-control" value="#1E7145" />
+                                                    <input name="result_th_color" id="result_th_color" type="color" class="form-control" value="#1E7145" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-control-label" for="result_td_color">Table Row
                                                     Background Color</label>
                                                 <div class="col-sm-9">
-                                                    <input name="result_td_color" id="result_td_color" type="color"
-                                                        class="form-control" value="#CAE1FF" />
+                                                    <input name="result_td_color" id="result_td_color" type="color" class="form-control" value="#CAE1FF" />
                                                 </div>
                                             </div>
 
@@ -340,8 +311,7 @@
                                                 <label class="form-control-label" for="result_th_text_color">Table Head
                                                     Text Color</label>
                                                 <div class="col-sm-9">
-                                                    <input name="result_th_text_color" id="result_th_text_color"
-                                                        type="color" class="form-control" value="#FCF7FF" />
+                                                    <input name="result_th_text_color" id="result_th_text_color" type="color" class="form-control" value="#FCF7FF" />
                                                 </div>
                                             </div>
 
@@ -349,13 +319,11 @@
                                                 <label class="form-control-label" for="result_has_head">Do you intend to
                                                     print report card with your own letter head paper?</label>
                                                 <div class="col-sm-9">
-                                                    <input name="result_has_head" type="radio" id="r-h-h2"
-                                                        class="with-gap radio-col-deep-purple" value="0" />
+                                                    <input name="result_has_head" type="radio" id="r-h-h2" class="with-gap radio-col-deep-purple" value="0" />
                                                     <label class="form-control-label m-r-20" for="r-h-h2">Yes, I have a
                                                         letter head paper</label>
                                                     <br>
-                                                    <input name="result_has_head" type="radio" id="r-h-h1"
-                                                        class="with-gap radio-col-deep-purple" value="1" checked />
+                                                    <input name="result_has_head" type="radio" id="r-h-h1" class="with-gap radio-col-deep-purple" value="1" checked />
                                                     <label class="form-control-label m-r-20" for="r-h-h1">No, use the
                                                         Portal's default heading
                                                     </label>
@@ -425,16 +393,13 @@
 
                                                 <div id="reportCardHolder">
                                                     <div style="min-height: 3em;">
-                                                        <table align="center"
-                                                            style="background:none; border:none; margin: auto;"
-                                                            class="result-head ">
+                                                        <table align="center" style="background:none; border:none; margin: auto;" class="result-head ">
                                                             <tr style="background:none; border:none; ">
                                                                 <td style="background:none; border:none;">
                                                                 </td>
 
                                                                 <td style="background:none; border:none;">
-                                                                    <img src="assets/img/logo_4a262eb69667.png"
-                                                                        height="50" />
+                                                                    <img src="assets/img/logo_4a262eb69667.png" height="50" />
                                                                 </td>
 
                                                                 <td style="background:none; border:none;">
@@ -517,11 +482,9 @@
 
 
                                                             <tr>
-                                                                <td align="center" class="tbl_cell_bg small_td"
-                                                                    style="text-align: center"> 2
+                                                                <td align="center" class="tbl_cell_bg small_td" style="text-align: center"> 2
                                                                 </td>
-                                                                <td class="tbl_cell_bg small_td"
-                                                                    style="text-align: left"> MATHEMATICS
+                                                                <td class="tbl_cell_bg small_td" style="text-align: left"> MATHEMATICS
                                                                 </td>
 
                                                                 <td align="center" class="tbl_cell_bg small_td"> 13</td>
@@ -552,11 +515,9 @@
 
 
                                                             <tr>
-                                                                <td align="center" class="tbl_cell_bg small_td"
-                                                                    style="text-align: center"> 4
+                                                                <td align="center" class="tbl_cell_bg small_td" style="text-align: center"> 4
                                                                 </td>
-                                                                <td class="tbl_cell_bg small_td"
-                                                                    style="text-align: left"> BUSINESS
+                                                                <td class="tbl_cell_bg small_td" style="text-align: left"> BUSINESS
                                                                     STUDIES
                                                                 </td>
 
@@ -667,8 +628,7 @@
                                                     <table align="center" class="no-border result-head " width="85%">
                                                         <tr class="no-border">
                                                             <td style="background:none; border:none;">
-                                                                <img src="assets/img/logo_4a262eb69667.png"
-                                                                    height="50" />
+                                                                <img src="assets/img/logo_4a262eb69667.png" height="50" />
                                                             </td>
 
                                                             <td style="background:none; border:none;">
@@ -745,8 +705,7 @@
 
 
                                                         <tr>
-                                                            <td align="center" class="tbl_cell_bg"
-                                                                style="text-align: center"> 2</td>
+                                                            <td align="center" class="tbl_cell_bg" style="text-align: center"> 2</td>
                                                             <td class="tbl_cell_bg" style="text-align: left">
                                                                 MATHEMATICS</td>
 
@@ -774,8 +733,7 @@
 
 
                                                         <tr>
-                                                            <td align="center" class="tbl_cell_bg"
-                                                                style="text-align: center"> 4</td>
+                                                            <td align="center" class="tbl_cell_bg" style="text-align: center"> 4</td>
                                                             <td class="tbl_cell_bg" style="text-align: left"> BUSINESS
                                                                 STUDIES</td>
 
@@ -801,8 +759,7 @@
                                                         </tr>
 
                                                         <tr>
-                                                            <td align="center" class="tbl_cell_bg"
-                                                                style="text-align: center"> 6</td>
+                                                            <td align="center" class="tbl_cell_bg" style="text-align: center"> 6</td>
                                                             <td class="tbl_cell_bg" style="text-align: left"> BUSINESS
                                                                 STUDIES</td>
 
@@ -827,8 +784,7 @@
                                                         </tr>
 
                                                         <tr>
-                                                            <td align="center" class="tbl_cell_bg"
-                                                                style="text-align: center"> 6</td>
+                                                            <td align="center" class="tbl_cell_bg" style="text-align: center"> 6</td>
                                                             <td class="tbl_cell_bg" style="text-align: left"> BUSINESS
                                                                 STUDIES</td>
 
@@ -868,15 +824,12 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex no-block">
-                                    <h4 class="card-title">Class Result Settings <label
-                                            class="label label-danger">new</label></h4>
+                                    <h4 class="card-title">Class Result Settings <label class="label label-danger">new</label></h4>
                                 </div>
 
-                                <form action="school-config/class-result-setting-process" method="post"
-                                    accept-charset="utf-8">
+                                <form action="school-config/class-result-setting-process" method="post" accept-charset="utf-8">
                                     <div class="table-responsive m-t-20">
-                                        <table class="table stylish-table color-table table-bordered success-table"
-                                            style="min-width: 400px">
+                                        <table class="table stylish-table color-table table-bordered success-table" style="min-width: 400px">
                                             <thead>
                                                 <tr>
                                                     <th class="center">Class</th>
@@ -890,25 +843,19 @@
                                                 <tr>
                                                     <td>JSS 1</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[1][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[1][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[1][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[1][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[1][position_on_result]">
+                                                        <select class="form-control" name="result_setting[1][position_on_result]">
                                                             <option value="1" selected>Yes</option>
                                                             <option value="0">No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[1][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[1][position_on_broadsheet]">
                                                             <option value="1" selected>Yes</option>
                                                             <option value="0">No</option>
                                                         </select>
@@ -917,25 +864,19 @@
                                                 <tr>
                                                     <td>JSS 2</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[2][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[2][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[2][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[2][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[2][position_on_result]">
+                                                        <select class="form-control" name="result_setting[2][position_on_result]">
                                                             <option value="1" selected>Yes</option>
                                                             <option value="0">No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[2][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[2][position_on_broadsheet]">
                                                             <option value="1" selected>Yes</option>
                                                             <option value="0">No</option>
                                                         </select>
@@ -944,25 +885,19 @@
                                                 <tr>
                                                     <td>JSS 3</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[3][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[3][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[3][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[3][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[3][position_on_result]">
+                                                        <select class="form-control" name="result_setting[3][position_on_result]">
                                                             <option value="1" selected>Yes</option>
                                                             <option value="0">No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[3][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[3][position_on_broadsheet]">
                                                             <option value="1" selected>Yes</option>
                                                             <option value="0">No</option>
                                                         </select>
@@ -971,25 +906,19 @@
                                                 <tr>
                                                     <td>SS 1</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[4][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[4][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[4][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[4][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[4][position_on_result]">
+                                                        <select class="form-control" name="result_setting[4][position_on_result]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[4][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[4][position_on_broadsheet]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
@@ -998,25 +927,19 @@
                                                 <tr>
                                                     <td>SS 2</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[5][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[5][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[5][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[5][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[5][position_on_result]">
+                                                        <select class="form-control" name="result_setting[5][position_on_result]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[5][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[5][position_on_broadsheet]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
@@ -1025,25 +948,19 @@
                                                 <tr>
                                                     <td>SS 3</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[6][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[6][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[6][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[6][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[6][position_on_result]">
+                                                        <select class="form-control" name="result_setting[6][position_on_result]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[6][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[6][position_on_broadsheet]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
@@ -1052,25 +969,19 @@
                                                 <tr>
                                                     <td>YEAR 1</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[7][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[7][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[7][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[7][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[7][position_on_result]">
+                                                        <select class="form-control" name="result_setting[7][position_on_result]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[7][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[7][position_on_broadsheet]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
@@ -1079,25 +990,19 @@
                                                 <tr>
                                                     <td>YEAR 2</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[8][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[8][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[8][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[8][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[8][position_on_result]">
+                                                        <select class="form-control" name="result_setting[8][position_on_result]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[8][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[8][position_on_broadsheet]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
@@ -1106,25 +1011,19 @@
                                                 <tr>
                                                     <td>YEAR 3</td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[9][rc_td_padding]" value="7" min="2"
-                                                            max="20" placeholder="e.g. 7">
+                                                        <input type="number" class="form-control" name="result_setting[9][rc_td_padding]" value="7" min="2" max="20" placeholder="e.g. 7">
                                                     </td>
                                                     <td>
-                                                        <input type="number" class="form-control"
-                                                            name="result_setting[9][rc_td_fontsize]" value="16" min="7"
-                                                            max="30" placeholder="e.g. 16">
+                                                        <input type="number" class="form-control" name="result_setting[9][rc_td_fontsize]" value="16" min="7" max="30" placeholder="e.g. 16">
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[9][position_on_result]">
+                                                        <select class="form-control" name="result_setting[9][position_on_result]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
                                                     </td>
                                                     <td>
-                                                        <select class="form-control"
-                                                            name="result_setting[9][position_on_broadsheet]">
+                                                        <select class="form-control" name="result_setting[9][position_on_broadsheet]">
                                                             <option value="1">Yes</option>
                                                             <option value="0" selected>No</option>
                                                         </select>
@@ -1144,31 +1043,31 @@
                 </div>
 
                 <script>
-                    $('input[name=result_template]').change(function () {
+                    $('input[name=result_template]').change(function() {
                         var a = $(this).val();
                         $('.temp').hide();
                         $('.temp-' + a).show('slow');
                     });
 
-                    $('input[name=result_th_color]').change(function () {
+                    $('input[name=result_th_color]').change(function() {
                         var a = $(this).val();
                         $('#reportCardHolder table th').css('background', a);
                         $('#reportCardHolder1 table th').css('background', a);
                     });
 
-                    $('input[name=result_td_color]').change(function () {
+                    $('input[name=result_td_color]').change(function() {
                         var a = $(this).val();
                         $('#reportCardHolder table tr td.tbl_cell_bg').css('background', a);
                         $('#reportCardHolder1 table tr td.tbl_cell_bg').css('background', a);
                     });
 
-                    $('input[name=result_th_text_color]').change(function () {
+                    $('input[name=result_th_text_color]').change(function() {
                         var a = $(this).val();
                         $('#reportCardHolder table th').css('color', a);
                         $('#reportCardHolder1 table th').css('color', a);
                     });
 
-                    $('input[name=result_has_head]').change(function () {
+                    $('input[name=result_has_head]').change(function() {
                         var a = $(this).val();
                         if (a === '0') {
                             $('.result-head').fadeOut();
@@ -1177,7 +1076,7 @@
                         }
                     });
 
-                    $('form').submit(function (e) {
+                    $('form').submit(function(e) {
                         e.preventDefault();
                         submit_form2(this);
                     });
@@ -1185,8 +1084,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a
-                        href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
@@ -1199,11 +1097,11 @@
         <!-- ============================================================== -->
         <!-- End Wrapper -->
         <!-- ============================================================== -->
-         <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <?php include('../layout/script.php') ?>
 </body>
 
 </html>

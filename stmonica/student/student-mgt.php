@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,8 +21,8 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -60,14 +59,12 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <form action="student/student-list" id="student-list" method="post"
-                                    accept-charset="utf-8">
+                                <form action="student/student-list" id="student-list" method="post" accept-charset="utf-8">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="filter-by">Filter by :</label>
-                                                <select name="filter_by" id="filter-by"
-                                                    class="custom-select form-control select2" style="width: 100%">
+                                                <select name="filter_by" id="filter-by" class="custom-select form-control select2" style="width: 100%">
                                                     <option></option>
                                                     <option value="state">State</option>
                                                     <option value="house">Sport House</option>
@@ -83,8 +80,7 @@
                                         <div class="col-md-4 option state">
                                             <div class="form-group">
                                                 <label for="state">Select State:</label>
-                                                <select name="state" id="state"
-                                                    class="custom-select form-control select2" style="width: 100%">
+                                                <select name="state" id="state" class="custom-select form-control select2" style="width: 100%">
                                                     <option value=""></option>
                                                     <option value=1>ABIA</option>
                                                     <option value=2>ADAMAWA</option>
@@ -933,8 +929,7 @@
                                             <div class="form-group">
                                                 <label>Select House: </label>
 
-                                                <select name="house" class="custom-select form-control select2"
-                                                    style="width: 100%">
+                                                <select name="house" class="custom-select form-control select2" style="width: 100%">
                                                     <option value=""></option>
                                                     <option value=1>ALPHA</option>
                                                     <option value=2>Beta</option>
@@ -948,10 +943,8 @@
                                             <div class="form-group">
                                                 <label for="age-from">Select Range :</label>
                                                 <p>From
-                                                    <input name="age_from" type="number" min="7" max="30" id="age-from"
-                                                        class="form-control"> To
-                                                    <input name="age_to" type="number" min="7" max="31" id="age-to"
-                                                        class="form-control">
+                                                    <input name="age_from" type="number" min="7" max="30" id="age-from" class="form-control"> To
+                                                    <input name="age_to" type="number" min="7" max="31" id="age-to" class="form-control">
                                                 </p>
                                             </div>
                                         </div>
@@ -982,20 +975,17 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <input type="hidden" name="print" value="">
-                                                <input type="submit" name="submit" value="Submit"
-                                                    class="btn btn-primary btn-rounded">
+                                                <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-rounded">
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                                 <div id="student-list-table"></div>
 
-                                <form action="student/student-list-print" target="_blank" method="post"
-                                    accept-charset="utf-8">
+                                <form action="student/student-list-print" target="_blank" method="post" accept-charset="utf-8">
                                     <textarea style="display: none" name="student_list_json" id="slj"></textarea>
                                     <input type="hidden" name="heading" id="hd" value="">
-                                    <button type="submit" class="btn btn-primary btn-rounded"
-                                        style="float: right; display: none" id="print-pdf">Print pdf</button>
+                                    <button type="submit" class="btn btn-primary btn-rounded" style="float: right; display: none" id="print-pdf">Print pdf</button>
                                 </form>
                             </div>
                         </div>
@@ -1003,9 +993,9 @@
                 </div>
 
                 <script>
-                    $(document).ready(function () {
+                    $(document).ready(function() {
 
-                        $('#filter-by').change(function () {
+                        $('#filter-by').change(function() {
                             var val = $(this).val();
                             if (val) {
                                 $('.option').hide();
@@ -1013,7 +1003,7 @@
                             }
                         });
 
-                        $('#state').change(function () {
+                        $('#state').change(function() {
                             var val = $(this).val();
                             if (val) {
                                 $('.lga').hide();
@@ -1023,31 +1013,29 @@
                             }
                         });
 
-                        $('#age-from').change(function () {
+                        $('#age-from').change(function() {
                             var val = $(this).val();
                             $('#age-to').val('');
                             $('#age-to').attr('min', ++val);
                         });
 
-                        $('#student-list').submit(function (e) {
+                        $('#student-list').submit(function(e) {
                             e.preventDefault();
                             student_list();
                         });
 
-                        $(document).on('click', '#print-pdf', function (e) {
+                        $(document).on('click', '#print-pdf', function(e) {
                             var json_data = $('#json_data').val();
                             var heading = $('#head').val();
                             $('#slj').val(json_data);
                             $('#hd').val(heading);
                         });
                     });
-
                 </script><!-- ============================================================== -->
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a
-                        href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
@@ -1060,11 +1048,11 @@
         <!-- ============================================================== -->
         <!-- End Wrapper -->
         <!-- ============================================================== -->
-         <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <?php include('../layout/script.php') ?>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../layout/head.php')?>
+<?php include('../layout/head.php') ?>
 
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
@@ -13,8 +13,7 @@
     </div>
 
     <!--========= AJAX load overlay =========== -->
-    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;"
-        id="DivOverlay">
+    <div style="width: 100%; height:100%; background-color: white; position: fixed; top:0; left:0; z-index: 1000; opacity:0.3; display: none;" id="DivOverlay">
     </div>
     <!-----===================================----->
 
@@ -22,15 +21,14 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-    <?php include('../layout/topbar.php')?>
-        <?php include('../layout/sidebar.php')?>
+        <?php include('../layout/topbar.php') ?>
+        <?php include('../layout/sidebar.php') ?>
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- =======================  This page styles =================== ---->
-            <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
-                rel="stylesheet">
+            <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
             <!-- =======================  This page styles =================== ---->
 
             <!-- ============================================================== -->
@@ -55,17 +53,13 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="offset-md-9 col-md-3 m-b-10">
-                                    <a href="#createGradeModal"
-                                        class="btn btn-primary btn-rounded waves-effect waves-light m-b-5"
-                                        data-toggle="modal" data-target="#createGradeModal">Post New Assignment</a>
+                                    <a href="#createGradeModal" class="btn btn-primary btn-rounded waves-effect waves-light m-b-5" data-toggle="modal" data-target="#createGradeModal">Post New Assignment</a>
                                 </div>
                                 <p>See below, all assignments that have been posted on the portal. You can edit and
                                     delete any assignment of your choice
                                 </p>
                                 <div class="table-responsive" id="resp-div">
-                                    <table
-                                        class="table-bordered table-hover table stylish-table table-striped color-table success-table"
-                                        width="100%" id="resp-table">
+                                    <table class="table-bordered table-hover table stylish-table table-striped color-table success-table" width="100%" id="resp-table">
                                         <thead>
                                             <tr role="row">
                                                 <th>#</th>
@@ -87,14 +81,8 @@
                                                 <td>Skills Development Class (science)</td>
                                                 <td>Jan 15, 2017 at 07:30 AM</td>
                                                 <td>
-                                                    <a href="classes/assignment-edit/c2349e5e4339610b4"
-                                                        class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                        title="Edit this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-edit"></i> </a>
-                                                    <a href="classes/assignment-delete/32e11df14bf472842"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del"
-                                                        title="Delete this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-times"></i> </a>
+                                                    <a href="classes/assignment-edit/c2349e5e4339610b4" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this assignment" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
+                                                    <a href="classes/assignment-delete/32e11df14bf472842" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del" title="Delete this assignment" data-toggle="tooltip"><i class="fa fa-times"></i> </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -106,14 +94,8 @@
                                                 <td>Skills Development Class (general)</td>
                                                 <td>Jan 15, 2017 at 03:20 PM</td>
                                                 <td>
-                                                    <a href="classes/assignment-edit/234c70f73ae4f5f00"
-                                                        class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                        title="Edit this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-edit"></i> </a>
-                                                    <a href="classes/assignment-delete/1ffa3d3035b16576d"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del"
-                                                        title="Delete this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-times"></i> </a>
+                                                    <a href="classes/assignment-edit/234c70f73ae4f5f00" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this assignment" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
+                                                    <a href="classes/assignment-delete/1ffa3d3035b16576d" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del" title="Delete this assignment" data-toggle="tooltip"><i class="fa fa-times"></i> </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -125,14 +107,8 @@
                                                 <td>Skills Development Class (general)</td>
                                                 <td>Jan 15, 2017 at 10:25 AM</td>
                                                 <td>
-                                                    <a href="classes/assignment-edit/ee82070d220a8f502"
-                                                        class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                        title="Edit this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-edit"></i> </a>
-                                                    <a href="classes/assignment-delete/334d91102166e1328"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del"
-                                                        title="Delete this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-times"></i> </a>
+                                                    <a href="classes/assignment-edit/ee82070d220a8f502" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this assignment" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
+                                                    <a href="classes/assignment-delete/334d91102166e1328" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del" title="Delete this assignment" data-toggle="tooltip"><i class="fa fa-times"></i> </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -144,37 +120,27 @@
                                                 <td>Skills Development Class (general)</td>
                                                 <td>Jan 15, 2017 at 06:20 AM</td>
                                                 <td>
-                                                    <a href="classes/assignment-edit/5553a8ac1173ec77a"
-                                                        class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5"
-                                                        title="Edit this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-edit"></i> </a>
-                                                    <a href="classes/assignment-delete/c8491ab91ad4357da"
-                                                        class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del"
-                                                        title="Delete this assignment" data-toggle="tooltip"><i
-                                                            class="fa fa-times"></i> </a>
+                                                    <a href="classes/assignment-edit/5553a8ac1173ec77a" class="btn btn-sm btn-warning btn-circle m-r-10 m-b-5" title="Edit this assignment" data-toggle="tooltip"><i class="fa fa-edit"></i> </a>
+                                                    <a href="classes/assignment-delete/c8491ab91ad4357da" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light a-del" title="Delete this assignment" data-toggle="tooltip"><i class="fa fa-times"></i> </a>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
 
-                                <div class="modal fade" id="createGradeModal" tabindex="1" role="dialog"
-                                    aria-labelledby="myModal" style="display: none">
+                                <div class="modal fade" id="createGradeModal" tabindex="1" role="dialog" aria-labelledby="myModal" style="display: none">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h4 class="modal-title" id="myModal">Post New Assignment</h4>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             </div>
-                                            <form action="classes/assignment-new-process" id="a-new" method="post"
-                                                accept-charset="utf-8">
+                                            <form action="classes/assignment-new-process" id="a-new" method="post" accept-charset="utf-8">
                                                 <div class="modal-body">
 
                                                     <div class="form-group">
                                                         <label class="form-control-label" for="subject">Subject:</label>
-                                                        <select name="subject_id" id="subject"
-                                                            class="form-control select2" style="width: 100%" required>
+                                                        <select name="subject_id" id="subject" class="form-control select2" style="width: 100%" required>
                                                             <option></option>
                                                             <option value="2">Skills Development Class (art)</option>
                                                             <option value="1">Skills Development Class (general)
@@ -187,9 +153,7 @@
                                                     <div class="row">
                                                         <div class="form-group col-sm-4">
                                                             <label class="form-control-label" for="class">Class:</label>
-                                                            <select class="selectpicker"
-                                                                data-style="form-control btn-secondary" id="class"
-                                                                name="class_id" style="width: 100%" required>
+                                                            <select class="selectpicker" data-style="form-control btn-secondary" id="class" name="class_id" style="width: 100%" required>
                                                                 <option value=""></option>
                                                                 <option value="1">JSS 1</option>
                                                                 <option value="2">JSS 2</option>
@@ -205,8 +169,7 @@
 
                                                         <div class="form-group col-sm-8">
                                                             <label for="class_arm_id">Class Arm</label>
-                                                            <select class="form-control" id="class_arm_id"
-                                                                name="class_arm_id">
+                                                            <select class="form-control" id="class_arm_id" name="class_arm_id">
                                                                 <option value="">ALL Arms</option>
                                                                 <option class="class_arm class-1 hide" value="1">JSS 1A
                                                                 </option>
@@ -339,15 +302,13 @@
                                                         <div class="form-group col-md-4">
                                                             <label class="form-control-label" for="marks">Marks
                                                                 Allocated:</label>
-                                                            <input type="number" class="form-control" name="marks"
-                                                                id="marks" max="100" required>
+                                                            <input type="number" class="form-control" name="marks" id="marks" max="100" required>
                                                         </div>
                                                         <div class="form-group col-md-12">
                                                             <label class="form-control-label" for="due_date">Due Date:
                                                                 <small><i>(Students will not see this assignment after
                                                                         this date)</i></small></label>
-                                                            <input class="form-control date" placeholder="YYYY-MM-DD"
-                                                                name="due_date" id="due_date" required>
+                                                            <input class="form-control date" placeholder="YYYY-MM-DD" name="due_date" id="due_date" required>
                                                         </div>
                                                     </div>
 
@@ -355,17 +316,14 @@
                                                         <label class="form-control-label" for="attachment">Do you want
                                                             to upload a document for this assignment?</label>
 
-                                                        <input name="upload-doc" type="radio" id="r1"
-                                                            class="with-gap radio-col-deep-purple" value="1" />
+                                                        <input name="upload-doc" type="radio" id="r1" class="with-gap radio-col-deep-purple" value="1" />
                                                         <label class="form-control-label m-r-20" for="r1">Yes</label>
 
-                                                        <input name="upload-doc" type="radio" id="r2"
-                                                            class="with-gap radio-col-deep-purple" value="2" checked />
+                                                        <input name="upload-doc" type="radio" id="r2" class="with-gap radio-col-deep-purple" value="2" checked />
                                                         <label class="form-control-label m-r-20" for="r2">No</label>
 
                                                         <div class="hide" id="upload-div">
-                                                            <input type="file" class="form-control" name="attachment"
-                                                                id="attachment">
+                                                            <input type="file" class="form-control" name="attachment" id="attachment">
                                                             <small class="text-warning">(Requirement: JPG, JPEG, PNG, or
                                                                 PDF. Max Size: 5MB)</small>
                                                         </div>
@@ -373,11 +331,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button"
-                                                        class="btn btn-warning btn-rounded waves-effect waves-light m-t-10"
-                                                        data-dismiss="modal">Close</button>
-                                                    <button type="submit" id="csv-form-btn"
-                                                        class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Submit</button>
+                                                    <button type="button" class="btn btn-warning btn-rounded waves-effect waves-light m-t-10" data-dismiss="modal">Close</button>
+                                                    <button type="submit" id="csv-form-btn" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Submit</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -393,8 +348,7 @@
 
             <!-- ======   This Page SCRIPTS   =========== -->
             <script src="assets/plugins/moment/moment.js"></script>
-            <script
-                src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+            <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
 
             <script>
@@ -409,7 +363,7 @@
 
                 reorder_class_arm();
 
-                $('#class').change(function () {
+                $('#class').change(function() {
                     reorder_class_arm();
                 });
 
@@ -419,7 +373,7 @@
                     minDate: new Date()
                 });
 
-                $('input[name=upload-doc]').change(function () {
+                $('input[name=upload-doc]').change(function() {
                     var a = $(this).val();
                     if (a === '1') {
                         $('#upload-div').show('slow');
@@ -428,13 +382,13 @@
                     }
                 });
 
-                $('#a-new').submit(function (e) {
+                $('#a-new').submit(function(e) {
                     e.preventDefault();
 
                     $('input[name=content]').val($('#content').html());
 
                     var jqxhr = submit_form_multipart('#a-new');
-                    jqxhr.done(function (result) {
+                    jqxhr.done(function(result) {
                         if (result.type === 'success') {
                             $('.last-updated').hide();
                             $('input').val('');
@@ -446,7 +400,7 @@
                 });
 
                 //===== Run when user attempts to delete an assignment ==============
-                $(document).on('click', '.a-del', function (e) {
+                $(document).on('click', '.a-del', function(e) {
                     e.preventDefault();
                     var a = $(this);
                     var url = a.attr('href');
@@ -457,13 +411,13 @@
                         showCancelButton: true,
                         confirmButtonColor: "#13aa2c",
                         confirmButtonText: "Yes, proceed!"
-                    }, function () {
+                    }, function() {
                         var xhr = get_request(url);
-                        xhr.done(function (result) {
+                        xhr.done(function(result) {
                             if (result.type === 'success') {
-                                a.parent().parent().fadeOut(2000, function () {
+                                a.parent().parent().fadeOut(2000, function() {
                                     $(this).remove();
-                                    $('.sn').each(function (i) {
+                                    $('.sn').each(function(i) {
                                         $(this).text(i + 1);
                                     });
                                 });
@@ -471,13 +425,12 @@
                         });
                     });
                 });
-    //====================================================================
+                //====================================================================
             </script><!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com"
-                    target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -490,11 +443,11 @@
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
-     <!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <?php include('../layout/script.php')?>
+    <?php include('../layout/script.php') ?>
 </body>
 
 </html>

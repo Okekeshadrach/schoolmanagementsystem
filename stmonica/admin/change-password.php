@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka">
     <meta name="keywords" content="school, education">
-    <meta name="author" content="Krystal Digital Solutions">
+    <meta name="author" content="BiNoZy DiGiTaL koncept">
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb69667.png?v1">
@@ -175,7 +175,7 @@
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a class="waves-effect waves-dark" href="admin-account/my-activity"><i class="ti-wallet"></i> My Activity Log</a></li>
+                                    <li><a class="waves-effect waves-dark" href="admin-account/my-activity.php"><i class="ti-wallet"></i> My Activity Log</a></li>
                                     <li><a class="waves-effect waves-dark" href="admin/change-password.php"><i class="ti-key"></i> Change Password</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a class="waves-effect waves-dark" href="login/logout"><i class="fa fa-power-off"></i> Logout</a></li>
@@ -204,7 +204,7 @@
                             Obinozie</a>
                         <div class="dropdown-menu animated flipInY">
                             <a href="admin/profile.php" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-                            <a href="admin-account/my-activity" class="dropdown-item"><i class="ti-wallet"></i> My
+                            <a href="admin-account/my-activity.php" class="dropdown-item"><i class="ti-wallet"></i> My
                                 Activity Log</a>
                             <div class="dropdown-divider"></div> <a href="login/logout" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                         </div>
@@ -423,7 +423,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

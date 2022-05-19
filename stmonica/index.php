@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka">
     <meta name="keywords" content="school, education">
-    <meta name="author" content="Krystal Digital Solutions">
+    <meta name="author" content="BiNoZy DiGiTaL koncept">
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb696676654.png?v1">
