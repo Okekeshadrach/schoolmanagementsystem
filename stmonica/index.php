@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from krystalng.com/fggconitsha/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2022 13:48:51 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- <meta http-equiv="content-type" content="text/html;charset=UTF-8" /> -->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka">
-    <meta name="keywords" content="school, education">
-    <meta name="author" content="BiNoZy DiGiTaL koncept">
+    <meta name="description" content="St. Monica Nur. & Pri. School, Ibusa Delta State">
+    <meta name="keywords" content="education-school-portal">
+    <meta name="author" content="BiNoZy DiGiTaL KoNcEpT">
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb696676654.png?v1">
-    <title>Krystal’s It Academy F.g.g.c, Nkwelle Ezunaka - School Portal</title>
+    <title>BiNoZy DiGiTaL - SDMS - St. Monica Nur. & Pri. Ibusa - School Portal</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -39,9 +37,10 @@
     <section id="wrapper" class="login-register login-sidebar" style="background-image:url(assets/img/home_pix_bb844d7f189a9834c.jpg);">
         <div class="login-box card">
             <div class="card-body">
-                <h3 href="javascript:void(0)" class="text-center db"><img src="assets/img/logo_4a262eb69667.png" alt="Home" height="150" /><br />KRYSTAL’S IT ACADEMY F.G.G.C, NKWELLE EZUNAKA </h3>
+                <h3 href="javascript:void(0)" class="text-center db"><img src="assets/img/logo_4a262eb69667.png" alt="Home" height="150" >
+                    <br>BiNoZy DiGiTaL - ST. MONICA NUR. & PRI, SCHOOL, IBUSA </h3>
                 <br>
-                <p class="text-center db">SCHOOL INFORMATION MANAGEMENT SYSTEM</p>
+                <p class="text-center db">SCHOOL DATABASE MANAGEMENT SYSTEM</p>
 
                 <form action="login/process" id="loginform" class="form-horizontal form-material" method="post" accept-charset="utf-8">
                     <div class="form-group m-t-40">
@@ -86,7 +85,6 @@
                             <select name="user_type" class="form-control" id="user_type" required>
                                 <option></option>
                                 <option value="student">Student Account</option>
-                                <option value="parent">Parent Account</option>
                                 <option value="staff">Staff Account</option>
                                 <option value="admin">Admin Account</option>
                             </select>
@@ -96,7 +94,7 @@
                                 Enter the email address that is on your profile. You will receive a link to create a new password via email.
                             </p>
                             <div class="col-xs-12">
-                                <input class="form-control" type="email" name="user_email" required placeholder="e.g. johndoe@gmail.com">
+                                <input class="form-control" type="email" name="user_email" required placeholder="e.g. yourmail@gmail.com">
                             </div>
                         </div>
                         <div class="form-group text-center m-t-20">
@@ -157,8 +155,5 @@
         !--End of Tawk.to Script-- >
     </script>
 </body>
-
-
-<!-- Mirrored from krystalng.com/fggconitsha/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2022 13:48:58 GMT -->
 
 </html>
