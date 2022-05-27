@@ -55,14 +55,14 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="name">School Full Name :</label>
-                                                <input type="text" name="name" class="form-control" id="name" value="Krystal’s IT Academy F.G.G.C, NKWELLE EZUNAKA" required>
+                                                <input type="text" name="name" class="form-control" id="name" value="" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="short_name">School Short Name
                                                     :</label>
-                                                <input type="text" name="short_name" class="form-control" id="short_name" value="F.G.G.C NKWELLE" required maxlength="15">
+                                                <input type="text" name="short_name" class="form-control" id="short_name" value="ST. MONICA" required maxlength="15">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -76,7 +76,7 @@
                                             <div class="form-group">
                                                 <label class="form-control-label" for="princ_title">Principal's
                                                     Designation :</label>
-                                                <input type="text" name="princ_title" class="form-control" id="princ_title" value="Project Manager KITA" required>
+                                                <input type="text" name="princ_title" class="form-control" id="princ_title" value="Project Manager" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
@@ -113,7 +113,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="email1">Email 1 :</label>
-                                                <input type="email" name="email1" class="form-control" id="email1" value="info@krystaldigitalng.com" required>
+                                                <input type="email" name="email1" class="form-control" id="email1" value="" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -133,13 +133,13 @@
                                             <div class="form-group">
                                                 <label class="form-control-label" for="site_desc">Site Description
                                                     :</label>
-                                                <textarea type="text" name="site_desc" class="form-control" id="site_desc" required>Federal Government Girls College, Nkwelle Ezunaka</textarea>
+                                                <textarea type="text" name="site_desc" class="form-control" id="site_desc" required>St. Monica Nur. & Pri. School, Ibusa Delta State</textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="address1">Address 1 :</label>
-                                                <textarea type="text" name="address1" class="form-control" id="address1" required>Nkwelle Ezunaka</textarea>
+                                                <textarea type="text" name="address1" class="form-control" id="address1" required>IBUSA DELTA</textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -244,7 +244,8 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                    &copy; <?php echo date('Y'); ?> School Database Management System (Edu-Portal) Powered By
+                <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL KoNcEpT</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
