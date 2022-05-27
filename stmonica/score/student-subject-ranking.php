@@ -112,7 +112,7 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span class="short_name" style="color: #FFF">F.G.G.C NKWELLE</span>
+                        <span class="short_name" style="color: #FFF">ST.MONICA</span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
