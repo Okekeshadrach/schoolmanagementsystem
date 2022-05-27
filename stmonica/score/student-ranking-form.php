@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka">
-    <meta name="keywords" content="school, education">
-    <meta name="author" content="BiNoZy DiGiTaL koncept">
+    <meta name="description" content="St. Monica Nur. & Pri. School, Ibusa Delta State">
+    <meta name="keywords" content="education-school-portal">
+    <meta name="author" content="BiNoZy DiGiTaL KoNcEpT"
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb69667.png?v1">
-    <title>Krystal’s IT Academy F.G.G.C, NKWELLE EZUNAKA - School Portal</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb696676654.png?v1">
+    <title>BiNoZy DiGiTaL - SDMS - St. Monica Nur. & Pri. Ibusa - School Portal</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -112,7 +112,7 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span class="short_name" style="color: #FFF">F.G.G.C NKWELLE</span>
+                        <span class="short_name" style="color: #FFF">ST. MONICA</span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -577,7 +577,8 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                      &copy; <?php echo date('Y'); ?> School Database Management System (Edu-Portal) Powered By
+                      <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL KoNcEpT</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
