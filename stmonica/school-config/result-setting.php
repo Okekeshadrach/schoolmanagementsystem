@@ -403,8 +403,8 @@
                                                                 </td>
 
                                                                 <td style="background:none; border:none;">
-                                                                    <h1 style="font-size: 12px;">Krystal’s IT Academy
-                                                                        F.G.G.C, NKWELLE EZUNAKA</h1>
+                                                                     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb69667.png?v1">
+                                                                     <title>BiNoZy DiGiTaL - SDMS - St. Monica Nur. & Pri. Ibusa - School Portal</title>
                                                                 </td>
 
                                                                 <td style="background:none; border:none;">
@@ -1084,7 +1084,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                    &copy; <?php echo date('Y'); ?> School Database Management System (Edu-Portal) Powered By <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL KoNcEpT</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
