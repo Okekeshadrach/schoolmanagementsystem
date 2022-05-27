@@ -51,7 +51,7 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span class="short_name" style="color: #FFF">F.G.G.C NKWELLE</span>
+                        <span class="short_name" style="color: #FFF">ST> MONICA</span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -589,7 +589,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                 &copy; <?php echo date('Y'); ?> School Database Management System (Edu-Portal) Powered By <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL KoNcEpT</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
