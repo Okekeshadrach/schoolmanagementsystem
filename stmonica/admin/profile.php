@@ -51,7 +51,7 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span class="short_name" style="color: #FFF">ST> MONICA</span>
+                        <span class="short_name" style="color: #FFF">ST MONICA</span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
