@@ -632,8 +632,8 @@
                                                             </td>
 
                                                             <td style="background:none; border:none;">
-                                                                <h1 style="font-size: 12px;">Krystal’s IT Academy
-                                                                    F.G.G.C, NKWELLE EZUNAKA</h1>
+                                                                <h1 style="font-size: 12px;">BiNoZy DiGiTaL
+                                                                    ST. MONICA NUR. & PRI., IBUSA DELTA STATE</h1>
                                                             </td>
 
                                                             <td class="no-border">
