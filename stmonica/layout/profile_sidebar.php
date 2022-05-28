@@ -29,7 +29,7 @@
                                 <h6>obinozie.n</h6>
 
                                 <small class="text-muted">Date Created</small>
-                                <h6>Nov 08, 2016 at 11:44 AM</h6>
+                                <h6>April 20, 2022 at 10:34 AM</h6>
 
 
 
@@ -55,7 +55,7 @@
                                 <h6>08064769378</h6>
 
                                 <small class="text-muted">Address</small>
-                                <h6>FGGC, ONISTHA</h6>
+                                <h6>Ibusa, DELTA STATE</h6>
                                 <div class="map-box">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070402.841056632!2d4.177613658408504!3d9.006483165840024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sus!4v1529581420386" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
