@@ -690,7 +690,7 @@
                                                         <a class="text-info" href="student/student-profile/1b4219724518f96e7816" target="_blank">
                                                             <b>Chukwu</b> Afoma Mathilda </a>
                                                     </td>
-                                                    <td>FGGCON208935</td>
+                                                    <td>STMONICA208935</td>
                                                     <td>
                                                         Female </td>
                                                     <td>
@@ -715,7 +715,7 @@
                                                         <a class="text-info" href="student/student-profile/e02503334519671021a9" target="_blank">
                                                             <b>Chukwudumogu </b> Chigozirim Precious </a>
                                                     </td>
-                                                    <td>FGGCON205378</td>
+                                                    <td>STMONICA205378</td>
                                                     <td>
                                                         Female </td>
                                                     <td>
@@ -740,7 +740,7 @@
                                                         <a class="text-info" href="student/student-profile/3272be76452041077eb0" target="_blank">
                                                             <b>Chukwuemeka </b> Esther Chisom </a>
                                                     </td>
-                                                    <td>FGGCON206931</td>
+                                                    <td>STMONICA206931</td>
                                                     <td>
                                                         Female </td>
                                                     <td>
@@ -765,7 +765,7 @@
                                                         <a class="text-info" href="student/student-profile/e5f17396452157510a3d" target="_blank">
                                                             <b>Ebubechukwu </b> Perpetua Chikamso </a>
                                                     </td>
-                                                    <td>FGGCON203219</td>
+                                                    <td>STMONICA203219</td>
                                                     <td>
                                                         Female </td>
                                                     <td>
@@ -790,7 +790,7 @@
                                                         <a class="text-info" href="student/student-profile/a72faec645227c2fc6a6" target="_blank">
                                                             <b>Egwuatu </b> Kamaranachimdindu </a>
                                                     </td>
-                                                    <td>FGGCON207149</td>
+                                                    <td>STMONICA207149</td>
                                                     <td>
                                                         Female </td>
                                                     <td>

@@ -1936,7 +1936,8 @@
 <!-- footer -->
 <!-- ============================================================== -->
 <footer class="footer">
-    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+     &copy; <?php echo date('Y'); ?> School Database Management System (Edu-Portal) Powered By
+                <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL KoNcEpT</a>
 </footer>
 <!-- ============================================================== -->
 <!-- End footer -->

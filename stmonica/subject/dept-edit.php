@@ -5,47 +5,47 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka">
-    <meta name="keywords" content="school, education">
-    <meta name="author" content="Krystal Digital Solutions">
+    <meta name="description" content="St. Monica Nur. & Pri. School, Ibusa Delta State">
+    <meta name="keywords" content="education-school-portal">
+    <meta name="author" content="BiNoZy DiGiTaL KoNcEpT">
     
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="https://krystalng.com/fggconitsha/assets/img/logo_4a262eb69667.png?v1">
-    <title>Krystal’s IT Academy F.G.G.C, NKWELLE EZUNAKA - School Portal</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb696676654.png?v1">
+    <title>BiNoZy DiGiTaL - SDMS - St. Monica Nur. & Pri. Ibusa - School Portal</title>
     <!-- Bootstrap Core CSS -->
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- chartist CSS -->
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/css-chart/css-chart.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/css-chart/css-chart.css" rel="stylesheet">
     
     <!--This page css - Morris CSS -->
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/c3-master/c3.min.css" rel="stylesheet">
     
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet">
 
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="https://stmonica.com/stmonica/assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://stmonica.com/stmonica/assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
     
     <!-- Custom CSS -->
-    <link href="https://krystalng.com/fggconitsha/assets/css/style.css?n=3" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/css/style.css?n=3" rel="stylesheet">
     
-    <link href="https://krystalng.com/fggconitsha/assets/css/colors/blue.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/css/colors/blue.css" rel="stylesheet">
 
-    <script src="https://krystalng.com/fggconitsha/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="https://stmonica.com/stmonica/assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="https://krystalng.com/fggconitsha/assets/plugins/popper/popper.min.js"></script>
-    <script src="https://krystalng.com/fggconitsha/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://stmonica.com/stmonica/assets/plugins/popper/popper.min.js"></script>
+    <script src="https://stmonica.com/stmonica/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- ============= Sweet Alert =================== -->
-    <script src="https://krystalng.com/fggconitsha/assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="https://stmonica.com/stmonica/assets/plugins/sweetalert/sweetalert.min.js"></script>
     <!-- Portal js -->
-    <script src="https://krystalng.com/fggconitsha/assets/js/portal-02.js?n=0"></script>
+    <script src="https://stmonica.com/stmonica/assets/js/portal-02.js?n=0"></script>
 
     <!-- Bootstrap responsive table CSS -->
-    <link href="https://krystalng.com/fggconitsha/assets/plugins/tablesaw-master/dist/tablesaw.css" rel="stylesheet">
+    <link href="https://stmonica.com/stmonica/assets/plugins/tablesaw-master/dist/tablesaw.css" rel="stylesheet">
 
     <style>
         /* Custom style for specific pages*/
@@ -56,8 +56,8 @@
 
     <script>
         //Global variables
-        var site_url = 'https://krystalng.com/fggconitsha/';
-        var base_url = 'https://krystalng.com/fggconitsha/';
+        var site_url = 'https://stmonica.com/stmonica/';
+        var base_url = 'https://stmonica.com/stmonica/';
 
         $(document).on('click', '.sidebartoggler', function(){
             if($('.hide-menu').is(':visible')){
@@ -100,13 +100,13 @@
                     <!-- Logo icon -->
                     <b>
                         <!-- Dark Logo icon -->
-                        <img src="https://krystalng.com/fggconitsha/assets/img/logo_4a262eb69667.png?v1" alt="school-page" class="dark-logo logo" height="60" width="60" />
+                        <img src="https://stmonica.com/stmonica/assets/img/logo_4a262eb69667.png?v1" alt="school-page" class="dark-logo logo" height="60" width="60" />
                         <!-- Light Logo icon -->
-                        <img src="https://krystalng.com/fggconitsha/assets/img/logo_4a262eb69667.png?v1" alt="homepage" class="light-logo logo" height="60" width="60" />
+                        <img src="https://stmonica.com/stmonica/assets/img/logo_4a262eb69667.png?v1" alt="homepage" class="light-logo logo" height="60" width="60" />
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
-                    <span class="short_name" style="color: #FFF">F.G.G.C NKWELLE</span>
+                    <span class="short_name" style="color: #FFF">ST. MONICA, IBUSA</span>
                 </a>
             </div>
             <!-- ============================================================== -->
@@ -127,7 +127,7 @@
                         <a class="nav-link text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
                         
                         <!-- =============== SEARCH BAR =================== -->
-                        <form action="https://krystalng.com/fggconitsha/student/search" class="app-search" method="post" accept-charset="utf-8">
+                        <form action="https://stmonica.com/stmonica/student/search" class="app-search" method="post" accept-charset="utf-8">
                         <input type="text" class="form-control" name="keyword" minlength="3" placeholder="Search student"> <a class="srh-btn"><i class="ti-close"></i></a>
                         </form>                        <!-- ============================================== -->
                         
@@ -154,25 +154,25 @@
                     <!-- Profile -->
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://krystalng.com/fggconitsha/uploads/nobody_m.jpg" alt="user" class="profile-pic" /></a>
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://stmonica.com/stmonica/uploads/nobody_m.jpg" alt="user" class="profile-pic" /></a>
                         <div class="dropdown-menu dropdown-menu-right scale-up">
                             <ul class="dropdown-user">
                                 <li>
                                     <div class="dw-user-box">
                                         <div class="u-img">
-                                            <img src="https://krystalng.com/fggconitsha/uploads/nobody_m.jpg" alt="user">
+                                            <img src="https://stmonica.com/stmonica/uploads/nobody_m.jpg" alt="user">
                                         </div>
                                         <div class="u-text">
                                             <h4 class="user-full-name">Henry Obinozie</h4>
-                                            <p class="text-muted user-email">obinoziehenry@gmail.com</p><a href="https://krystalng.com/fggconitsha/admin-account/profile" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                            <p class="text-muted user-email">obinoziehenry@gmail.com</p><a href="https://stmonica.com/stmonica/admin-account/profile" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                         </div>
                                     </div>
                                 </li>
                                 <li role="separator" class="divider"></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/admin-account/my-activity"><i class="ti-wallet"></i> My Activity Log</a></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/admin-account/change-password"><i class="ti-key"></i> Change Password</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/admin-account/my-activity"><i class="ti-wallet"></i> My Activity Log</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/admin-account/change-password"><i class="ti-key"></i> Change Password</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/login/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/login/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -190,15 +190,15 @@
         <!-- Sidebar scroll-->
         <div class="_scroll-sidebar" style="overflow: scroll; width: auto; height: 100%;">
             <!-- User profile -->
-            <div class="user-profile" style="background: url(https://krystalng.com/fggconitsha/assets/images/background/images.jpg) no-repeat;">
+            <div class="user-profile" style="background: url(https://stmonica.com/stmonica/assets/images/background/images.jpg) no-repeat;">
                 <!-- User profile image -->
-                <div class="profile-img"> <img src="https://krystalng.com/fggconitsha/uploads/nobody_m.jpg" alt="user" /> </div>
+                <div class="profile-img"> <img src="https://stmonica.com/stmonica/uploads/nobody_m.jpg" alt="user" /> </div>
                 <!-- User profile text-->
                 <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Henry Obinozie</a>
                     <div class="dropdown-menu animated flipInY">
-                        <a href="https://krystalng.com/fggconitsha/admin-account/profile" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-                        <a href="https://krystalng.com/fggconitsha/admin-account/my-activity" class="dropdown-item"><i class="ti-wallet"></i> My Activity Log</a>
-                        <div class="dropdown-divider"></div> <a href="https://krystalng.com/fggconitsha/login/logout" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        <a href="https://stmonica.com/stmonica/admin-account/profile" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                        <a href="https://stmonica.com/stmonica/admin-account/my-activity" class="dropdown-item"><i class="ti-wallet"></i> My Activity Log</a>
+                        <div class="dropdown-divider"></div> <a href="https://stmonica.com/stmonica/login/logout" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
                     <li>
-                        <a href="https://krystalng.com/fggconitsha/admin-account" aria-expanded="false"><i class="mdi mdi-gauge"></i>
+                        <a href="https://stmonica.com/stmonica/admin-account" aria-expanded="false"><i class="mdi mdi-gauge"></i>
                             <span class="hide-menu">Dashboard</span></a>
                     </li>
                     <li class="nav-devider"></li>
@@ -218,28 +218,28 @@
                             <span class="hide-menu">Students</span></a>
                         <ul aria-expanded="false" class="collapse">
 
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/student/student-mgt" title="Manage list of student's that fall in a set criteria" data-toggle="tooltip">Students List</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/student/student-mgt" title="Manage list of student's that fall in a set criteria" data-toggle="tooltip">Students List</a></li>
                             
-                                                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/student/add-student" title="Register a new student on the system" data-toggle="tooltip">Register new Student</a></li>
-                                                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/student/withdrawn-students" title="Manage students who have been withdrawn" data-toggle="tooltip">Withdrawn Students</a></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/student/graduated-students" title="Manage students who have graduated" data-toggle="tooltip">Graduated Students</a></li>
-                                                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/student/manage-parents" title="See List of all parents on the system" data-toggle="tooltip">Manage Parents</a></li>
+                                                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/student/add-student" title="Register a new student on the system" data-toggle="tooltip">Register new Student</a></li>
+                                                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/student/withdrawn-students" title="Manage students who have been withdrawn" data-toggle="tooltip">Withdrawn Students</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/student/graduated-students" title="Manage students who have graduated" data-toggle="tooltip">Graduated Students</a></li>
+                                                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/student/manage-parents" title="See List of all parents on the system" data-toggle="tooltip">Manage Parents</a></li>
                                                             
                         </ul>
                     </li>
                     <li>
                         <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-university"></i><span class="hide-menu">Class</span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/classes/class-arm-mgt" title="View all class arms and perform specific tasks for any class arm" data-toggle="tooltip">Manage Class Arms</a></li>
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/classes/classes_and_arms" title="Create, Edit or Delete Arm/Class Arm" data-toggle="tooltip">Classes and Arms</a></li>
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/classes/class-teachers" title="Manage all class teachers on the system" data-toggle="tooltip">Class teachers</a></li>
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/classes/assignment" title="Create, edit or delete class assignments" data-toggle="tooltip">Class Assignments</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/classes/class-arm-mgt" title="View all class arms and perform specific tasks for any class arm" data-toggle="tooltip">Manage Class Arms</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/classes/classes_and_arms" title="Create, Edit or Delete Arm/Class Arm" data-toggle="tooltip">Classes and Arms</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/classes/class-teachers" title="Manage all class teachers on the system" data-toggle="tooltip">Class teachers</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/classes/assignment" title="Create, edit or delete class assignments" data-toggle="tooltip">Class Assignments</a></li>
                         </ul>
                     </li>
     
                                             
                         <li>
-                            <a href="https://krystalng.com/fggconitsha/classes/past-records" aria-expanded="false" title="Manage records in a past Term/Session" data-toggle="tooltip"><i class="fa fa-file-text"></i><span class="hide-menu">Past Records</span></a>
+                            <a href="https://stmonica.com/stmonica/classes/past-records" aria-expanded="false" title="Manage records in a past Term/Session" data-toggle="tooltip"><i class="fa fa-file-text"></i><span class="hide-menu">Past Records</span></a>
                         </li>
                         
                     <li>
@@ -253,9 +253,9 @@
                                             <li>
                             <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-book"></i><span class="hide-menu">Subject</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/subject">School Subjects</a></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/subject/teachers" title="Manage all subject teachers. (i.e. All Staff who have been assigned to one or more subjects)" data-toggle="tooltip">Subject Teachers</a></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/subject/departments" title="Manage Subject departments. Add, update or remove departments" data-toggle="tooltip">Departments</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/subject">School Subjects</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/subject/teachers" title="Manage all subject teachers. (i.e. All Staff who have been assigned to one or more subjects)" data-toggle="tooltip">Subject Teachers</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/subject/departments" title="Manage Subject departments. Add, update or remove departments" data-toggle="tooltip">Departments</a></li>
                             </ul>
                         </li>
                                             
@@ -268,11 +268,11 @@
                                             <li>
                             <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-message-settings"></i><span class="hide-menu">Messaging</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/messaging/send-email" title="Send customized email to Parents, Staff, Students or Admin" data-toggle="tooltip">Send Email</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/messaging/send-email" title="Send customized email to Parents, Staff, Students or Admin" data-toggle="tooltip">Send Email</a></li>
                                 
                                 
-                                    <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/messaging/send-text-message" title="Send a text message to Parents, Staff, Students or Admin" data-toggle="tooltip">Send Text Message</a></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/messaging/generate-letter" title="Generate a customized Letter for Parents, Staff, Students or Admin" data-toggle="tooltip">Generate Letter</a></li>
+                                    <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/messaging/send-text-message" title="Send a text message to Parents, Staff, Students or Admin" data-toggle="tooltip">Send Text Message</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/messaging/generate-letter" title="Generate a customized Letter for Parents, Staff, Students or Admin" data-toggle="tooltip">Generate Letter</a></li>
                             </ul>
                         </li>
                                             
@@ -292,9 +292,9 @@
                         <ul aria-expanded="false" class="collapse">
 
                             
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/staff/manage" title="See List of all staff on the system" data-toggle="tooltip">Manage Staff</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/staff/manage" title="See List of all staff on the system" data-toggle="tooltip">Manage Staff</a></li>
                                 
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/admin-account/manage" title="See List of all administrators on the system" data-toggle="tooltip">Manage Admin</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/admin-account/manage" title="See List of all administrators on the system" data-toggle="tooltip">Manage Admin</a></li>
                                                             
                         </ul>
                     </li>
@@ -302,8 +302,8 @@
                     <li>
                         <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-soccer"></i><span class="hide-menu">Sport House</span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/sport-house" title="Add, Edit or Delete Sport Houses" data-toggle="tooltip">Manage Sport Houses</a></li>
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/sport-house/heads" title="Manage house masters/mistresses" data-toggle="tooltip">Sport House Heads</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/sport-house" title="Add, Edit or Delete Sport Houses" data-toggle="tooltip">Manage Sport Houses</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/sport-house/heads" title="Manage house masters/mistresses" data-toggle="tooltip">Sport House Heads</a></li>
                         </ul>
                     </li>
                     
@@ -319,16 +319,16 @@
                         <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Configuration</span></a>
                         <ul aria-expanded="false" class="collapse">
     
-                                                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/school-grades" title="Add, Edit or Delete Grades" data-toggle="tooltip">School Grades</a></li>
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/grades-config" title="Configure how grades are awarded in students result" data-toggle="tooltip">Grade Configuration</a></li>
-                                                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/school-information" title="View/Make changes to the school's information" data-toggle="tooltip">School Information</a></li>
-                                                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/result-setting" title="Make changes to how students Report card or Broadsheet looks" data-toggle="tooltip">Result Settings</a></li>
-                                                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/academic-session" title="View Academic Session history, create new session, or move to next session" data-toggle="tooltip">Academic Sessions</a></li>
+                                                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/school-grades" title="Add, Edit or Delete Grades" data-toggle="tooltip">School Grades</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/grades-config" title="Configure how grades are awarded in students result" data-toggle="tooltip">Grade Configuration</a></li>
+                                                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/school-information" title="View/Make changes to the school's information" data-toggle="tooltip">School Information</a></li>
+                                                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/result-setting" title="Make changes to how students Report card or Broadsheet looks" data-toggle="tooltip">Result Settings</a></li>
+                                                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/academic-session" title="View Academic Session history, create new session, or move to next session" data-toggle="tooltip">Academic Sessions</a></li>
                                                                 
-                                <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/session-parameters" title="Set or Edit weight of session parameters (i.e. CA1, CA2..., Exam, Term weight)" data-toggle="tooltip">Session Parameters</a></li>
+                                <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/session-parameters" title="Set or Edit weight of session parameters (i.e. CA1, CA2..., Exam, Term weight)" data-toggle="tooltip">Session Parameters</a></li>
                                                             
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/comment-remarks" title="create, edit or delete library of comment remarks" data-toggle="tooltip">Comment Remarks</a></li>
-                            <li><a class="waves-effect waves-dark" href="https://krystalng.com/fggconitsha/school-config/behavioural-traits" title="Manage your preference of student behavioural traits e.g Neatness, punctuality etc..." data-toggle="tooltip">Behavioural Traits</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/comment-remarks" title="create, edit or delete library of comment remarks" data-toggle="tooltip">Comment Remarks</a></li>
+                            <li><a class="waves-effect waves-dark" href="https://stmonica.com/stmonica/school-config/behavioural-traits" title="Manage your preference of student behavioural traits e.g Neatness, punctuality etc..." data-toggle="tooltip">Behavioural Traits</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -363,7 +363,7 @@
     <div class="row">
         <div class="offset-md-3 col-md-6">
             <div class="card card-body">
-                <form action="https://krystalng.com/fggconitsha/subject/dept-edit-process/f8fe3525187323e1d" id="dept-edit" method="post" accept-charset="utf-8">
+                <form action="https://stmonica.com/stmonica/subject/dept-edit-process/f8fe3525187323e1d" id="dept-edit" method="post" accept-charset="utf-8">
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group col-sm-12">
@@ -373,7 +373,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="https://krystalng.com/fggconitsha/subject/departments"
+                    <a href="https://stmonica.com/stmonica/subject/departments"
                        class="btn btn-warning btn-rounded waves-effect waves-light m-t-10">Close</a>
                     <button type="submit"
                             class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save changes
@@ -401,7 +401,8 @@
 <!-- footer -->
 <!-- ============================================================== -->
 <footer class="footer">
-    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+&copy; <?php echo date('Y'); ?> School Database Management System (Edu-Portal) Powered By
+                <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL KoNcEpT</a>
 </footer>
 <!-- ============================================================== -->
 <!-- End footer -->
@@ -417,34 +418,34 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="https://krystalng.com/fggconitsha/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="https://stmonica.com/stmonica/assets/plugins/datatables/jquery.dataTables.min.js"></script>
 
 <!-- slimscrollbar scrollbar JavaScript -->
-<script src="https://krystalng.com/fggconitsha/assets/js/jquery.slimscroll.js"></script>
+<script src="https://stmonica.com/stmonica/assets/js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
-<script src="https://krystalng.com/fggconitsha/assets/js/waves.js"></script>
+<script src="https://stmonica.com/stmonica/assets/js/waves.js"></script>
 <!--Menu sidebar -->
-<script src="https://krystalng.com/fggconitsha/assets/js/sidebarmenu.js"></script>
+<script src="https://stmonica.com/stmonica/assets/js/sidebarmenu.js"></script>
 
 <!--stickey kit -->
-<script src="https://krystalng.com/fggconitsha/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+<script src="https://stmonica.com/stmonica/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
 
 <!--Custom JavaScript -->
-<script src="https://krystalng.com/fggconitsha/assets/js/custom.min.js"></script>
+<script src="https://stmonica.com/stmonica/assets/js/custom.min.js"></script>
 
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->
 
 
-<script src="https://krystalng.com/fggconitsha/assets/js/bootstrap-notify.js"></script>
+<script src="https://stmonica.com/stmonica/assets/js/bootstrap-notify.js"></script>
 
-<script src="https://krystalng.com/fggconitsha/assets/plugins/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
-<script src="https://krystalng.com/fggconitsha/assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="https://stmonica.com/stmonica/assets/plugins/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+<script src="https://stmonica.com/stmonica/assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
 
 <!-- jQuery peity -->
-<script src="https://krystalng.com/fggconitsha/assets/plugins/tablesaw-master/dist/tablesaw.js"></script>
-<script src="https://krystalng.com/fggconitsha/assets/plugins/tablesaw-master/dist/tablesaw-init.js"></script>
+<script src="https://stmonica.com/stmonica/assets/plugins/tablesaw-master/dist/tablesaw.js"></script>
+<script src="https://stmonica.com/stmonica/assets/plugins/tablesaw-master/dist/tablesaw-init.js"></script>
 
 
 <script>
