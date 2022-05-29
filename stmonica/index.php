@@ -36,7 +36,7 @@
         <div class="login-box card">
             <div class="card-body">
                 <h3 href="javascript:void(0)" class="text-center db"><img src="assets/img/logo_4a262eb69667.png" alt="Home" height="150" >
-                    <br>BiNoZy DiGiTaL - ST. MONICA NUR. & PRI, SCHOOL, IBUSA </h3>
+                    <br>ST. MONICA NUR. & PRI. SCHOOL, IBUSA DELTA STATE</h3>
                 <br>
                 <p class="text-center db">SCHOOL DATABASE MANAGEMENT SYSTEM</p>
 
