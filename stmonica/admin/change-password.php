@@ -10,7 +10,7 @@
     <meta name="author" content="BiNoZy DiGiTaL koncept">
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb69667.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_4a262eb69667.png">
     <title>Krystal’s IT Academy F.G.G.C, NKWELLE EZUNAKA - School Portal</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -106,9 +106,9 @@
                         <!-- Logo icon -->
                         <b>
                             <!-- Dark Logo icon -->
-                            <img src="assets/img/logo_4a262eb69667.png?v1" alt="school-page" class="dark-logo logo" height="60" width="60" />
+                            <img src="assets/img/logo_4a262eb69667.png" alt="school-page" class="dark-logo logo" height="60" width="60" />
                             <!-- Light Logo icon -->
-                            <img src="assets/img/logo_4a262eb69667.png?v1" alt="homepage" class="light-logo logo" height="60" width="60" />
+                            <img src="assets/img/logo_4a262eb69667.png" alt="homepage" class="light-logo logo" height="60" width="60" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
@@ -169,8 +169,8 @@
                                                 <img src="uploads/nobody_m.jpg" alt="user">
                                             </div>
                                             <div class="u-text">
-                                                <h4 class="user-full-name">Henry Obinozie</h4>
-                                                <p class="text-muted user-email">obinoziehenry@gmail.com</p><a href="admin/profile.php" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                                <h4 class="user-full-name">Teachers</h4>
+                                                <p class="text-muted user-email">teacheremail@gmail.com</p><a href="admin/profile.php" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                             </div>
                                         </div>
                                     </li>
@@ -200,8 +200,7 @@
                     <!-- User profile image -->
                     <div class="profile-img"> <img src="uploads/nobody_m.jpg" alt="user" /> </div>
                     <!-- User profile text-->
-                    <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Henry
-                            Obinozie</a>
+                    <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">teachers name</a>
                         <div class="dropdown-menu animated flipInY">
                             <a href="admin/profile.php" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
                             <a href="admin-account/my-activity.php" class="dropdown-item"><i class="ti-wallet"></i> My
@@ -423,7 +422,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

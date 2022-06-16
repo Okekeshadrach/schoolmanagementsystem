@@ -57,8 +57,8 @@
                             <div class="card-body">
                                 <p>
                                     <a href="create.php" class="btn btn-primary btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-user-plus"></i> New staff account</a>
-                                    <a href="staff/nominal-roll.html" target="_blank" class="btn btn-info btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-print"></i> Print Staff Nominal roll</a>
-                                    <a href="staff/bulk-bio-update/1" class="btn btn-success btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-th-list"></i> Staff Bulk Bio update</a>
+                                    <a href="../staff/nominal-roll.php" target="_blank" class="btn btn-info btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-print"></i> Print Staff Nominal roll</a>
+                                    <a href="../staff/bulk-bio-update/1" class="btn btn-success btn-rounded waves-effect waves-light m-t-5"><i class="fa fa-th-list"></i> Staff Bulk Bio update</a>
                                 </p>
 
                                 <div class="table-responsive" id="resp-div">
@@ -77,69 +77,7 @@
                                         <tbody>
 
 
-                                            <tr>
-                                                <td>1</td>
-                                                <td>
-                                                    <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
-                                                </td>
-                                                <td>
-                                                    <a href="staff/staff-profile/fd9dcc2e1324d22fb" class="text-info" target="_blank">Mr Fawole John Oluwaseyi</a>
-                                                </td>
-                                                <td>fawole.j</td>
-                                                <td>fawole37@yahoo.com</td>
-                                                <td>08064828248</td>
-                                                <td>
-                                                    <a href="user-account/delete/6bc35d554a82fd726" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>2</td>
-                                                <td>
-                                                    <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
-                                                </td>
-                                                <td>
-                                                    <a href="staff/staff-profile/892ad0ba4184e247f" class="text-info" target="_blank">MR Obinozie Henry Ebuka</a>
-                                                </td>
-                                                <td>obinozie.h</td>
-                                                <td>obinoziehenry@gmail.com</td>
-                                                <td>08037370787</td>
-                                                <td>
-                                                    <a href="user-account/delete/7bb090a875ff21d52" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>3</td>
-                                                <td>
-                                                    <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
-                                                </td>
-                                                <td>
-                                                    <a href="staff/staff-profile/e19bc1d52c75e1542" class="text-info" target="_blank">Mr Obinozie Nnamdi Francis</a>
-                                                </td>
-                                                <td>obinozie.n</td>
-                                                <td>nnamdifrancis32@gmail.com</td>
-                                                <td>08064769378</td>
-                                                <td>
-                                                    <a href="user-account/delete/4640cc2058b1bde4b" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>4</td>
-                                                <td>
-                                                    <img src="uploads/passport_df0f6ec551dfee6df.jpg" width="50" class="img-circle" />
-                                                </td>
-                                                <td>
-                                                    <a href="staff/staff-profile/9a192c3a5f6e794a7" class="text-info" target="_blank">Mr Umerah Anthony Tochukwu</a>
-                                                </td>
-                                                <td>umerah.t</td>
-                                                <td>umra2020@gmail.com</td>
-                                                <td>08068513947</td>
-                                                <td>
-                                                    <a href="user-account/delete/668962267681d0e10c58" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Staff Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                </td>
-                                            </tr>
+                                            <?php $class->get_staff() ?>
 
                                         </tbody>
                                     </table>
@@ -191,7 +129,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                    © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->

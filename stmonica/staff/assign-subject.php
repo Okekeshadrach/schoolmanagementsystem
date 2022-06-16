@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('../layout/head.php') ?>
-
+<?php include('../staff/get_staff.php') ?>
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -53,18 +53,18 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                     <!-- Column -->
-                     <?php include('../layout/profile_sidebar.php') ?>
+                    <!-- Column -->
+                    <?php include('../staff/profile_nav.html') ?>
                     <!-- Column -->
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-body">
 
-                            <?php include('../layout/profile_nav.php') ?>
-                                <p>You want to make Mr Obinozie Nnamdi a subject teacher?</p>
+                                <?php include('../layout/profile_nav.php') ?>
+                                <p>You want to make Mr teachers name a subject teacher?</p>
 
-                                <small class="text-warning">Note: Mr Obinozie Nnamdi can only be a subject teacher for
+                                <small class="text-warning">Note: Mr teachers name can only be a subject teacher for
                                     subjects in the same department as his</small>
                                 <hr>
                                 <form action="staff/assign-subject-process/5047f2e72c815caa6" class="form-horizontal" id="staff-assign" enctype="multipart/form-data" method="post" accept-charset="utf-8">
@@ -74,22 +74,12 @@
                                         <div class="col-sm-9">
                                             <select class="select2 m-b-10" name="subj_id" style="width: 100%" id="subj" required>
                                                 <option></option>
+                                                <?php $class->get_subject_select() ?>
                                             </select>
                                         </div>
                                     </div>
 
-                                    <div class="form-group row" id="mini-subj-div" style="display: none">
-                                        <div class="offset-sm-3 col-sm-9">
-                                            <small class="text-success" id="hint"></small>
-                                        </div>
-                                        <label for="mini-subject" class="col-sm-3 text-right control-label col-form-label">Select Sub
-                                            Subject</label>
-                                        <div class="col-sm-9">
-                                            <select class="m-b-10 form-control" name="sub_subj_id" id="mini-subject">
-                                                <option></option>
-                                            </select>
-                                        </div>
-                                    </div>
+
 
                                     <div class="form-group row">
                                         <label for="class_arm_id" class="col-sm-3 text-right control-label col-form-label">Select Class
@@ -153,7 +143,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

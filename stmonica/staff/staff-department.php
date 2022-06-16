@@ -52,15 +52,15 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                     <!-- Column -->
-                    <?php include('../layout/profile_sidebar.php') ?>
+                    <!-- Column -->
+                    <?php include('../staff/profile_nav.html') ?>
                     <!-- Column -->
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-body">
 
-                            <?php include('../layout/profile_nav.php') ?>
+                                <?php include('../layout/profile_nav.php') ?>
                                 <div id="resp-div">
                                     <table class="tablesaw table-bordered table-hover table stylish-table table-striped color-table success-table" data-tablesaw-mode="stack" id="resp-table" width="100%">
                                         <thead>
@@ -83,7 +83,7 @@
                                 <br>
                                 <hr>
                                 <br>
-                                <p>If you want to add <b>Mr Obinozie Nnamdi</b> to a department, select the department
+                                <p>If you want to add <b>Mr teachers name</b> to a department, select the department
                                     below</p>
 
                                 <form action="staff/staff-dept-process/5047f2e72c815caa6" class="form-horizontal" id="add-staff-dept" enctype="multipart/form-data" method="post" accept-charset="utf-8">
@@ -133,7 +133,7 @@
                         var url = a.attr('href');
                         swal({
                             title: "Are you sure?",
-                            text: "Your action will remove Mr Obinozie Nnamdi from the selected department. Do you really want to do this?",
+                            text: "Your action will remove Mr teachers name from the selected department. Do you really want to do this?",
                             type: "warning",
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",
@@ -162,7 +162,7 @@
 
                         swal({
                             title: "Are you sure?",
-                            text: "Your action will make Mr Obinozie Nnamdi the H.O.D of the selected department. Do you really want to do this?",
+                            text: "Your action will make Mr teachers name the H.O.D of the selected department. Do you really want to do this?",
                             type: "warning",
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",
@@ -211,7 +211,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('../layout/head.php') ?>
-
+<?php include('../staff/get_staff.php') ?>
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -53,16 +53,16 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                     <!-- Column -->
-                     <?php include('../layout/profile_sidebar.php') ?>
+                    <!-- Column -->
+                    <?php include('../staff/profile_nav.html') ?>
                     <!-- Column -->
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-body">
 
-                            <?php include('../layout/profile_nav.php') ?>
-                                <p>You want to make Mr Obinozie Nnamdi a House Master ?</p>
+                                <?php include('../layout/profile_nav.php') ?>
+                                <p>You want to make Mr teachers name a House Master ?</p>
 
                                 <form action="staff/assign-house-process/5047f2e72c815caa6" class="form-horizontal" id="staff-assign" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="form-group row">
@@ -70,11 +70,8 @@
                                             House*</label>
                                         <div class="col-sm-8">
                                             <select class="select2 m-b-10" name="house_id" style="width: 100%" id="house" required>
-                                                <option></option>
-                                                <option value="1">ALPHA</option>
-                                                <option value="2">Beta</option>
-                                                <option value="3">Gamma</option>
-                                                <option value="4">Phyle</option>
+                                                <option>-- Select --</option>
+                                                <?php $class->get_sporthouse_select() ?>
                                             </select>
                                         </div>
                                     </div>
@@ -112,7 +109,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

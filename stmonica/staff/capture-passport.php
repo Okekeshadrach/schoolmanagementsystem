@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('../layout/head.php') ?>
-
+<?php include('../staff/get_staff.php') ?>
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -53,15 +53,15 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                     <!-- Column -->
-                     <?php include('../layout/profile_sidebar.php') ?>
+                    <!-- Column -->
+                    <?php include('../staff/profile_nav.html') ?>
                     <!-- Column -->
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-body">
 
-                            <?php include('../layout/profile_nav.php') ?>
+                                <?php include('../layout/profile_nav.php') ?>
                                 <form action="staff/capture-passport-process/5047f2e72c815caa6" class="form-horizontal" id="staff-passport" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="form-group row">
                                         <label for="passport" class="col-sm-3 text-right control-label col-form-label">Upload
@@ -108,7 +108,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

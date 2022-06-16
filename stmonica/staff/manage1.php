@@ -77,74 +77,23 @@
 
 
                                                 <tr>
-                                                    <td class="sn">1</td>
+                                                    <td class="sn"></td>
                                                     <td>
-                                                        <img src="uploads/passport_Akanbi_Bukola.jpg" width="50" class="img-circle" />
+                                                        <!-- <img src="uploads/passport_Akanbi_Bukola.jpg" width="50" class="img-circle" /> -->
+
+                                                        Details
                                                     </td>
                                                     <td>
-                                                        <a href="admin-account.html/admin-profile/43f5c32e73595a730" class="text-info" target="_blank">Akanbi Bukola </a>
+                                                        Coming
+                                                        <!-- <a href="admin-account.html/admin-profile/43f5c32e73595a730" class="text-info" target="_blank">Akanbi Bukola </a> -->
                                                     </td>
-                                                    <td>Female</td>
-                                                    <td>bukky</td>
-                                                    <td>bukky@krystalng.com</td>
-                                                    <td>08038439573</td>
+                                                    <td>Very</td>
+                                                    <td></td>
+                                                    <td>soon</td>
+                                                    <td>Enough</td>
 
                                                     <td>
                                                         <a href="user-account/delete/bcda2b8a74946c10a946" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="sn">2</td>
-                                                    <td>
-                                                        <img src="uploads/nobody_f.jpg" width="50" class="img-circle" />
-                                                    </td>
-                                                    <td>
-                                                        <a href="admin-account.html/admin-profile/38bdacf644eed5f6f" class="text-info" target="_blank">Egejuru Gift </a>
-                                                    </td>
-                                                    <td>Female</td>
-                                                    <td>gift</td>
-                                                    <td>giftegejuru0@gmail.com</td>
-                                                    <td>08037598829</td>
-
-                                                    <td>
-                                                        <a href="user-account/delete/e6bf78fd99537f91d" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="sn">3</td>
-                                                    <td>
-                                                        <img src="uploads/nobody_m.jpg" width="50" class="img-circle" />
-                                                    </td>
-                                                    <td>
-                                                        <a href="admin-account.html/admin-profile/f024b40b15ba842f7" class="text-info" target="_blank">Krystal Admin </a>
-                                                    </td>
-                                                    <td>Male</td>
-                                                    <td>krystal_adm</td>
-                                                    <td>newton.job@krystaldigitalng.com</td>
-                                                    <td>09026428001</td>
-
-                                                    <td>
-                                                        <a href="user-account/delete/38c432991f115c38e" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="sn">4</td>
-                                                    <td>
-                                                        <img src="uploads/passport_Ogah_Elizabethmary.jpeg" width="50" class="img-circle" />
-                                                    </td>
-                                                    <td>
-                                                        <a href="admin-account.html/admin-profile/750f1d6e649901fe6" class="text-info" target="_blank">Ogah Elizabethmary </a>
-                                                    </td>
-                                                    <td>Female</td>
-                                                    <td>lizzy_@o</td>
-                                                    <td>elizabethmary.ogah@krystaldigitalng.com</td>
-                                                    <td>08026200015</td>
-
-                                                    <td>
-                                                        <a href="user-account/delete/32ca592e746920f48a92" class="btn btn-sm btn-danger btn-circle ajax-link m-b-5 waves-effect waves-light user-delete" title="Delete this Admin Account" data-toggle="tooltip"><i class="fa fa-user-times"></i> </a>
                                                     </td>
                                                 </tr>
 
@@ -195,7 +144,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                    © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->

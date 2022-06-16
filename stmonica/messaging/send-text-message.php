@@ -81,15 +81,7 @@
                                         <div class="form-group col-sm-6">
                                             <label class="form-control-label" for="class">Class</label>
                                             <select class="selectpicker" data-style="form-control btn-secondary" id="class" name="class_id" style="width: 100%" required>
-                                                <option value="1">JSS 1</option>
-                                                <option value="2">JSS 2</option>
-                                                <option value="3">JSS 3</option>
-                                                <option value="4">SS 1</option>
-                                                <option value="5">SS 2</option>
-                                                <option value="6">SS 3</option>
-                                                <option value="7">YEAR 1</option>
-                                                <option value="8">YEAR 2</option>
-                                                <option value="9">YEAR 3</option>
+                                            <?php $class->get_class_select()?>
                                             </select>
                                         </div>
 
@@ -97,61 +89,7 @@
                                             <label for="class_arm_id">Class Arm</label>
                                             <select class="form-control" id="class_arm_id" name="class_arm_id">
                                                 <option value="">ALL Arms</option>
-                                                <option class="class_arm class-1 hide" value="1">JSS 1A</option>
-                                                <option class="class_arm class-1 hide" value="2">JSS 1B</option>
-                                                <option class="class_arm class-1 hide" value="3">JSS 1C</option>
-                                                <option class="class_arm class-1 hide" value="4">JSS 1D</option>
-                                                <option class="class_arm class-1 hide" value="5">JSS 1E</option>
-                                                <option class="class_arm class-1 hide" value="6">JSS 1G</option>
-                                                <option class="class_arm class-1 hide" value="7">JSS 1H</option>
-                                                <option class="class_arm class-1 hide" value="8">JSS 1J</option>
-                                                <option class="class_arm class-1 hide" value="9">JSS 1K</option>
-                                                <option class="class_arm class-2 hide" value="10">JSS 2A</option>
-                                                <option class="class_arm class-2 hide" value="11">JSS 2B</option>
-                                                <option class="class_arm class-2 hide" value="12">JSS 2C</option>
-                                                <option class="class_arm class-2 hide" value="13">JSS 2D</option>
-                                                <option class="class_arm class-2 hide" value="14">JSS 2E</option>
-                                                <option class="class_arm class-2 hide" value="15">JSS 2G</option>
-                                                <option class="class_arm class-2 hide" value="16">JSS 2H</option>
-                                                <option class="class_arm class-2 hide" value="17">JSS 2J</option>
-                                                <option class="class_arm class-2 hide" value="18">JSS 2K</option>
-                                                <option class="class_arm class-3 hide" value="46">JSS 3A</option>
-                                                <option class="class_arm class-3 hide" value="47">JSS 3B</option>
-                                                <option class="class_arm class-3 hide" value="48">JSS 3C</option>
-                                                <option class="class_arm class-3 hide" value="49">JSS 3D</option>
-                                                <option class="class_arm class-3 hide" value="50">JSS 3E</option>
-                                                <option class="class_arm class-3 hide" value="51">JSS 3G</option>
-                                                <option class="class_arm class-3 hide" value="52">JSS 3H</option>
-                                                <option class="class_arm class-3 hide" value="53">JSS 3J</option>
-                                                <option class="class_arm class-3 hide" value="54">JSS 3K</option>
-                                                <option class="class_arm class-4 hide" value="19">SS 1A</option>
-                                                <option class="class_arm class-4 hide" value="20">SS 1B</option>
-                                                <option class="class_arm class-4 hide" value="55">SS 1BECE</option>
-                                                <option class="class_arm class-4 hide" value="21">SS 1C</option>
-                                                <option class="class_arm class-4 hide" value="22">SS 1D</option>
-                                                <option class="class_arm class-4 hide" value="23">SS 1E</option>
-                                                <option class="class_arm class-4 hide" value="24">SS 1G</option>
-                                                <option class="class_arm class-4 hide" value="25">SS 1H</option>
-                                                <option class="class_arm class-4 hide" value="26">SS 1J</option>
-                                                <option class="class_arm class-4 hide" value="27">SS 1K</option>
-                                                <option class="class_arm class-5 hide" value="28">SS 2A</option>
-                                                <option class="class_arm class-5 hide" value="29">SS 2B</option>
-                                                <option class="class_arm class-5 hide" value="30">SS 2C</option>
-                                                <option class="class_arm class-5 hide" value="31">SS 2D</option>
-                                                <option class="class_arm class-5 hide" value="32">SS 2E</option>
-                                                <option class="class_arm class-5 hide" value="33">SS 2G</option>
-                                                <option class="class_arm class-5 hide" value="34">SS 2H</option>
-                                                <option class="class_arm class-5 hide" value="35">SS 2J</option>
-                                                <option class="class_arm class-5 hide" value="36">SS 2K</option>
-                                                <option class="class_arm class-6 hide" value="37">SS 3A</option>
-                                                <option class="class_arm class-6 hide" value="38">SS 3B</option>
-                                                <option class="class_arm class-6 hide" value="39">SS 3C</option>
-                                                <option class="class_arm class-6 hide" value="40">SS 3D</option>
-                                                <option class="class_arm class-6 hide" value="41">SS 3E</option>
-                                                <option class="class_arm class-6 hide" value="42">SS 3G</option>
-                                                <option class="class_arm class-6 hide" value="43">SS 3H</option>
-                                                <option class="class_arm class-6 hide" value="44">SS 3J</option>
-                                                <option class="class_arm class-6 hide" value="45">SS 3K</option>
+                                                <?php $class->get_classarm_select()?>
                                             </select>
                                         </div>
                                     </div>
@@ -259,7 +197,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

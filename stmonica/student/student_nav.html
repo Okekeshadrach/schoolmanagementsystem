@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 1em">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Profile
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../student/student-profile.php?student_id=<?php echo $student_id ?>">Edit
+                        Profile</a>
+                    <a class="dropdown-item" href="../student/capture-passport.php?student_id=<?php echo $student_id ?>">Capture
+                        Passport</a>
+                    <a class="dropdown-item" href="../student/activity.php?student_id=<?php echo $student_id ?>">Activity
+                        Log</a>
+
+                    <a class="dropdown-item" href="../student/change-password.php?student_id=<?php echo $student_id ?>">Reset
+                        Password</a>
+
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="../student/account-status.php?student_id=<?php echo $student_id ?>">Account
+                    Status</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="../student/class-trail.php?student_id=<?php echo $student_id ?>">Class
+                    Trail</a>
+            </li>
+
+            <!--<li class="nav-item">
+<a class="nav-link" href="#">Performance Analytics</a>
+</li>-->
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Payment/Bill
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../student/current-bill.php?student_id=<?php echo $student_id ?>">Current
+                        Bill Invoice</a>
+                    <a class="dropdown-item" href="../payment/transaction-log.php?student_id=<?php echo $student_id ?>">Transaction
+                        Log</a>
+                    <!--<a class="dropdown-item" href="">Student Ledger</a>-->
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Others
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../student/withdrawn-students.php?student_id=<?php echo $student_id ?>" title="Is Ifechukwu back to school? Click here to return her to the system." data-toggle="tooltip">Return to Class</a>
+
+                    <a class="dropdown-item" href="../student/registration-printout.php?student_id=<?php echo $student_id ?>" target="_blank">Registration Printout</a>
+
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>

@@ -7,21 +7,21 @@
     <div class="_scroll-sidebar" style="overflow: scroll; width: auto; height: 100%">
         <!-- User profile -->
         <div class="user-profile" style="
-              background: url(assets/images/background/images.jpg) no-repeat;
+              background: url(../assets/images/background/images.png) no-repeat;
             ">
             <!-- User profile image -->
             <div class="profile-img">
-                <img src="uploads/nobody_m.jpg" alt="user" />
+                <img src=<?php echo $img ?> alt="user" />
             </div>
             <!-- User profile text-->
             <div class="profile-text">
-                <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Henry Obinozie</a>
+                <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><?php echo strtoupper($name) ?></a>
                 <div class="dropdown-menu animated flipInY">
                     <a href="../admin/profile.php" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
                     <a href="../admin/my-activity.php" class="dropdown-item"><i class="ti-wallet"></i> My Activity
                         Log</a>
                     <div class="dropdown-divider"></div>
-                    <a href="../login/logout" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                    <a href="../login/logout.php" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                 </div>
             </div>
         </div>
@@ -56,10 +56,10 @@
                             <a class="waves-effect waves-dark" href="../student/graduated-students.php" title="Manage students who have graduated" data-toggle="tooltip">Graduated
                                 Students</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="waves-effect waves-dark" href="../student/manage-parents.php" title="See List of all parents on the system" data-toggle="tooltip">Manage
                                 Parents</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li>
@@ -187,10 +187,10 @@
                         <li>
                             <a class="waves-effect waves-dark" href="../school-config/school-grades.php" title="Add, Edit or Delete Grades" data-toggle="tooltip">School Grades</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="waves-effect waves-dark" href="../school-config/grades-config.php" title="Configure how grades are awarded in students result" data-toggle="tooltip">Grade Configuration</a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a class="waves-effect waves-dark" href="../school-config/school-information.php" title="View/Make changes to the school's information" data-toggle="tooltip">School Information</a>
                         </li>
                         <li>
@@ -198,11 +198,11 @@
                         </li>
                         <li>
                             <a class="waves-effect waves-dark" href="../school-config/academic-session.php" title="View Academic Session history, create new session, or move to next session" data-toggle="tooltip">Academic Sessions</a>
-                        </li>
+                        </li> -->
 
-                        <li>
+                        <!-- <li>
                             <a class="waves-effect waves-dark" href="../school-config/session-parameters.php" title="Set or Edit weight of session parameters (i.e. CA1, CA2..., Exam, Term weight)" data-toggle="tooltip">Session Parameters</a>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a class="waves-effect waves-dark" href="../school-config/comment-remarks.php" title="create, edit or delete library of comment remarks" data-toggle="tooltip">Comment Remarks</a>

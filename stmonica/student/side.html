@@ -1,0 +1,84 @@
+<div class="row">
+    <!-- Column -->
+    <div class="col-lg-4 col-xlg-3 col-md-5" id="student-profile-div">
+        <div class="card" id="student-profile-side">
+            <div class="card-body">
+                <center class="m-t-30">
+                    <img src="../../uploads/<?php echo $student_image?>" class="img-circle" id="s-passport" width="150" />
+                    <h4 class="card-title m-t-10" id="s-name">
+                        <?php echo $surname?>,
+                        <?php echo $first_name . ' ' .
+                        $last_name; ?> </h4>
+                    <h6 class="card-subtitle">
+                        <span class="label label-danger">Active</span>
+                    </h6>
+                    <div class="row text-center justify-content-md-center">
+                        <div class="col-6" id="s-gender">
+                            <?php echo $student_gender?> </div>
+                        <div class="col-6" id="s-dob">
+                            <?php echo $birthday?> </div>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="card-body">
+                <small class="text-muted">Username</small>
+                <h6>
+                    <?php echo $id?>
+                </h6>
+
+                <small class="text-muted">Date Registered</small>
+                <h6>
+                    <?php $month = date('F', strtotime($day));echo $month ; $string = " d Y H:i:s";
+echo date($string, strtotime($day));?>
+                </h6>
+
+                <small class="text-muted">Registered into</small>
+                <h6>
+                    <?php echo $classname?>:
+                    <?php echo $schoolyear?>
+                </h6>
+
+                <small class="text-muted">Withdrawn on</small>
+                <h6></h6>
+
+                <small class="text-muted">Withdrawn from</small>
+                <h6></h6>
+
+                <small class="text-muted">Reason for Withdrawal</small>
+                <h6></h6>
+
+
+
+
+                <small class="text-muted">Email address</small>
+                <h6 id="s-email">
+                    <?php echo $student_email?>
+                </h6>
+
+                <small class="text-muted">Phone</small>
+                <h6 id="s-phone">75322</h6>
+
+
+                <small class="text-muted">Sport House</small>
+                <h6 id="s-house">
+                    <?php echo $sporthouse?>
+                </h6>
+
+
+                <small class="text-muted">Address</small>
+                <h6 id="s-addr"><span class="label label-light-warning">Unspecified</span></h6>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070402.841056632!2d4.177613658408504!3d9.006483165840024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sus!4v1529581420386"
+                        width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <br>
+                <hr>
+                <small class="text-success pull-right"><i></i></small>
+                <small class="text-success pull-right last-updated"><i>Last Updated by: You on Jun 28,
+                        2021 at 07:37 PM</i></small>
+            </div>
+        </div>
+    </div>

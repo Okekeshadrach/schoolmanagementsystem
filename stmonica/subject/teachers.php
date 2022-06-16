@@ -58,9 +58,7 @@
                                 <div class="form-group col-md-4">
                                     <label for="__subj_id">Showing Subject Teachers for</label>
                                     <select class="form-control select2" id="__subj_id" style="width: 100%" required>
-                                        <option value="2">Skills Development Class (art)</option>
-                                        <option value="1">Skills Development Class (general)</option>
-                                        <option value="3">Skills Development Class (science)</option>
+                                        <?php $class->get_subject_select(); ?>
 
                                     </select>
                                 </div>
@@ -103,13 +101,13 @@
                                             <tr class="subj-1 subj-teacher">
                                                 <td class="sn-1">1</td>
                                                 <td>
-                                                    Skills Development Class (general) </td>
-                                                <td>JSS 2K</td>
+                                                    No Data </td>
+                                                <td>Found</td>
                                                 <td>
-                                                    <a href="staff/staff-profile/7f57d1c742cb4cb55" target="_blank">
-                                                        Obinozie Henry Ebuka </a>
+                                                    <a href="" target="_blank">
+                                                        teachers name </a>
                                                 </td>
-                                                <td>Nov 08, 2016 at 05:50 PM</td>
+                                                <td>Yet</td>
                                                 <td>
                                                     <div class="switch">
                                                         <label>
@@ -119,44 +117,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="subj-2 subj-teacher">
-                                                <td class="sn-2">2</td>
-                                                <td>
-                                                    Skills Development Class (art) </td>
-                                                <td>SS 3G</td>
-                                                <td>
-                                                    <a href="staff/staff-profile/8e0867064f6c76ea6" target="_blank">
-                                                        Obinozie Henry Ebuka </a>
-                                                </td>
-                                                <td>Nov 23, 2016 at 06:56 AM</td>
-                                                <td>
-                                                    <div class="switch">
-                                                        <label>
-                                                            <input name="data_id[]" type="checkbox" value="9e2a34963105cc565" class="chk">
-                                                            <span class="lever switch-col-light-blue"></span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="subj-2 subj-teacher">
-                                                <td class="sn-2">3</td>
-                                                <td>
-                                                    Skills Development Class (art) </td>
-                                                <td>SS 3J</td>
-                                                <td>
-                                                    <a href="staff/staff-profile/4e256e204b7b09e40" target="_blank">
-                                                        Obinozie Henry Ebuka </a>
-                                                </td>
-                                                <td>Nov 08, 2016 at 09:52 PM</td>
-                                                <td>
-                                                    <div class="switch">
-                                                        <label>
-                                                            <input name="data_id[]" type="checkbox" value="565b75be201f0d40e" class="chk">
-                                                            <span class="lever switch-col-light-blue"></span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -241,7 +202,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                    © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->

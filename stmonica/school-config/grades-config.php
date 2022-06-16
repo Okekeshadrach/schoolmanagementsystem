@@ -57,15 +57,7 @@
                                 <div class="form-group col-md-4">
                                     <label for="__class_id">Showing Grades config for</label>
                                     <select class="form-control select2" id="__class_id" style="width: 100%" required>
-                                        <option value="1">JSS 1</option>
-                                        <option value="2">JSS 2</option>
-                                        <option value="3">JSS 3</option>
-                                        <option value="4">SS 1</option>
-                                        <option value="5">SS 2</option>
-                                        <option value="6">SS 3</option>
-                                        <option value="7">YEAR 1</option>
-                                        <option value="8">YEAR 2</option>
-                                        <option value="9">YEAR 3</option>
+                                    <?php $class->get_class_select()?>
 
                                     </select>
                                 </div>
@@ -688,7 +680,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                    © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->

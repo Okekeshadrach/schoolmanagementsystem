@@ -11,9 +11,9 @@
                 <!-- Logo icon -->
                 <b>
                     <!-- Dark Logo icon -->
-                    <img src="../assets/img/logo_4a262eb69667.png?v1" alt="school-page" class="dark-logo logo" height="60" width="60" />
+                    <img src="../assets/img/logo_4a262eb69667.png" alt="school-page" class="dark-logo logo" height="60" width="60" />
                     <!-- Light Logo icon -->
-                    <img src="../assets/img/logo_4a262eb69667.png?v1" alt="homepage" class="light-logo logo" height="60" width="60" />
+                    <img src="../assets/img/logo_4a262eb69667.png" alt="homepage" class="light-logo logo" height="60" width="60" />
                 </b>
                 <!--End Logo icon -->
                 <!-- Logo text -->
@@ -80,14 +80,14 @@
                             <li>
                                 <div class="dw-user-box">
                                     <div class="u-img">
-                                        <img src="uploads/nobody_m.jpg" alt="user" />
+                                        <img src="../../uploads/nobody_m.jpg" alt="user" />
                                     </div>
                                     <div class="u-text">
-                                        <h4 class="user-full-name">Henry Obinozie</h4>
+                                        <h4 class="user-full-name"><?php echo $name ?></h4>
                                         <p class="text-muted user-email">
-                                            obinoziehenry@gmail.com
+                                        <?php echo $email ?>
                                         </p>
-                                        <a href="admin/profile" class="btn btn-rounded btn-danger btn-sm">View
+                                        <a href="../admin/profile.php?=<?php echo $staff_id?>" class="btn btn-rounded btn-danger btn-sm">View
                                             Profile</a>
                                     </div>
                                 </div>

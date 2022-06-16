@@ -72,8 +72,8 @@
                                         </thead>
                                         <tbody>
 
-                                            <?php $class->get_subject();?>
-                                            
+                                            <?php $class->get_subject(); ?>
+
 
                                         </tbody>
                                     </table>
@@ -101,7 +101,7 @@
                                                             <label for="dept_id">Subject Department</label>
                                                             <select class="custom-select form-control select2" id="dept_id" name="dept_id" style="width: 100%" required>
                                                                 <option value="">-- select --</option>
-                                                                <?php $class->get_department_select()?>
+                                                                <?php $class->get_department_select() ?>
 
                                                             </select>
                                                         </div>
@@ -177,7 +177,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

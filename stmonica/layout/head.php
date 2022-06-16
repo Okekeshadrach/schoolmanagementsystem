@@ -2,10 +2,48 @@
 session_start();
 require '../../public_functions.php';
 $class = new sms_engine;
-
+// session_destroy();
 if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
-    // echo '<script>window.location="../../login.php"</script>';
-}  ?>
+    echo '<script>window.location="../index.php"</script>';
+    echo '<script>window.alert("yes")</script>';
+} else {
+    $user_id = $_SESSION['user_id'];
+    $db = mysqli_connect($class->host, $class->user, $class->pass, $class->database);
+    $sql = "SELECT * FROM staff WHERE id='$user_id'";
+    $query = mysqli_query($db, $sql);
+    $count = mysqli_num_rows($query);
+    if ($count == true) {
+        while ($row = mysqli_fetch_array($query)) {
+        // echo '<script>window.alert("yes")</script>';
+        $name = $row['first_name'] .' '.$row['last_name'].''.$row['other_name'];
+        $first_name = $row['first_name'];
+        $last_name = $row['last_name'];
+        $other_name = $row['other_name'];
+        $email = $row['email'];
+        $staff_id = $row['staff_id'];
+        $address = $row['home_address'];
+        $phone_no = $row['mobileno'];
+        $last_update = $row['updated_at'];
+        if ($row['gender'] == 'M') {
+            $gender = "Male";
+            $check = "M";
+            $img = "../../uploads/nobody_m.jpg";
+        } elseif ($row['gender'] == 'F') {
+            $gender = "Female";
+            $check = "F";
+            $img = "../../uploads/nobody_f.jpg";
+        }else {
+            $gender = "Other";
+            $check = "";
+            $img = "../../uploads/nobody_n.jpg";
+        }
+        
+        if ($user_id == '1') {
+            $role = 'Portal Admin';
+        }
+        }
+    }
+}     ?>
 
 <head>
     <meta charset="utf-8" />
@@ -16,7 +54,8 @@ if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
     <meta name="author" content="BiNoZy DiGiTaL koncept" />
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo_4a262eb69667.png?v1" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo_4a262eb69667.png" />
     <title>ST. Monica - School Portal</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />

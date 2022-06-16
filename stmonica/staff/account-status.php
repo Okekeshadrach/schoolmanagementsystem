@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('../layout/head.php') ?>
-
+<?php include('../staff/get_staff.php') ?>
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -52,15 +52,15 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                     <!-- Column -->
-                     <?php include('../layout/profile_sidebar.php') ?>
+                    <!-- Column -->
+                    <?php include('../staff/profile_nav.html') ?>
                     <!-- Column -->
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-body">
 
-                            <?php include('../layout/profile_nav.php') ?>
+                                <?php include('../layout/profile_nav.php') ?>
                                 <div class="form-group row">
                                     <label for="passport" class="col-sm-3 control-label col-form-label">Current
                                         State:</label>
@@ -93,7 +93,7 @@
                                 <hr>
 
                                 <div class="form-group">
-                                    <p>LOCK <b>Mr Obinozie's</b> account? </p>
+                                    <p>LOCK <b>Mr teachers's</b> account? </p>
                                     <p>
                                         <a class="btn btn-outline-danger btn-sm btn-rounded waves-effect waves-light ajax-link change-status" href="user-account/change-status/0/32382055523e4afb6">
                                             <span class="fa fa-lock"></span> Yes, LOCK his account!
@@ -103,7 +103,7 @@
 
                                 <hr>
                                 <div class="form-group">
-                                    <p>Push login details to <b>Mr Obinozie</b>?</p>
+                                    <p>Push login details to <b>Mr teachers</b>?</p>
                                     <p><a class="btn btn-outline-primary btn-sm btn-rounded waves-effect waves-light" id="push-email" href="user-account/push-details/8bfcb98c54cc7ec6b">
                                             <span class="fa fa-send"></span> Yes, push email to Nnamdi!
                                         </a>
@@ -165,7 +165,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://krystaldigitalng.com" target="_blank">BiNoZy DiGiTaL koncept</a>
+                © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

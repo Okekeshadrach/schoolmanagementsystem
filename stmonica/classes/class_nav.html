@@ -1,0 +1,107 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 1em">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="../classes/manage-student.php?class_id=<?php echo $class_id ?>" title="See list of students in this class" data-toggle="tooltip">Students</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Subjects
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../classes/student-subject-reg.php?class_id=<?php echo $class_id ?>" title="Register subjects for students in this class" data-toggle="tooltip">Student Subject
+                        Registration</a>
+
+                    <a class="dropdown-item" href="../classes/register-class-subject.php?class_id=<?php echo $class_id ?>" title="Register a subject that is offered by the whole class" data-toggle="tooltip">Class
+                        Subject Registration</a>
+
+
+                    <a class="dropdown-item" href="../classes/create-combo-subject.php?class_id=<?php echo $class_id ?>" title="Make an already registered subject become a combination subject" data-toggle="tooltip">Create Combo Subject</a>
+                    <a class="dropdown-item" href="../classes/subject-offered-by-students.php?class_id=<?php echo $class_id ?>" target="_blank" title="See subjects offered by students in this class" data-toggle="tooltip">Subjects offered by students</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../score/class-subject.php?class_id=<?php echo $class_id ?>" title="Enter/Edit scores for subjects registered in this class" data-toggle="tooltip">Result
+                    Computation</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Class Reports
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item" href="../score/report-card-link.php?class_id=<?php echo $class_id ?>" title="View this term report card of this class" data-toggle="tooltip">View Report Card</a>
+
+
+                    <a class="dropdown-item" href="../score/post-result-comment.php?class_id=<?php echo $class_id ?>" title="Place comments on student's report card" data-toggle="tooltip">Report card comment</a>
+                    <a class="dropdown-item" href="../score/send-result.php?class_id=<?php echo $class_id ?>" title="Send student results to their parents via email" data-toggle="tooltip">Send Results to
+                        parents</a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="../score/student-ranking-form.php?class_id=<?php echo $class_id ?>" title="Fetch students ranked by their overall performance" data-toggle="tooltip">Score
+                        Ranking</a>
+
+                    <a class="dropdown-item" href="../score/student-subject-ranking-form.php?class_id=<?php echo $class_id ?>" title="Fetch students ranked by their performance in a specific subject" data-toggle="tooltip">Subject Ranking</a>
+
+                    <a class="dropdown-item" href="../score/term-analysis.php?class_id=<?php echo $class_id ?>" title="see performance analysis of students in <?php echo $classname ?> class corridor" data-toggle="tooltip" target="_blank">Term Analysis</a>
+
+                    <a class="dropdown-item" href="../score/subject-grade-analysis.php?class_id=<?php echo $class_id ?>" title="see number of student scoring specific grades in this class arm" data-toggle="tooltip" target="_blank">Subject Grade Analysis</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Score sheets
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" target="_blank" href="../score/class-datasheet.php?class_id=<?php echo $class_id ?>" title="View/print a general class datasheet (subject independent) for this class" data-toggle="tooltip">Class Datasheet</a>
+                    <a class="dropdown-item" target="_blank" href="../score/class-datasheet.php?class_id=<?php echo $class_id ?>/ca" title="View/print Continuous assessment datasheet for this class" data-toggle="tooltip">CA
+                        Datasheet</a>
+                    <a class="dropdown-item" href="../score/boardsheet-preference.php?class_id=<?php echo $class_id ?>" title="View/print broadsheet of all students scores in this class" data-toggle="tooltip">Broadsheet</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Class settings
+                </a>
+                <div class="dropdown-menu animated flipInY" aria-labelledby="navbarDropdownMenuLink">
+
+
+                    <a class="dropdown-item" href="../classes/promote-student.php?class_id=<?php echo $class_id ?>" title="Promote students in this class to the next class" data-toggle="tooltip">Promote
+                        Student(s)</a>
+
+
+                    <a class="dropdown-item" href="../classes/withdraw-student.php?class_id=<?php echo $class_id ?>" title="Withdraw students who have left the school from the system" data-toggle="tooltip">Withdraw Student(s)</a>
+
+                    <a class="dropdown-item" href="../classes/move-student.php?class_id=<?php echo $class_id ?>" title="Move students from this class arm to a different class arm within the class corridor" data-toggle="tooltip">Move Student(s)</a>
+
+                    <a class="dropdown-item" href="../classes/nominal-roll.php?class_id=<?php echo $class_id ?>" title="View/print this class nominal roll" data-toggle="tooltip">Class Nominal Roll</a>
+
+                    <a class="dropdown-item" href="../classes/student-matters-form.php?class_id=<?php echo $class_id ?>" target="_blank" title="View/print the student's matters form" data-toggle="tooltip">Student
+                        Matters Form</a>
+
+
+                    <a class="dropdown-item" href="../classes/bulk-bio-update.php?class_id=<?php echo $class_id ?>" title="Update information of students in this class (in bulk)" data-toggle="tooltip">Class Bulk
+                        Bio Update</a>
+
+                    <a class="dropdown-item" href="../staff/manage.php?class_id=<?php echo $class_id ?>" title="Change the existing class teacher of this class to a new staff" data-toggle="tooltip">Change Class Teacher</a>
+
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
