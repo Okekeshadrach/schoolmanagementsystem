@@ -93,6 +93,22 @@ class sms_engine
     }
 
 
+    public function global_schoolyear_select()
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = "SELECT * FROM schoolyear";
+        $query = mysqli_query($db, $sql);
+        $count = mysqli_num_rows($query);
+        if ($count == true) {
+            while ($row = mysqli_fetch_array($query)) {
+                $id = $row['id'];
+                $school_year = $row['school_year'];
+                echo '<option value="' . $school_year . '">' . $school_year . '</option>';
+            }
+        } else {
+            echo '<option>No Data Found</option>';
+        }
+    }
     public function get_schoolyear_select()
     {
         $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
@@ -280,6 +296,36 @@ class sms_engine
 
 
 
+    public function add_school_info(
+        $school_name,
+        $short_name,
+        $school_code,
+        $footer_text,
+        $established,
+        $gender,
+        $session_id,
+        $mobileno,
+        $mobileno2,
+        $email1,
+        $email2,
+        $site_keyword,
+        $site_desc,
+        $address1,
+        $address2,
+        $logo,
+        $princ_sign
+    )
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = 'INSERT INTO `global_settings` (`school_name`, `short_name`, `session_id`, `institution_code`, `institute_email`, `institute_email2`, `address`, `address2`, `mobileno`, `mobileno2`, `site_keyword`, `site_desc`, `footer_text`, `school_logo`, `principal_sign`,`established`, `gender`)
+         VALUES ("'.$school_name.'","'.$short_name.'","'.$session_id.'","'.$school_code.'","'.$email1.'","'.$email2.'","'.$address1.'","'.$address2.'","'.$mobileno.'","'.$mobileno2.'","'.$site_keyword.'","'.$site_desc.'","'.$footer_text.'", "'.$logo.'","'.$princ_sign.'","'.$established.'","'.$gender.'") ';
+        $query = mysqli_query($db, $sql) or die(mysqli_error($db));
+        if ($query == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     public function add_grade($grade_name, $grade_remark)
     {
         $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
@@ -567,6 +613,25 @@ class sms_engine
 
 
 
+    public function get_school_info()
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = "SELECT * FROM `global_settings` ";
+        $query = mysqli_query($db, $sql);
+        $count = mysqli_num_rows($query);
+        if ($count == true) {
+            while ($row = mysqli_fetch_array($query)) {
+                
+            }
+        } else {
+            echo '<tr>
+            <tr>
+                <td>No</td>
+                <td>Data Found</td>
+            </tr>
+        </tr>';
+        }
+    }
     public function get_grade()
     {
         $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);

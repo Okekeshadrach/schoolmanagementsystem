@@ -18,9 +18,9 @@ if (isset($_GET['staffid'])) {
             $staff_gender = $row['gender'];
             $staff_image = $row['photo'];
             if (empty($row['photo']) && $staff_gender == 'Male') {
-                $staff_image = 'nobody_m.jpg';
-            } else if (empty($row['photo']) && $staff_gender == 'Female') {
                 $staff_image = 'nobody_f.jpg';
+            } else if (empty($row['photo']) && $staff_gender == 'Female') {
+                $staff_image = 'nobody_n.jpg';
             } else {
                 $staff_image = $row['photo'];
             }

@@ -50,7 +50,7 @@
                             <div class="card-body">
                                 <p class="text-success">See School information below. You can make changes here at will
                                 </p>
-                                <form action="school-config/school-info-process" id="school-info" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                <form action="school-info-process.php" id="school-ifo" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -67,23 +67,24 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="form-control-label" for="princ_name">Principal's Name
+                                                <label class="form-control-label" for="princ_name">school code
                                                     :</label>
-                                                <input type="text" name="princ_name" class="form-control" id="princ_name" value=" " required>
+                                                <input type="text" name="school_code" class="form-control" id="princ_name" value="" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="form-control-label" for="princ_title">Principal's
-                                                    Designation :</label>
-                                                <input type="text" name="princ_title" class="form-control" id="princ_title" value="Project Manager KITA" required>
+                                                <label class="form-control-label" for="princ_title">Academic Session :</label>
+                                                <select name="session_id" class="selectpicker" data-style="form-control btn-secondary" id="gender_type" required>
+                                                    <?php $class->global_schoolyear_select() ?>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="established">Year of
                                                     Establishment :</label>
-                                                <input type="number" name="established" class="form-control" id="established" value="1928" required maxlength="4" max="2022">
+                                                <input type="number" name="established" class="form-control" id="established" value="2001" required maxlength="4" max="2022">
                                             </div>
                                         </div>
 
@@ -92,16 +93,16 @@
                                                 <label class="form-control-label" for="gender_type">Gender Type
                                                     :</label>
                                                 <select name="gender_type" class="selectpicker" data-style="form-control btn-secondary" id="gender_type" required>
-                                                    <option>Both</option>
+                                                    <option selected>Both</option>
                                                     <option>Male</option>
-                                                    <option selected>Female</option>
+                                                    <option>Female</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="phone1">Phone 1 :</label>
-                                                <input type="text" name="phone1" class="form-control" id="phone1" value="+23412952086" required>
+                                                <input type="text" name="phone1" class="form-control" id="phone1" value="" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
@@ -154,7 +155,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="logo-img">School Logo :</label>
-                                                <img src="assets/img/logo_4a262eb69667.png" height="100" class="logo">
+                                                <img src="../assets/img/logo_4a262eb69667.png" height="100" class="logo">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -172,7 +173,7 @@
                                             <div class="form-group">
                                                 <label class="form-control-label" for="princ_sign_img">Principal's
                                                     Signature :</label>
-                                                <img src="assets/img/princ_sign_d8e59db65c4c.png" height="100" class="img-rounded princ_sign">
+                                                <img src="../assets/img/princ_sign_d8e59db65c4c.png" height="100" class="img-rounded princ_sign">
                                             </div>
                                         </div>
 
@@ -186,27 +187,17 @@
                                         </div>
                                     </div>
                                     <hr>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label" for="home_pix_img">Landing Page
-                                                    Picture :</label>
-                                                <img src="assets/img/home_pix_bb844d7f189a9834c.jpg" height="100" class="img-rounded home_pix">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label" for="home_pix">Upload new Landing Page
-                                                    Picture here :</label>
-                                                <input type="file" name="home_pix" class="form-control" id="home_pix">
-                                                <small class="text-info">(JPG, JPEG, or PNG. Minimum Resolution: 1200px
-                                                    x 800px; Max Size: 1MB)</small>
-                                            </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="site_desc">Footer Text
+                                                :</label>
+                                            <textarea type="text" name="footer_text" class="form-control" id="site_desc" required>&lt;footer class=&#039;footer&#039;&gt;
+                    © 2022 School Management System (Edu-Portal) by <a href=&#039;https://binozydigital.com&#039; target=&#039;_blank&#039;>BiNoZy DiGiTaL koncept</a>&lt;/footer&gt;</textarea>
                                         </div>
                                     </div>
-                                    <hr>
                                     <div class="col-md-3">
-                                        <button class="btn btn-primary btn-rounded waves-effect waves-light m-b-5">Save
+                                        <button name="done" class="btn btn-primary btn-rounded waves-effect waves-light m-b-5">Save
                                             Changes</button>
                                     </div>
 
