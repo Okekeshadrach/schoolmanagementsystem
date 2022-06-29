@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('../layout/head.php') ?>
-
+<?php include('../staff/get_staff.php') ?>
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -74,8 +74,11 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td colspan="5"><i>This staff has not been added to any department
-                                                        yet.</i></td>
+                                                <td>1</td>
+                                                <td><?php echo $staff_department?></td>
+                                                <td><?php echo $day?></td>
+                                                <td></td>
+                                                <td></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -83,18 +86,17 @@
                                 <br>
                                 <hr>
                                 <br>
-                                <p>If you want to add <b>Mr teachers name</b> to a department, select the department
+                                <p>If you want to add <b><?php echo $staff_title .' '. $staff_first_name ?>'s name</b> to a department, select the department
                                     below</p>
 
-                                <form action="staff/staff-dept-process/5047f2e72c815caa6" class="form-horizontal" id="add-staff-dept" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                <form action="../staff/staff-dept-process.php" class="form-horizontal" id="add-staff-dept" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="form-group row">
                                         <label for="dept" class="col-sm-4 text-right control-label col-form-label">Select
                                             Department*</label>
                                         <div class="col-sm-8">
                                             <select class="select2" name="dept_id" style="width: 100%" id="dept" required>
                                                 <option></option>
-                                                <option value="90dd04b615b208b11">
-                                                    Krystal&rsquo;s IT Academy </option>
+                                                <?php $class->get_department_select()?>
                                             </select>
                                         </div>
                                     </div>

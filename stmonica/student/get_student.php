@@ -14,9 +14,11 @@ if (isset($_GET['student_id'])) {
     ,       gender as gender
     ,       photo as photo
     ,       house_name as house_name
+    ,       sporthouse_id as sporthouse_id
     ,       birthday as birthday
     ,       admission_date as admission_date
     ,       school_year as school_year
+    ,       `student`.`previous_details`
     ,       `student`.`created_at`
     ,       `student`.`email`
     ,       `student`.`mobileno`
@@ -26,6 +28,7 @@ if (isset($_GET['student_id'])) {
     ,       `student`.`genotype`
     ,       `student`.`state_origin`
     ,       `student`.`lga_origin`
+    ,       `student`.`place_birth`
     ,       `classarm`.`classarm_id`
     FROM student
         RIGHT JOIN enroll ON student.id = enroll.student_id
@@ -41,12 +44,13 @@ if (isset($_GET['student_id'])) {
         while ($row = mysqli_fetch_array($query)) {
             $classarm_name = $row['class_name'];
             $class_id = $row['class_arm_id'];
-            $classname = $row['class_name'] .' '.$row['arm_name'];
+            $classname = $row['class_name'] . ' ' . $row['arm_name'];
             $id = $row['register_no'];
             $student_gender = $row['gender'];
             $student_id = $row['student_id'];
             $surname = strtoupper($row['surname']);
             $sporthouse = $row['house_name'];
+            $sport_house = $row['sporthouse_id'];
             $schoolyear = $row['school_year'];
             $student_email = $row['email'];
             $student_number = $row['mobileno'];
@@ -64,14 +68,17 @@ if (isset($_GET['student_id'])) {
             } else {
                 $student_image = $row['photo'];
             }
-            $day= $row['created_at'];
-            $dob= $row['birthday'];
+            $day = $row['created_at'];
+            $dob = $row['birthday'];
+            $pob = $row['place_birth'];
             $first_name = $row['first_name'];
-            $last_name= $row['last_name'];
+            $last_name = $row['last_name'];
             $today = new DateTime();
             $birthdate = new DateTime($dob);
             $interval = $today->diff($birthdate);
             $birthday = $interval->format('%y years');
+
+            
         }
     }
 }

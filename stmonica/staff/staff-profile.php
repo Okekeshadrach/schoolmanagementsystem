@@ -31,7 +31,7 @@
         <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- =======================  This page styles =================== ---->
-            <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+            <link href="../assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
             <!-- =======================  This page styles =================== ---->
 
 
@@ -76,17 +76,17 @@
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="surname" class="control-label col-form-label">Surname <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="surname" name="surname" value="<?php echo $first_name; ?>" required maxlength="45">
+                                            <input type="text" class="form-control" id="surname" name="surname" value="<?php echo $staff_first_name; ?>" required maxlength="45">
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="first_name" class="control-label col-form-label">First Name
                                                 <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="first_name" name="first_name" value="<?php echo $last_name; ?>" required maxlength="45">
+                                            <input type="text" class="form-control" id="first_name" name="first_name" value="<?php echo $staff_last_name; ?>" required maxlength="45">
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="sec_name" class="control-label col-form-label">Other
                                                 Name</label>
-                                            <input type="text" class="form-control" id="sec_name" name="sec_name" value="<?php echo $other_name; ?>" maxlength="45">
+                                            <input type="text" class="form-control" id="sec_name" name="sec_name" value="<?php echo $staff_othername; ?>" maxlength="45">
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="dob" class="control-label col-form-label">Date of Birth <span class="text-danger">*</span></label>
@@ -171,56 +171,20 @@
                                         </div>
 
                                         <div class="form-group col-sm-6">
-                                            <label for="rank" class="control-label col-form-label">Rank</label>
-                                            <input type="text" class="form-control" id="rank" name="rank" value="" maxlength="45">
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <label for="grade_level" class="control-label col-form-label">Grade
-                                                Level</label>
-                                            <input type="number" class="form-control" id="grade_level" name="grade_level" value="" max="100">
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <label for="step" class="control-label col-form-label">Step</label>
-                                            <input type="number" class="form-control" id="step" name="step" value="" max="20">
-                                        </div>
-                                        <div class="form-group col-sm-6">
                                             <label for="academic_qualification" class="control-label col-form-label">Academic Qualification</label>
-                                            <input type="text" class="form-control" id="academic_qualification" name="academic_qualification" value="" maxlength="45">
+                                            <input type="text" class="form-control" id="academic_qualification" name="academic_qualification" value="<?php echo $staff_qualification ?>" maxlength="45">
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="first_appt_date" class="control-label col-form-label">Date of
-                                                first appointment</label>
-                                            <input type="text" class="form-control date" placeholder="YYYY-MM-DD" id="first_appt_date" name="first_appt_date" value="">
+                                                appointment</label>
+                                            <input type="text" class="form-control date" placeholder="YYYY-MM-DD" name="first_appt_date" value="<?php echo $staff_appoint ?>">
                                         </div>
                                         <div class="form-group col-sm-6">
-                                            <label for="present_appt_date" class="control-label col-form-label">Date of
-                                                present appointment</label>
-                                            <input type="text" class="form-control date" placeholder="YYYY-MM-DD" id="present_appt_date" name="present_appt_date" value="">
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <label for="present_posting_date" class="control-label col-form-label">Date
-                                                of present posting</label>
-                                            <input type="text" class="form-control date" placeholder="YYYY-MM-DD" id="present_posting_date" name="present_posting_date" value="">
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <label for="conf_date" class="control-label col-form-label">Date of
-                                                confirmation</label>
-                                            <input type="text" class="form-control date" placeholder="YYYY-MM-DD" id="conf_date" name="conf_date" value="">
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <label for="hq_file_no" class="control-label col-form-label">Head Quarters
-                                                file number</label>
-                                            <input type="text" class="form-control to-validate" id="hq_file_no" name="hq_file_no" value="" maxlength="45">
-                                            <small class="form-control-feedback"></small>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <label for="ippis" class="control-label col-form-label">IPPIS</label>
-                                            <input type="text" class="form-control to-validate" id="ippis" name="ippis" value="" maxlength="45">
-                                            <small class="form-control-feedback"></small>
+                                            <input type="hidden" class="form-control date" id="" name="staffid" value="<?php echo $staff_id ?>">
                                         </div>
                                         <div class="form-group col-sm-12 text-center">
-                                            <a type="submit" href="javascript: void()" title="Coming soon..." data-toggle="tooltip" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save
-                                                Changes</a>
+                                            <button type="submit" name="update" data-toggle="tooltip" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save
+                                                Changes</button>
                                             <span class="processor"></span>
                                         </div>
                                     </div>
@@ -234,8 +198,8 @@
 
 
             <!-- ======   This Page SCRIPTS   =========== -->
-            <script src="assets/plugins/moment/moment.js"></script>
-            <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+            <script src="../assets/plugins/moment/moment.js"></script>
+            <script src="../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
             <script>
                 $(function() {

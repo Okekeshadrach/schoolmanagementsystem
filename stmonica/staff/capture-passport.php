@@ -62,18 +62,19 @@
                             <div class="card-body">
 
                                 <?php include('../layout/profile_nav.php') ?>
-                                <form action="staff/capture-passport-process/5047f2e72c815caa6" class="form-horizontal" id="staff-passport" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                <form action="../staff/staff-profile-process.php" class="form-horizontal" id="staff-passport" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="form-group row">
                                         <label for="passport" class="col-sm-3 text-right control-label col-form-label">Upload
                                             Passport*</label>
                                         <div class="col-sm-9">
+                                            <input type="hidden" class="form-control" value="<?php echo $staff_id?>" name="staffid" required>
                                             <input type="file" class="form-control" id="passport" name="passport" required>
                                             <small class="text-info">(JPG, JPEG, or PNG. Max Size: 100KB)</small>
                                         </div>
                                     </div>
                                     <div class="form-group m-b-0">
                                         <div class="offset-sm-3 col-sm-9">
-                                            <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Upload
+                                            <button type="submit" name="upload" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Upload
                                                 Passport</button>
                                             <span class="processor"></span>
                                         </div>
@@ -88,19 +89,19 @@
 
             <script>
                 $(function() {
-                    $('form').submit(function(e) {
-                        e.preventDefault();
-                        var xhr = submit_form_multipart('#staff-passport');
-                        xhr.done(function(result) {
-                            if (result.type === 'success') {
-                                //Automatically update page content. Not until user refreshes
-                                $('#staff-profile-div').load(site_url + 'staff/staff-profile/5047f2e72c815caa6 #staff-profile-side');
+                    // $('form').submit(function(e) {
+                    //     e.preventDefault();
+                    //     var xhr = submit_form_multipart('#staff-passport');
+                    //     xhr.done(function(result) {
+                    //         if (result.type === 'success') {
+                    //             //Automatically update page content. Not until user refreshes
+                    //             $('#staff-profile-div').load(site_url + 'staff/staff-profile/5047f2e72c815caa6 #staff-profile-side');
 
-                                //Clear form input
-                                $('#passport').val('');
-                            }
-                        });
-                    });
+                    //             //Clear form input
+                    //             $('#passport').val('');
+                    //         }
+                    //     });
+                    // });
                 })
             </script>
             <!-- ========================================== -->

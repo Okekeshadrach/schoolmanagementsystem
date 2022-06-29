@@ -56,10 +56,6 @@
                             <a class="waves-effect waves-dark" href="../student/graduated-students.php" title="Manage students who have graduated" data-toggle="tooltip">Graduated
                                 Students</a>
                         </li>
-                        <!-- <li>
-                            <a class="waves-effect waves-dark" href="../student/manage-parents.php" title="See List of all parents on the system" data-toggle="tooltip">Manage
-                                Parents</a>
-                        </li> -->
                     </ul>
                 </li>
                 <li>
@@ -190,10 +186,10 @@
                         <!-- <li>
                             <a class="waves-effect waves-dark" href="../school-config/grades-config.php" title="Configure how grades are awarded in students result" data-toggle="tooltip">Grade Configuration</a>
                         </li> -->
-                        <!-- <li>
+                        <li>
                             <a class="waves-effect waves-dark" href="../school-config/school-information.php" title="View/Make changes to the school's information" data-toggle="tooltip">School Information</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="waves-effect waves-dark" href="../school-config/result-setting.php" title="Make changes to how students Report card or Broadsheet looks" data-toggle="tooltip">Result Settings</a>
                         </li>
                         <li>

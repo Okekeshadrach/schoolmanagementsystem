@@ -49,14 +49,13 @@ if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Federal Government Girls College, Nkwelle Ezunaka" />
-    <meta name="keywords" content="school, education" />
-    <meta name="author" content="BiNoZy DiGiTaL koncept" />
-
+    <meta name="description" content="<?php echo $class->get_school_sitedesc()?>">
+    <meta name="keywords" content="<?php echo $class->get_school_sitekeyword()?>">
+    <meta name="author" content="DSQ-TECH" />
     <!-- Favicon icon -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo_4a262eb69667.png" />
-    <title>ST. Monica - School Portal</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/<?php echo $class->get_school_logo()?>">
+    <title><?php echo $class->get_school_name()?></title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 

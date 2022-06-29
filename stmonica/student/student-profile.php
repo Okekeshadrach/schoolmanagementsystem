@@ -32,7 +32,7 @@
         <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- =======================  This page styles =================== ---->
-            <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+            <link href="../assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
             <!-- =======================  This page styles =================== ---->
 
 
@@ -63,12 +63,12 @@
                     <div class="card">
                         <div class="card-body">
                             <?php include('../student/student_nav.html') ?>
-                            <form action="student/student-profile-process" class="form-horizontal" id="student-profile" method="post" accept-charset="utf-8">
+                            <form action="../student/student-profile-process.php" class="form-horizontal" id="studentprofile" method="post" accept-charset="utf-8">
 
                                 <div class="row record" data-id="df7cea02590681d281e1">
                                     <div class="form-group col-md-6">
                                         <label for="surname" class="control-label col-form-label">Surname <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="surname" name="surname" value="<?php echo $surname ?>" required>
+                                        <input type="text" class="form-control" id="surname" name="surname" value="<?php echo strtolower($surname) ?>" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="first_name" class="control-label col-form-label">First Name
@@ -85,8 +85,12 @@
                                         <input type="text" class="form-control date" placeholder="YYYY-MM-DD" id="dob" name="dob" value="<?php echo $dob ?>" required>
                                     </div>
                                     <div class="form-group col-md-6">
+                                        <label for="dob" class="control-label col-form-label">Place of Birth <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" placeholder="" id="dob" name="pob" value="<?php echo $pob ?>" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
                                         <label class="control-label col-form-label">Gender <span class="text-danger">*</span></label><br>
-                                        <input name="gender" type="radio" id="radio_1" class="with-gap radio-col-deep-purple" <?php echo $student_gender == "" ? "checked" : ''; ?> value="Male" />
+                                        <input name="gender" type="radio" id="radio_1" class="with-gap radio-col-deep-purple" <?php echo $student_gender == "Male" ? "checked" : ''; ?> value="Male" />
                                         <label class="form-control-label" for="radio_1">Male</label>
                                         <input name="gender" type="radio" id="radio_2" class="with-gap radio-col-deep-purple" <?php echo $student_gender == "Female" ? "checked" : ''; ?>value="Female" />
                                         <label class="form-control-label" for="radio_2">Female</label>
@@ -151,7 +155,7 @@
                                     <div class="form-group col-md-6">
                                         <label for="house" class="control-label col-form-label">Sport House </label>
                                         <select class="custom-select form-control select2" id="house" name="house_id" style="width: 100%">
-                                            <option value=""><?php echo $sporthouse?></option>
+                                            <option value="<?php echo $sport_house?>" selected><?php echo $sporthouse?></option>
                                         <?php $class->get_sporthouse_select() ?>
 
                                         </select>
@@ -160,9 +164,9 @@
                                         <label for="religion" class="control-label col-form-label">Religion <span class="text-danger">*</span></label>
                                         <select class="custom-select form-control select2" id="religion" name="relig_id" required style="width: 100%">
                                             <option value=""></option>
-                                            <option value=""<?php echo $student_religion == "Christianity" ? "selected" : ''; ?>>Christianity</option>
-                                            <option value=""<?php echo $student_religion == "Islam" ? "selected" : ''; ?>>Islam</option>
-                                            <option value=""<?php echo $student_religion == "Others" ? "selected" : ''; ?>>Others</option>
+                                            <option value="Christianity"<?php echo $student_religion == "Christianity" ? "selected" : ''; ?>>Christianity</option>
+                                            <option value="Islam"<?php echo $student_religion == "Islam" ? "selected" : ''; ?>>Islam</option>
+                                            <option value="Others"<?php echo $student_religion == "Others" ? "selected" : ''; ?>>Others</option>
 
                                         </select>
                                     </div>
@@ -194,6 +198,10 @@
                                     </div>
 
                                     <div class="form-group col-md-12">
+                                        <!-- <label for="addr" class="control-label col-form-label">House Address</label> -->
+                                        <input type="hidden" class="form-control" id="addr" name="student_id" value="<?php echo $student_id ?>">
+                                    </div>
+                                    <div class="form-group col-md-12">
                                         <label for="addr" class="control-label col-form-label">House Address</label>
                                         <input type="text" class="form-control" id="addr" name="address" value="<?php echo $student_home ?>">
                                     </div>
@@ -218,7 +226,7 @@
                                     </div>
 
                                     <div class="form-group col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save
+                                        <button type="submit" name="update" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Save
                                             Changes</button>
                                         <span class="processor"></span>
                                     </div>
@@ -234,8 +242,8 @@
 
 
         <!-- ======   This Page SCRIPTS   =========== -->
-        <script src="assets/plugins/moment/moment.js"></script>
-        <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+        <script src="../assets/plugins/moment/moment.js"></script>
+        <script src="../assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
         <script>
             $(function() {

@@ -2,6 +2,7 @@
 <html lang="en">
 <?php include('../layout/head.php') ?>
 <?php include('../staff/get_staff.php') ?>
+
 <body class="fix-header fix-sidebar card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
@@ -62,25 +63,23 @@
                             <div class="card-body">
 
                                 <?php include('../layout/profile_nav.php') ?>
-                                <p>You want to make Mr teachers name a subject teacher?</p>
+                                <p>You want to make <?php echo $staff_title . ' ' . $staff_first_name ?>'s name a subject teacher?</p>
 
-                                <small class="text-warning">Note: Mr teachers name can only be a subject teacher for
+                                <small class="text-warning">Note: <?php echo $staff_title . ' ' . $staff_first_name ?>'s name can only be a subject teacher for
                                     subjects in the same department as his</small>
                                 <hr>
-                                <form action="staff/assign-subject-process/5047f2e72c815caa6" class="form-horizontal" id="staff-assign" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                <form action="../staff/assign-subject-process.php" class="form-horizontal" id="staff_assign" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="form-group row">
                                         <label for="subj" class="col-sm-3 text-right control-label col-form-label">Select
                                             Subject*</label>
+                                            <input type="hidden" name="staff_id" value="<?php echo $staffid ?>">
                                         <div class="col-sm-9">
                                             <select class="select2 m-b-10" name="subj_id" style="width: 100%" id="subj" required>
                                                 <option></option>
-                                                <?php $class->get_subject_select() ?>
+                                                <?php $class->get_staff_subject_select($staff_department_id) ?>
                                             </select>
                                         </div>
                                     </div>
-
-
-
                                     <div class="form-group row">
                                         <label for="class_arm_id" class="col-sm-3 text-right control-label col-form-label">Select Class
                                             Arm*</label>
@@ -94,7 +93,7 @@
 
                                     <div class="form-group m-b-0">
                                         <div class="offset-sm-3 col-sm-9">
-                                            <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Assign</button>
+                                            <button type="submit" name="assign" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Assign</button>
                                             <span class="processor"></span>
                                         </div>
                                     </div>

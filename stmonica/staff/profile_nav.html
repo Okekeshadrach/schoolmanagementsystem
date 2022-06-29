@@ -2,9 +2,9 @@
     <div class="card" id="staff-profile-side">
         <div class="card-body">
             <center class="m-t-30">
-                <img src="../../uploads/nobody_m.jpg" class="img-circle" width="150" />
+                <img src="../../uploads/<?php echo $staff_image ?>" class="img-circle" width="150" />
                 <h4 class="card-title m-t-10">
-                    <?php echo $staff_title .' '. $first_name .' '. $last_name .' '. $staff_othername ?>
+                    <?php echo $staff_title .' '. $staff_first_name .' '. $staff_last_name .' '. $staff_othername ?>
                 </h4>
 
                 <h6 class="card-subtitle">
@@ -13,7 +13,7 @@
 
                 <div class="row text-center justify-content-md-center">
                     <div class="col-6">
-                        <?php echo $staff_gen ?> </div>
+                        <?php echo $staff_gender ?> </div>
                     <div class="col-6">
                         <?php echo $birthday ?> old </div>
                 </div>
@@ -42,24 +42,27 @@
 
             <small class="text-muted">Class Teacher for</small>
             <h6>
-                Not Ready Yet
-                <!-- <a href="classes/manage-students/93198c8013b3b646cd/b41e43bd10d0922b9a" class="text-info">JSS 2A</a>, <a href="classes/manage-students/2c135cfb1339b43f4b/65efbefd11f5791a36" class="text-info">JSS 2B</a>, <a href="classes/manage-students/cf0160ed13135543ad/d6089c2f12583ba869"
-                    class="text-info">JSS 2C</a>, <a href="classes/manage-students/bb7533421339888ead/e529f5b91388b9581f" class="text-info">JSS 2D</a>, <a href="classes/manage-students/a1c1f6ce13ee5a10ab/014ed07b1433a0ec63" class="text-info">JSS 2E</a>,
-                <a href="classes/manage-students/527d148c134b41e78a/295f7aeb158f2e6215" class="text-info">JSS 2G</a>, <a href="classes/manage-students/ab5bcac8133d526337/cc8162a816172cf707" class="text-info">JSS 2H</a>, <a href="classes/manage-students/fb766a02132ac080c5/9add77be17d00bb52d"
-                    class="text-info">JSS 2J</a>, <a href="classes/manage-students/4b9bb70e13d8a60bbb/2bfe370318408e16fb" class="text-info">JSS 2K</a>, <a href="classes/manage-students/ddfdf19713b4ec7039/b68f64a2151203f94" class="text-info">JSS 1A</a>,
-                <a href="classes/manage-students/b66d07f2135b22b5c8/0a888daf210dec680" class="text-info">JSS 1B</a>,
-                <a href="classes/manage-students/fd1935ad13a61b501e/ef8025b83e0f12700" class="text-info">JSS 1C</a> -->
+                <?php $class->get_teach_class_allocation($staffid)?>
             </h6>
 
 
-            <small class="text-muted">Rank</small>
-            <h6><span class="label label-light-warning">Unspecified</span></h6>
+            <small class="text-muted">D O B</small>
+            <h6>
+                <?php echo $dob ?>
+
+            </h6>
 
             <small class="text-muted">Academic Qualification</small>
-            <h6><span class="label label-light-warning">Unspecified</span></h6>
+            <h6>
+                <?php echo $staff_qualification ?>
 
-            <small class="text-muted">Grade Level</small>
-            <h6><span class="label label-light-warning">Unspecified</span></h6>
+            </h6>
+
+            <small class="text-muted">Date of Appointment</small>
+            <h6>
+                <?php echo $staff_appoint ?>
+
+            </h6>
 
             <small class="text-muted">Email address</small>
             <h6>

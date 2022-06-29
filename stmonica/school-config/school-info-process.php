@@ -31,20 +31,23 @@ if (isset($_POST['done'])) {
     $logo = $rlogo. '.' . end($temp);
     
     if (move_uploaded_file($_FILES["logo"]["tmp_name"], "../assets/img/" . $logo)) {
-        echo "<h3>  Image uploaded successfully!</h3>";
+        // echo "<h3>  Image uploaded successfully!</h3>";
 
     } else {
-        echo "<h3>  Failed to upload image!</h3>";
+        $logo = null;
+        // echo "<h3>  Failed to upload image!</h3>";
     }
     $rprinc_sign = 'princ_sign';
     $temp = explode(".", $_FILES["princ_sign"]["name"]);
     $princ_sign = $rprinc_sign. '.' . end($temp);
     
     if (move_uploaded_file($_FILES["princ_sign"]["tmp_name"], "../assets/img/" . $princ_sign)) {
-        echo "<h3>  Image uploaded successfully!</h3>";
+        // echo "<h3>  Image uploaded successfully! '$princ_sign','$session_id',</h3>";
 
     } else {
-        echo "<h3>  Failed to upload image!</h3>";
+        $princ_sign = null;
+        // echo "<h3>  Failed to upload image!</h3> '$princ_sign','$session_id'" ;
+        
     }
 
 

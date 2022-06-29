@@ -105,7 +105,7 @@
                                 <div class="form-group">
                                     <p>Push login details to <b>Mr teachers</b>?</p>
                                     <p><a class="btn btn-outline-primary btn-sm btn-rounded waves-effect waves-light" id="push-email" href="user-account/push-details/8bfcb98c54cc7ec6b">
-                                            <span class="fa fa-send"></span> Yes, push email to Nnamdi!
+                                            <span class="fa fa-send"></span> Yes, push email to <?php echo $staff_first_name?>!
                                         </a>
                                     </p>
                                 </div>
@@ -125,7 +125,7 @@
                         var url = a.attr('href');
                         swal({
                             title: "Are you sure?",
-                            text: "Your action will change the status of Nnamdi's account. Are you sure you want to do this?",
+                            text: "Your action will change the status of <?php echo $staff_first_name?>'s account. Are you sure you want to do this?",
                             type: "warning",
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",
@@ -148,7 +148,7 @@
                         var url = a.attr('href');
                         swal({
                             title: "Are you sure?",
-                            text: "Your action will send an email with Nnamdi's login details to him. \n Are you sure you want to do this?",
+                            text: "Your action will send an email with <?php echo $staff_first_name?>'s login details to him. \n Are you sure you want to do this?",
                             type: "warning",
                             showCancelButton: true,
                             confirmButtonColor: "#13aa2c",

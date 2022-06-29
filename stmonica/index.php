@@ -19,12 +19,12 @@ elseif (isset($_SESSION['username']) and isset($_SESSION['password'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
-    <title>St. Monica | Admin</title>
+    <title><?php echo $class->get_school_name()?></title>
     <script src="assets/js/pages/jquery.min.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/plugins/charts-c3/plugin.css" /> -->
-    <link rel="shortcut icon" href="assets/img/logo_4a262eb69667.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/<?php echo $class->get_school_logo()?>" type="image/x-icon" />
     <!-- animate.css -->
     <!-- <link rel="stylesheet" href="assets/plugins/morrisjs/morris.min.css" /> -->
     <!-- Custom Css -->
@@ -59,8 +59,8 @@ elseif (isset($_SESSION['username']) and isset($_SESSION['password'])) {
                             <div class="body col-12" style="background: orange;">
 
                                 <div class="text-center">
-                                    <img src="assets/img/logo_4a262eb69667.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
-                                    <h5><strong>School Database Management System</strong></h5>
+                                    <img src="assets/img/<?php echo $class->get_school_logo()?>" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
+                                    <h5><strong><?php echo $class->get_school_name()?></strong></h5>
                                     <p><strong>Super Admin Login</strong></p>
                                     <p><a href="../index.html">Go To Home</a></p>
                                 </div>
@@ -99,7 +99,7 @@ elseif (isset($_SESSION['username']) and isset($_SESSION['password'])) {
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-12 text-center">
-                                                    <p><span class="text-warning">Edu - Portal Powered</span> <span style="color: #FFFDD0;"><a href="https://binozydigital.com "> by BiNoZy DigiTal </a></span></p>
+                                                    <p><span class="text-warning"> Edu - Portal Powered</span> <span style="color: #FFFDD0;"><a href="https://binozydigital.com "> by BiNoZy DigiTal </a></span></p>
                                                     <span class="text-white">&copy; </span> <span style="color: #FFFDD0;" id="demo"></span>
 
                                                     <script>

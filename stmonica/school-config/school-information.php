@@ -55,28 +55,29 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="name">School Full Name :</label>
-                                                <input type="text" name="name" class="form-control" id="name" value="Krystal’s IT Academy F.G.G.C, NKWELLE EZUNAKA" required>
+                                                <input type="text" name="name" class="form-control" id="name" value="<?php echo $class->get_school_name()?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="short_name">School Short Name
                                                     :</label>
-                                                <input type="text" name="short_name" class="form-control" id="short_name" value="F.G.G.C NKWELLE" required maxlength="15">
+                                                <input type="text" name="short_name" class="form-control" id="short_name" value="<?php echo $class->get_school_short()?>" required maxlength="15">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="princ_name">school code
                                                     :</label>
-                                                <input type="text" name="school_code" class="form-control" id="princ_name" value="" required>
+                                                <input type="text" name="school_code" class="form-control" id="princ_name" value="<?php echo $class->get_school_code()?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="princ_title">Academic Session :</label>
                                                 <select name="session_id" class="selectpicker" data-style="form-control btn-secondary" id="gender_type" required>
-                                                    <?php $class->global_schoolyear_select() ?>
+                                                    <?php echo $class->get_school_session() ?>
+                                                    <?php $class->get_schoolyear_select() ?>
                                                 </select>
                                             </div>
                                         </div>
@@ -84,7 +85,7 @@
                                             <div class="form-group">
                                                 <label class="form-control-label" for="established">Year of
                                                     Establishment :</label>
-                                                <input type="number" name="established" class="form-control" id="established" value="2001" required maxlength="4" max="2022">
+                                                <input type="number" name="established" class="form-control" id="established" value="<?php echo $class->get_school_established() ?>" required maxlength="4" max="2022">
                                             </div>
                                         </div>
 
@@ -93,6 +94,7 @@
                                                 <label class="form-control-label" for="gender_type">Gender Type
                                                     :</label>
                                                 <select name="gender_type" class="selectpicker" data-style="form-control btn-secondary" id="gender_type" required>
+                                                    <option selected><?php echo $class->get_school_gender() ?></option>
                                                     <option selected>Both</option>
                                                     <option>Male</option>
                                                     <option>Female</option>
@@ -102,51 +104,51 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="phone1">Phone 1 :</label>
-                                                <input type="text" name="phone1" class="form-control" id="phone1" value="" required>
+                                                <input type="text" name="phone1" class="form-control" id="phone1" value="<?php echo $class->get_school_mobile() ?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="phone2">Phone 2 :</label>
-                                                <input type="text" name="phone2" class="form-control" id="phone2" value="">
+                                                <input type="text" name="phone2" class="form-control" id="phone2" value="<?php echo $class->get_school_mobile2() ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="email1">Email 1 :</label>
-                                                <input type="email" name="email1" class="form-control" id="email1" value="info@krystaldigitalng.com" required>
+                                                <input type="email" name="email1" class="form-control" id="email1" value="<?php echo $class->get_school_email() ?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="email2">Email 2 :</label>
-                                                <input type="email" name="email2" class="form-control" id="email2" value="">
+                                                <input type="email" name="email2" class="form-control" id="email2" value="<?php echo $class->get_school_email2() ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="site_keyword">Site Keywords
                                                     :</label>
-                                                <textarea type="text" name="site_keyword" class="form-control" id="site_keyword" required>school, education</textarea>
+                                                <textarea type="text" name="site_keyword" class="form-control" id="site_keyword" required><?php echo $class->get_school_sitekeyword() ?></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="site_desc">Site Description
                                                     :</label>
-                                                <textarea type="text" name="site_desc" class="form-control" id="site_desc" required>Federal Government Girls College, Nkwelle Ezunaka</textarea>
+                                                <textarea type="text" name="site_desc" class="form-control" id="site_desc" required><?php echo $class->get_school_sitedesc() ?></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="address1">Address 1 :</label>
-                                                <textarea type="text" name="address1" class="form-control" id="address1" required>Nkwelle Ezunaka</textarea>
+                                                <textarea type="text" name="address1" class="form-control" id="address1" required><?php echo $class->get_school_address() ?></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="address2">Address 2 :</label>
-                                                <textarea type="text" name="address2" class="form-control" id="address2"></textarea>
+                                                <textarea type="text" name="address2" class="form-control" id="address2"><?php echo $class->get_school_address2() ?></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +157,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="logo-img">School Logo :</label>
-                                                <img src="../assets/img/logo_4a262eb69667.png" height="100" class="logo">
+                                                <img src="../assets/img/<?php echo $class->get_school_logo() ?>" height="100" class="logo">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -173,7 +175,7 @@
                                             <div class="form-group">
                                                 <label class="form-control-label" for="princ_sign_img">Principal's
                                                     Signature :</label>
-                                                <img src="../assets/img/princ_sign_d8e59db65c4c.png" height="100" class="img-rounded princ_sign">
+                                                <img src="../assets/img/<?php echo $class->get_school_princ_sign() ?>" height="100" class="img-rounded princ_sign">
                                             </div>
                                         </div>
 
@@ -192,8 +194,7 @@
                                         <div class="form-group">
                                             <label class="form-control-label" for="site_desc">Footer Text
                                                 :</label>
-                                            <textarea type="text" name="footer_text" class="form-control" id="site_desc" required>&lt;footer class=&#039;footer&#039;&gt;
-                    © 2022 School Management System (Edu-Portal) by <a href=&#039;https://binozydigital.com&#039; target=&#039;_blank&#039;>BiNoZy DiGiTaL koncept</a>&lt;/footer&gt;</textarea>
+                                            <textarea type="text" name="footer_text" class="form-control" id="site_desc" required><?php echo $class->get_school_footer() ?></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-3">

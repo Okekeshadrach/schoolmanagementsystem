@@ -60,32 +60,12 @@
                                                 <th>#</th>
                                                 <th>Class Arm</th>
                                                 <th>Students</th>
-
-
                                                 <th>Class Teacher</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
-                                        <tr>
-                                            <td class="sn">1</td>
-                                            <td>
-                                                <a href="classes/manage-students/e01ac7d6138b318c6d/f578ad0414d67611b" target="_blank" class="text-info">
-                                                    <?php echo $classarm_name ?></a>
-                                            </td>
-                                            <td>46</td>
-
-
-                                            <td>
-
-                                                <a href="staff/staff-profile/6b217d4e2f544c640">
-
-                                                    <img src="uploads/nobody_m.jpg" width="40" class="img-circle" />
-                                                    Teachers Name </a>
-                                            </td>
-                                            <td>
-                                            </td>
-                                        </tr>
                                         <tbody>
+                                            <?php $class->get_classarmteachers() ?>
                                         </tbody>
                                     </table>
                                 </div>
