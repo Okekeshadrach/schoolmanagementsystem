@@ -161,7 +161,7 @@ class sms_engine
         $count = mysqli_num_rows($query);
         if ($count == true) {
             while ($row = mysqli_fetch_array($query)) {
-                $id = $row['id'];
+                $id = $row['s_id'];
                 $name = $row['subject_name'];
                 echo '<option value="' . $id . '">' . $name . '</option>';
             }
@@ -177,7 +177,7 @@ class sms_engine
         $count = mysqli_num_rows($query);
         if ($count == true) {
             while ($row = mysqli_fetch_array($query)) {
-                $id = $row['id'];
+                $id = $row['s_id'];
                 $name = $row['subject_name'];
                 echo '<option value="' . $id . '">' . $name . '</option>';
             }
@@ -426,7 +426,6 @@ class sms_engine
                 if ($query == true) {
                     echo "<script>alert('saved')
     history.back()</script>";
-                    // echo $session_id . ' ' . $princ_sign;
                     return true;
                 } else {
                     return false;
@@ -435,7 +434,6 @@ class sms_engine
                 $sql = 'UPDATE `global_settings` SET `school_name`="' . $school_name . '",`short_name`="' . $short_name . '",`session_id`="' . $session_id . '",`institution_code`="' . $school_code . '",`institute_email`="' . $email1 . '",`institute_email2`="' . $email2 . '",`address`="' . $address1 . '",`address2`="' . $email2 . '",`mobileno`="' . $mobileno . '",`mobileno2`="' . $mobileno2 . '",`site_keyword`="' . $site_keyword . '",`site_desc`="' . $site_desc . '",`footer_text`="' . $footer_text . '",`school_logo`="' . $logo . '",`established`="' . $established . '",`gender`="' . $gender . '"';
                 $query = mysqli_query($db, $sql) or die(mysqli_error($db));
                 if ($query == true) {
-                    // echo $session_id . ' ' . $logo;
                     echo "<script>alert('saved')
     history.back()</script>";
                     return true;
@@ -446,7 +444,7 @@ class sms_engine
                 $sql = 'UPDATE `global_settings` SET `school_name`="' . $school_name . '",`short_name`="' . $short_name . '",`session_id`="' . $session_id . '",`institution_code`="' . $school_code . '",`institute_email`="' . $email1 . '",`institute_email2`="' . $email2 . '",`address`="' . $address1 . '",`address2`="' . $email2 . '",`mobileno`="' . $mobileno . '",`mobileno2`="' . $mobileno2 . '",`site_keyword`="' . $site_keyword . '",`site_desc`="' . $site_desc . '",`footer_text`="' . $footer_text . '",`school_logo`="' . $logo . '",`principal_sign`="' . $princ_sign . '",`established`="' . $established . '",`gender`="' . $gender . '"';
                 $query = mysqli_query($db, $sql) or die(mysqli_error($db));
                 if ($query == true) {
-                    // echo $session_id;
+
                     echo "<script>alert('saved')
     history.back()</script>";
                     return true;
@@ -639,6 +637,35 @@ class sms_engine
     history.back()</script>";
         }
     }
+    public function update_staffdept_req($staffid, $dept_id)
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $chk_sql = 'SELECT * FROM `subject_assign` WHERE teacher_id="' . $staffid . '"';
+        $chk_query = mysqli_query($db, $chk_sql) or die(mysqli_error($db));
+        $chk_count = mysqli_num_rows($chk_query);
+        if ($chk_count == true) {
+            echo "<Script> 
+            alert('Update Failed');
+            alert('Subjects Has Already been assigned to Previous Deparment');
+            alert('Add Subjects you wish to Assign to teacher to the Previous Department');
+            history.back()
+            </Script>
+             ";
+            echo 'Err';
+        } else {
+            $sql = 'UPDATE `staff` SET `department_id`="' . $dept_id . '" WHERE `id` = "' . $staffid . '" ';
+            $sql_query = mysqli_query($db, $sql)  or die(mysqli_error($db));
+            if ($sql_query == true) {
+                echo "
+                <script>alert('saved')
+                    history.back()
+                </script>";
+            } else {
+                echo "<script>alert('Failed')
+                history.back()</script>";
+            }
+        }
+    }
     public function update_student_req(
         $surname,
         $first_name,
@@ -714,35 +741,6 @@ class sms_engine
         }
     }
 
-
-
-    // public function add_parent(
-    //     $title,
-    //     $p_surname,
-    //     $p_firstname,
-    //     $p_othername,
-    //     $p_email,
-    //     $mobileno,
-    //     $next_kin,
-    //     $next_mobile,
-    //     $home_address,
-    //     $office_address
-    // ) {
-    //     $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
-
-    //     $sql = 'INSERT INTO `parent` (`title`, `surname`, `firstname`, `othername`, `email`, `mobileno`, `next_kin`, `next_mobile`, `home_address`, `office_address`, `active`) 
-    //     VALUES ("' . $title . '", "' . $p_surname . '", "' . $p_firstname . '", "' . $p_othername . '", "' . $p_email . '", "' . $mobileno . '", "' . $next_kin . '", "' . $next_mobile . '", "' . $home_address . '", "' . $office_address . '", "1") ';
-    //     $query = mysqli_query($db, $sql);
-    //     if ($query == true) {
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
-
-
-
-
     public function add_staff(
         $staff_id,
         $title,
@@ -768,7 +766,7 @@ class sms_engine
                              VALUES ("' . $staff_id . '", "' . $title . '", "' . $firstname . '", "' . $surname . '","' . $sec_name . '", "' . $gender . '", "' . $birthday . '", "' . $email . '", "' . $mobileno . '", "' . $state . '", "' . $lga . '", "' . $home_address . '", "' . $role_id . '", "' . $qualification . '", "' . $joining_date . '", "' . $photo . '", "' . $sporthouse_id . '", "' . $department_id . '")';
         $query = mysqli_query($db, $sql) or die(mysqli_error($db));
         if ($query == true) {
-            // return true;
+
             echo "<script>alert('$staff_id,$lga,$department_id');
         
         </script>";
@@ -1039,9 +1037,7 @@ class sms_engine
         $count = mysqli_num_rows($query);
         if ($count == true) {
             while ($row = mysqli_fetch_array($query)) {
-                // $global_school_name = $row['school_name'];
                 $global_shot_name = $row['short_name'];
-                // return $global_school_name;
                 return $global_shot_name;
             }
         }
@@ -1127,7 +1123,7 @@ class sms_engine
         JOIN arm
             ON classarm.arm_id=arm.id
         WHERE class.id Is NOT NULL
-";
+        ";
         $query = mysqli_query($db, $sql);
         $count = mysqli_num_rows($query);
         if ($count == true) {
@@ -1150,35 +1146,49 @@ class sms_engine
         </tr>';
         }
     }
+    public function update_subject_req($subject_id, $name, $short_name, $dept_id)
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = "UPDATE `subject` SET subject_name='$name',subject_code = '$short_name', department_id = '$dept_id'
+         WHERE s_id = '$subject_id'";
+        $query = mysqli_query($db, $sql)  or die(mysqli_error($db));
+        if ($query == true) {
+            echo '<script> 
+                alert("Update Successfull");
+                history.back()
+                </script>';
+        } else {
+            echo '<script> 
+                alert("Update Failed ' . $query . ' b");
+            history.back()</script>';
+        }
+    }
     public function update_arm($arm, $armid)
     {
-        echo $arm;
-        echo $armid;
         $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
         $sql = "UPDATE arm SET arm_name='$arm' WHERE arm_id = '$armid'";
         echo $arm;
         echo $sql;
-        $query = mysqli_query($db, $sql);
-        $count = mysqli_num_rows($query) or die(mysqli_error($db));
+        $query = mysqli_query($db, $sql) or die(mysqli_error($db));
 
-        if ($count == true) {
+        if ($query == true) {
             echo '<script> 
-   Toastify({
-        text: "Update Successfull",
-        offset: {
-          x: 50, 
-          y: 10 
-        },
-      }).showToast();</script>';
+            Toastify({
+                    text: "Update Successfull",
+                    offset: {
+                    x: 50, 
+                    y: 10 
+                    },
+                }).showToast();</script>';
         } else {
             echo '<script> 
-   Toastify({
-        text: "Update Failed ' . $count . ' b",
-        offset: {
-          x: 50, 
-          y: 10 
-        },
-      }).showToast();</script>';
+            Toastify({
+                    text: "Update Failed ' . $query . ' b",
+                    offset: {
+                    x: 50, 
+                    y: 10 
+                    },
+                }).showToast();</script>';
         }
     }
     public function get_arm()
@@ -1284,7 +1294,6 @@ class sms_engine
         if ($count == true) {
             $counter = 0;
             while ($row = mysqli_fetch_array($query)) {
-                // $id = $row['id'];
                 $name = $row['surname'];
                 $names = $row['first_name'] . ' ' . $row['last_name'];
                 $regno = $row['register_no'];
@@ -1382,7 +1391,7 @@ class sms_engine
         $counter = 0;
         if ($count == true) {
             while ($row = mysqli_fetch_array($query)) {
-                $id = $row['id'];
+                $id = $row['s_id'];
                 $subject_name = $row['subject_name'];
                 $subject_code = $row['subject_code'];
                 $department_id = $row['department_name'];
@@ -1431,8 +1440,7 @@ class sms_engine
                 $staff_id = $row['staff_id'];
                 $name = $title . ' ' . $lastname . ' ' . $firstname . ' ' . $othername;
                 $usename = 'unassigned';
-                // $image = $row['photo'];
-                // $img = '';
+
                 $staff_gender = $row['gender'];
                 $staff_image = $row['photo'];
                 if ($staff_image == "" && $staff_gender == 'Male') {
@@ -1442,13 +1450,7 @@ class sms_engine
                 } else {
                     $staff_image = $row['photo'];
                 }
-                // if ($image == "" && $row['gender'] == 'Male') {
-                //     $img = "../../uploads/nobody_m.jpg";
-                // } else if ($image == "" && $row['gender'] == 'Female' || 'F') {
-                //     $img = "../../uploads/nobody_f.jpg";
-                // } else {
-                //     $img = "../../uploads/$image";
-                // }
+
                 echo '<tr>
                 <td>' . ++$counter . '</td>
                 <td>
@@ -1612,8 +1614,66 @@ class sms_engine
     }
 
 
+    // Score entry For classes
+    public function get_score_entry($class_id)
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = "SELECT  student_id as student_id
+        ,       enroll.class_id
+        ,       class_arm_id as class_arm_id
+        ,       class_name as class_name
+        ,       register_no as register_no
+        ,       surname as surname
+        ,       first_name as first_name
+        ,       last_name as last_name
+        ,       gender as gender
+        ,       photo as photo
+        ,       arm_name as arm_name
+        FROM enroll
+            LEFT JOIN class ON class_id = class.id
+            RIGHT JOIN student ON student_id = student.id
+            RIGHT JOIN classarm ON class_arm_id = classarm_id
+            RIGHT JOIN arm ON classarm.arm_id = arm.arm_id
+            WHERE class_arm_id = '$class_id'
+        ";
+        $query = mysqli_query($db, $sql);
+        $count = mysqli_num_rows($query) or die(mysqli_error($db));
+        if ($count == true) {
+            $counter = 0;
+            while ($row = mysqli_fetch_array($query)) {
+                $id = $row['register_no'];
+                $class_name = $row['class_name'] . '<b> ' . $row['arm_name'] . '<b>';
+                $gender = $row['gender'];
+                $student_id = $row['student_id'];
+                $surname = ucfirst($row['surname']);
+                $image = $row['photo'];
+                if (empty($image) && $gender == 'Male') {
+                    $image = 'nobody_m.jpg';
+                } else if (empty($image) && $gender == 'Female') {
+                    $image = 'nobody_f.jpg';
+                } else {
+                    $image = $row['photo'];
+                }
 
+                $name = $row['first_name'] . ' ' . $row['last_name'];
+                echo '<tr>
+                <td>'.++$counter.'</td>
+                <td>
+                    <img src="../../uploads/'.$image.'" height="50" class="img-circle" />
+                </td>
+                <td><b>'.$surname.'</b> '.$name.'</td>
+                <td>'.$id.'</td>
 
+                <td> <input name="score[3895][ca1]" min="0" max="50" type="number" class="form-control score-input" value="36" />
+                </td>
+
+                <td> <input name="score[3895][exam]" min="0" max="50" type="number" class="form-control score-input" value="27" />
+                </td>
+
+            </tr>';
+            }
+        }
+    }
 
 
 
@@ -1625,9 +1685,104 @@ class sms_engine
 
 
     // Assignment of subject and Teacher to Classes
+    public function get_class_subjects($class_id)
+    {
+        $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = "SELECT * FROM `subject` 
+        LEFT JOIN department ON department_id = department.d_id";
+        $query = mysqli_query($db, $sql);
+        $count = mysqli_num_rows($query);
+        if ($count == true) {
+            $counter = 0;
+            while ($row = mysqli_fetch_array($query)) {
+                $subject_name = $row['subject_name'];
+                $subject_code = $row['subject_code'];
+                $s_id = $row['s_id'];
+                $department_name = $row['department_name'];
+                if ($s_id == '1') {
+                    $value = 'checked';
+                } else {
+                    $value = '';
+                }
+                echo '
+                <tr>
+                                            <td class="sn">' . ++$counter . '</td>
+                                            <td>
+                                            ' . $subject_name . ' </td>
+
+                                            <td>' . $subject_code . '</td>
+
+                                            <td style="text-align: center">
+                                                <span class="label label-light-success">All Students</span>
+                                            </td>
+                                            <td>
+                                                <a href="../subject/assign-teacher.php"><span class="label label-light-danger">Unassigned</span></a>
+                                            </td>
+
+                                            <td>
+                                                <a class="btn btn-outline-primary btn-rounded btn-sm waves-effect waves-light m-t-10" data-toggle="tooltip" title="View/Print ' . $subject_name . ' Datasheet" target="_blank" href="../score/subject-datasheet-print.php?class_id='.$class_id.'">
+                                                    <i class="fa fa-file-text-o"></i> View Datasheet
+                                                </a>
+                                            </td>
+
+                                            <td>
+
+                                                <a class="btn btn-success btn-rounded btn-sm waves-effect waves-light m-t-10" data-toggle="tooltip" title="Download a csv file. You can enter Enter Scores therein and upload later" href="../score/csv-download.php?class_id='.$class_id.'">
+                                                    <i class="fa fa-file-excel-o"></i> CSV File
+                                                </a>
+
+                                            </td>
+
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <a class="btn btn-success btn-rounded btn-sm waves-effect waves-light m-t-10" data-toggle="tooltip" title="Enter or update scores for this subject" href="../score/score-update-form.php?class_id='.$class_id.'">
+                                                        <i class="fa fa-edit"></i> Enter Score
+                                                    </a>
+
+                                                </div>
+                                            </td>
+                                        </tr>   ';
+            }
+        }
+    }
     public function assign_subjectclass()
     {
         $db = mysqli_connect($this->host, $this->user, $this->pass, $this->database);
+        $sql = "SELECT * FROM `subject` 
+        LEFT JOIN department ON department_id = department.d_id";
+        $query = mysqli_query($db, $sql);
+        $count = mysqli_num_rows($query);
+        if ($count == true) {
+            $counter = 0;
+            while ($row = mysqli_fetch_array($query)) {
+                $subject_name = $row['subject_name'];
+                $subject_code = $row['subject_code'];
+                $s_id = $row['s_id'];
+                $department_name = $row['department_name'];
+                if ($s_id == '1') {
+                    $value = 'checked';
+                } else {
+                    $value = '';
+                }
+                echo '
+                <tr>
+                    <td class="sn">' . ++$counter . '</td>
+                    <td>' . $subject_name . '</td>
+                    <td>' . $subject_code . '</td>
+                    <td>' . $department_name . '</td>
+                    <td>
+                        <div class="switch">
+                            <label>
+                                <input name="data_id[]" type="checkbox" value="' . $s_id . '" class="chk" ' . $value . '>
+                                <span class="lever switch-col-light-blue"></span>
+                            </label>
+                        </div>
+                    </td>
+                 </tr>
+                                                ';
+            }
+        }
     }
     public function assign_subject_teacher($int, $subject_id, $staffid)
     {
@@ -1695,16 +1850,11 @@ class sms_engine
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['password'] = $row['password'];
                 $_SESSION['user_id'] = $row['user_id'];
-
-
-                if ($row[5] == 'block') {
-                    // echo '<script>window.location="ep/docs/block_account.php"</script>';
+                if ($row['role'] == 'block') {
                 } elseif ($row['role'] == '1') {
                     echo '<script>window.alert("yes")</script>';
                     echo '<script>window.location="admin-account.php?engine=' . $row['user_id'] . '"</script>';
                 } elseif ($row['role']) {
-                    // update timestructureinvest_member
-                    // mysqli_query($db, "UPDATE paywase_member SET last_seen='$last_seen' WHERE user_id='$_SESSION[user_id]'");
                     echo '<script>window.location="admin-account.php?engine=' . $row['user_id'] . '"</script>';
                     echo '<script>window.alert("yes")</script>';
                 }

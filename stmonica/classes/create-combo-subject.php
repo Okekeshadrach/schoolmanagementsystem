@@ -81,8 +81,7 @@
                                                         subject</label>
                                                     <select name="subject_id" id="subj" class="custom-select form-control select2" style="width: 100%">
                                                         <option></option>
-                                                        <option value="eec9b69715d5b8996">Skills Development Class
-                                                            (general)</option>
+                                                        <?php $class->get_subject_select()?>
                                                     </select>
                                                 </div>
                                                 <div id="make-combo" style="display: none;">
@@ -90,10 +89,7 @@
                                                         <label for="sub_subj"></label>
                                                         <select class="select2 m-b-10 select2-multiple" name="sub_subj[]" style="width: 100%" multiple="multiple" data-placeholder="Choose" id="sub_subj" required>
                                                             <option></option>
-                                                            <option value="7fa8b44021a757c1f">Skills Development Class
-                                                                (art)</option>
-                                                            <option value="13ae650d3a349824a">Skills Development Class
-                                                                (science)</option>
+                                                            <?php $class->get_subject_select()?>
                                                         </select>
                                                     </div>
                                                 </div>

@@ -41,7 +41,7 @@
                 <div class="row page-titles">
                     <div class="col-md-12 align-self-center">
                         <h3 class="text-themecolor m-b-0 m-t-0" id="page-title">
-                            Student Subject Registration<?php echo $classarm_name ?></h3>
+                            Student Subject Registration <?php echo $classarm_name ?></h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Class</a></li>
                             <li class="breadcrumb-item active">students subject reg</li>
@@ -78,9 +78,7 @@
                                                 <label for="subj">Select Subject</label>
                                                 <select name="subject_id" id="subjt" class="custom-select form-control select2" required>
                                                     <option></option>
-                                                    <option value="2">Skills Development Class (art)</option>
-                                                    <option value="1">Skills Development Class (general)</option>
-                                                    <option value="3">Skills Development Class (science)</option>
+                                                    <?php $class->get_subject_select() ?>
                                                 </select>
                                                 <input type="hidden" name="class_arm_id" value="170ac27a1b5177272">
                                                 <input type="hidden" name="session_id" value="d6fd49ad137f5edbe4">

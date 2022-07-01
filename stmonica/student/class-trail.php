@@ -79,14 +79,14 @@
                                                             Action
                                                         </button>
                                                         <div class="dropdown-menu animated slideInUp">
-                                                            <a class="dropdown-item" target="_blank" href="../score/report-card.php?class_id=<?php echo $class_id;?>">View Term Result
+                                                            <a class="dropdown-item" target="_blank" href="../score/report-card.php?student_id=<?php echo $student_id;?>">View Term Result
                                                             </a>
 
-                                                            <a class="dropdown-item" target="_blank" href="../score/cumulative-report-card.php">Session Cum Result</a>
+                                                            <a class="dropdown-item" target="_blank" href="../score/cumulative-report-card.php?student_id=<?php echo $student_id;?>">Session Cum Result</a>
 
-                                                            <a class="dropdown-item" href="../student/student-subjects.php" target="_blank" title="See subjects offered by this student. You can also Register/Deregister any subject" data-toggle="tooltip">Subjects Offered</a>
+                                                            <a class="dropdown-item" href="../student/student-subjects.php?student_id=<?php echo $student_id;?>" target="_blank" title="See subjects offered by this student. You can also Register/Deregister any subject" data-toggle="tooltip">Subjects Offered</a>
 
-                                                            <a class="dropdown-item" href="../student/score-update-form" target="_blank" title="Input/Update this student's score" data-toggle="tooltip">Enter/Edit Score</a>
+                                                            <a class="dropdown-item" href="../student/score-update-form.php?student_id=<?php echo $student_id;?>" target="_blank" title="Input/Update this student's score" data-toggle="tooltip">Enter/Edit Score</a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -141,7 +141,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2018 School Information Management System (MySkool Portal) by <a href="https://binozydigital.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+            © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL koncept</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

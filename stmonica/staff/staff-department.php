@@ -86,14 +86,15 @@
                                 <br>
                                 <hr>
                                 <br>
-                                <p>If you want to add <b><?php echo $staff_title .' '. $staff_first_name ?>'s name</b> to a department, select the department
+                                <p>If you want to add <b><?php echo $staff_title .' '. strtolower($staff_first_name) ?></b> to a department, select the department
                                     below</p>
 
-                                <form action="../staff/staff-dept-process.php" class="form-horizontal" id="add-staff-dept" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                <form action="../staff/staff-dept-process.php" class="form-horizontal" id="addstaff-dept" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                                     <div class="form-group row">
                                         <label for="dept" class="col-sm-4 text-right control-label col-form-label">Select
                                             Department*</label>
                                         <div class="col-sm-8">
+                                        <input type="hidden" name="staff_id" value="<?php echo $staffid ?>">
                                             <select class="select2" name="dept_id" style="width: 100%" id="dept" required>
                                                 <option></option>
                                                 <?php $class->get_department_select()?>
@@ -103,7 +104,7 @@
 
                                     <div class="form-group m-b-0">
                                         <div class="offset-sm-4 col-sm-8">
-                                            <button type="submit" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Add
+                                            <button type="submit" name="check" class="btn btn-primary btn-rounded waves-effect waves-light m-t-10">Add
                                                 to Department</button>
                                             <span class="processor"></span>
                                         </div>

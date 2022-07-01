@@ -32,7 +32,6 @@ if (isset($_GET['staffid'])) {
             $staff_number = $row['mobileno'];
             $lga_origin = $row['lga'];
             $state_origin = $row['state'];
-            $staff_rank = $row['rank'];
             $staff_home = $row['home_address'];
             $staff_qualification = $row['qualification'];
             $staff_appoint = $row['joining_date'];

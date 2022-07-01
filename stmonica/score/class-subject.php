@@ -41,7 +41,7 @@
                 <div class="row page-titles">
                     <div class="col-md-12 align-self-center">
                         <h3 class="text-themecolor m-b-0 m-t-0" id="page-title">
-                            Class Result Computation<?php echo $classarm_name ?></h3>
+                            Class Result Computation <?php echo $classarm_name ?></h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Score</a></li>
                             <li class="breadcrumb-item active">class subject</li>
@@ -86,46 +86,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-
-                                        <tr>
-                                            <td class="sn">1</td>
-                                            <td>
-                                                Skills Development Class (general) </td>
-
-                                            <td>S DC</td>
-
-                                            <td style="text-align: center">
-                                                <span class="label label-light-success">All Students</span>
-                                            </td>
-                                            <td>
-                                                <a href="subject/assign-teacher"><span class="label label-light-danger">Unassigned</span></a>
-                                            </td>
-
-                                            <td>
-                                                <a class="btn btn-outline-primary btn-rounded btn-sm waves-effect waves-light m-t-10" data-toggle="tooltip" title="View/Print Skills Development Class (general) Datasheet" target="_blank" href="score/subject-datasheet-print/d6fd49ad137f5edbe4/170ac27a1b5177272/72e6f5ae1943be758/current-term">
-                                                    <i class="fa fa-file-text-o"></i> View Datasheet
-                                                </a>
-                                            </td>
-
-                                            <td>
-
-                                                <a class="btn btn-success btn-rounded btn-sm waves-effect waves-light m-t-10" data-toggle="tooltip" title="Download a csv file. You can enter Enter Scores therein and upload later" href="score/csv-download/d6fd49ad137f5edbe4/170ac27a1b5177272/6294268a116e01348">
-                                                    <i class="fa fa-file-excel-o"></i> CSV File
-                                                </a>
-
-                                            </td>
-
-                                            <td>
-
-                                                <div class="btn-group">
-                                                    <a class="btn btn-success btn-rounded btn-sm waves-effect waves-light m-t-10" data-toggle="tooltip" title="Enter or update scores for this subject" href="score/score-update-form/0f00b7f913ed0e456f/170ac27a1b5177272/174348111e30ffb42">
-                                                        <i class="fa fa-edit"></i> Enter Score
-                                                    </a>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-
+                                        <?php $class->get_class_subjects($class_id)?>
                                     </tbody>
                                 </table>
                             </div>

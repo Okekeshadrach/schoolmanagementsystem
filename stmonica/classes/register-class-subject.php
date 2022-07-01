@@ -100,50 +100,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-
-                                                <tr>
-                                                    <td class="sn">1</td>
-                                                    <td>Skills Development Class (art)</td>
-                                                    <td>SD C</td>
-                                                    <td>Krystal&rsquo;s IT Academy</td>
-                                                    <td>
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input name="data_id[]" type="checkbox" value="2ab060892d2f5cd0f" class="chk">
-                                                                <span class="lever switch-col-light-blue"></span>
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sn">2</td>
-                                                    <td>Skills Development Class (general)</td>
-                                                    <td>S DC</td>
-                                                    <td>Krystal&rsquo;s IT Academy</td>
-                                                    <td>
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input name="data_id[]" type="checkbox" value="a113ca7014c7a2fca" class="chk">
-                                                                <span class="lever switch-col-light-blue"></span>
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sn">3</td>
-                                                    <td>Skills Development Class (science)</td>
-                                                    <td>SDC</td>
-                                                    <td>Krystal&rsquo;s IT Academy</td>
-                                                    <td>
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input name="data_id[]" type="checkbox" value="37742f1e390c7ffc0" class="chk">
-                                                                <span class="lever switch-col-light-blue"></span>
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
+                                        <?php $class->assign_subjectclass()?>
                                             </tbody>
                                         </table>
 
@@ -179,7 +136,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">KRYSTAL DIGITAL SOLUTIONS</a>
+                    © 2022 School Management System (Edu-Portal) by <a href="https://binozydigital.com" target="_blank">BiNoZy DiGiTaL Koncept</a>
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
